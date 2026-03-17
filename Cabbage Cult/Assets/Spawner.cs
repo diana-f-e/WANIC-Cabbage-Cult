@@ -50,6 +50,8 @@ public class Spawner : MonoBehaviour
     public void SpawnNextEnemy()
     {
         GameObject newEnemy = Instantiate(enemyPrefab, gameObject.transform.position, Quaternion.identity);
+        newEnemy.GetComponent<Enemy>().waypoints = waypoints;
+        
     }
 }
 

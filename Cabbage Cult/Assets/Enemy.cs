@@ -3,7 +3,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     private Transform myTF;
-    private GameObject[] waypoints;
+    public GameObject[] waypoints;
     public float speed;
 
     private Vector3 direction;
@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
     {
         myTF = this.GetComponent<Transform>();
         direction = new Vector3(0.005f, 0, 0);
+        currentWaypoint = waypoints[0];
     }
 
     // Update is called once per frame
@@ -59,6 +60,10 @@ public class Enemy : MonoBehaviour
     private bool HelpReachedWaypoint(float myDir, float myNum, float wayPtNum)
     {
         //my position should be further right than the waypoint, so mypos-waypos matches the sign of my direction
+        if(myDir == 0)
+        {
+            return true;
+        }
         float diffPos = myNum - wayPtNum;
         if (myDir < 0)
         {
