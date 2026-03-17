@@ -37,5 +37,10 @@ public class Spawner : MonoBehaviour
                     //else
                         //go to shop phase
     }
+
+    public void SpawnNextEnemy()
+    {
+
+    }
 }
 
