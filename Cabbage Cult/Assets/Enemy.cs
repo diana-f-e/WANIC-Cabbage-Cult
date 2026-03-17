@@ -8,13 +8,15 @@ public class Enemy : MonoBehaviour
 
     private Vector3 direction;
     private GameObject currentWaypoint;
+    private int currentWaypointIndex;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         myTF = this.GetComponent<Transform>();
-        direction = new Vector3(0.005f, 0, 0);
+        direction = new Vector3(0.005f, 0.005f, 0);
         currentWaypoint = waypoints[0];
+        currentWaypointIndex = 0;
     }
 
     // Update is called once per frame
@@ -25,7 +27,18 @@ public class Enemy : MonoBehaviour
         //if im at/past the waypoint: reassign waypoint
         if(ReachedWaypoint(direction, myTF.position, currentWaypoint.GetComponent<Transform>().position))
         {
-            Debug.Log("goofy gumba");
+            if (currentWaypointIndex == waypoints.Length - 1)
+            {
+                Debug.Log("reached last waypoint");
+                direction = new Vector3(0, 0, 0);
+
+            }
+            else
+            {
+                currentWaypointIndex += 1;
+                currentWaypoint = waypoints[currentWaypointIndex];
+                //reassign direction
+            }
         }
     }
 
