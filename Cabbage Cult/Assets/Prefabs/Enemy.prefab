@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints: []
-  speed: 2
+  speed: 5
 --- !u!50 &896317262270712088
 Rigidbody2D:
   serializedVersion: 5

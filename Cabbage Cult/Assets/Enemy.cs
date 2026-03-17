@@ -14,23 +14,24 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         myTF = this.GetComponent<Transform>();
-        direction = new Vector3(0.005f, 0.005f, 0);
         currentWaypoint = waypoints[0];
         currentWaypointIndex = 0;
+        direction = GetNewDirection(myTF.position, currentWaypoint.GetComponent<Transform>().position);
     }
 
     // Update is called once per frame
     void Update()
     {
         //walk a step toward the next waypoint
-        myTF.position += speed * direction;
+        myTF.position += speed * direction / 1000;
         //if im at/past the waypoint: reassign waypoint
         if(ReachedWaypoint(direction, myTF.position, currentWaypoint.GetComponent<Transform>().position))
         {
             if (currentWaypointIndex == waypoints.Length - 1)
             {
-                Debug.Log("reached last waypoint");
+                //Debug.Log("reached last waypoint");
                 direction = new Vector3(0, 0, 0);
+                Destroy(this.gameObject);
 
             }
             else
@@ -38,13 +39,18 @@ public class Enemy : MonoBehaviour
                 currentWaypointIndex += 1;
                 currentWaypoint = waypoints[currentWaypointIndex];
                 //reassign direction
+                direction = GetNewDirection(myTF.position, currentWaypoint.GetComponent<Transform>().position);
             }
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+
+    private Vector3 GetNewDirection(Vector3 myPos, Vector3 wayPtPos)
     {
-        Destroy(this.gameObject);
+        //new direction vector should have magnitude of 1, and point toward next waypoint
+        Vector3 newDir = wayPtPos - myPos;
+        newDir /= newDir.magnitude;
+        return newDir;
     }
 
     //detect whether the enemy has reached the current waypoint
