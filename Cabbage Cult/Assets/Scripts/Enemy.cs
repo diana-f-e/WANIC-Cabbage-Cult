@@ -56,7 +56,7 @@ public class Enemy : MonoBehaviour
     //detect whether the enemy has reached the current waypoint
     private bool ReachedWaypoint(Vector3 myDirection, Vector3 myPos, Vector3 wayPtPos)
     {
-        //assume i am past the waypoint, return false if not
+        //return false if i am behind the waypoint in any direction
         //check x
         if(!HelpReachedWaypoint(myDirection.x, myPos.x, wayPtPos.x))
         {
@@ -75,7 +75,7 @@ public class Enemy : MonoBehaviour
         return true;
     }
 
-    //help check if the enemy has reached a waypoint by checking a given direction
+    //check if an enemy has passed a waypoint in a specific direction
     private bool HelpReachedWaypoint(float myDir, float myNum, float wayPtNum)
     {
         //my position should be further right than the waypoint, so mypos-waypos matches the sign of my direction
