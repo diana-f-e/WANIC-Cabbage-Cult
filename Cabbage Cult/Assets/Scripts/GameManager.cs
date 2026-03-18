@@ -3,13 +3,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    /* vars:
-     * 
-     * obj in hand: each shop icon needs a held version and placed version
-     */
     public GameObject heldObj;
-    public GameObject gameGrid;
     private GameObject clickedObj;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,11 +15,15 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //get the mouse position
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePosition.z += Camera.main.nearClipPlane;
+
         //what am i clicking?
         RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector3.zero);
         //Debug.Log(hit.collider);
+
+
         if (hit.collider != null)
         {
             clickedObj = hit.collider.gameObject;
@@ -42,14 +42,15 @@ public class GameManager : MonoBehaviour
 
         }
         //click
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
             
             //holding smth?
             if (heldObj != null)
             {
                 //valid spot?
-                if(validTowerSpot(mousePosition, heldObj))
+                //if(validTowerSpot(mousePosition, heldObj))
+                if (heldObj.GetComponent<TowerItem>().validPlacement)
                 {
                     //place it
                     placeTower(mousePosition, heldObj);
@@ -74,8 +75,8 @@ public class GameManager : MonoBehaviour
     {
         //at the point im given, put a tower
         GameObject placedTower = Instantiate(tower, coords, Quaternion.identity);
-        placedTower.GetComponent<Tower>().placingCollider.gameObject.SetActive(true);
-        placedTower.GetComponent<Tower>().attackingCollider.gameObject.SetActive(true);
+        //placedTower.GetComponent<Tower>().placingCollider.gameObject.SetActive(true);
+        //placedTower.GetComponent<Tower>().attackingCollider.gameObject.SetActive(true);
     }
 
     private bool validTowerSpot(Vector3 coords, GameObject tower)

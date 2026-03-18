@@ -16,6 +16,7 @@ public class SceneSwitcher : MonoBehaviour
         
     }
 
+    //function to be used by buttons for switching scenes
     public void goToScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);

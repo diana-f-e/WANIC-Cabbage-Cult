@@ -21,6 +21,14 @@ public class Tower : MonoBehaviour
     //update in scene view when changed
     private void OnValidate()
     {
+        //update vals based on scriptable object
         placingCollider.radius = scriptVals.placeRadius;
+        attackingCollider.radius = scriptVals.attackRadius;
+    }
+
+    //if the placing collider is colliding with something, like another tower or the path, it can't be placed
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
     }
 }

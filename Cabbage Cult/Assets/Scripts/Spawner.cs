@@ -25,12 +25,15 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //increment timer, spawn enemy when timer done
         timerCounter -= Time.deltaTime;
         if(timerCounter <= 0)
         {
             SpawnNextEnemy();
             timerCounter = cooldown;
         }
+
+        //plan:
         //if spawner active
             //increment timer
             //if readyupped (timer 0):
@@ -47,6 +50,7 @@ public class Spawner : MonoBehaviour
                             //go to shop phase
     }
 
+    //spawn the next enemy
     public void SpawnNextEnemy()
     {
         GameObject newEnemy = Instantiate(enemyPrefab, gameObject.transform.position, Quaternion.identity);

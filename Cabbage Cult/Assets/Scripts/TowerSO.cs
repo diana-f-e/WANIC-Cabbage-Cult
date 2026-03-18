@@ -4,4 +4,5 @@ using UnityEngine;
 public class TowerSO : ScriptableObject
 {
     public float placeRadius;
+    public float attackRadius;
 }

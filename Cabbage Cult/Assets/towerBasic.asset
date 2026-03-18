@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d9016dda2ad7aa4a952f58554d44add, type: 3}
   m_Name: towerBasic
   m_EditorClassIdentifier: 
-  placeRadius: 3
+  placeRadius: 1.5
+  attackRadius: 2
