@@ -5,16 +5,24 @@ public class Tower : MonoBehaviour
     public TowerSO scriptVals;
     public CircleCollider2D attackingCollider;
 
+    public float cooldown; // cooldown in seconds
+    private float timerCounter;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        timerCounter = cooldown;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        timerCounter -= Time.deltaTime;
+        if (timerCounter <= 0)
+        {
+            Attack();
+            timerCounter = cooldown;
+        }
     }
 
     //update in scene view when changed
@@ -24,9 +32,8 @@ public class Tower : MonoBehaviour
         attackingCollider.radius = scriptVals.attackRadius;
     }
 
-    //if the placing collider is colliding with something, like another tower or the path, it can't be placed
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void Attack()
     {
-        
+        Debug.Log("pew pew");
     }
 }

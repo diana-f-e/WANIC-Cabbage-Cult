@@ -4,7 +4,7 @@ public class TowerItem : MonoBehaviour
 {
     //after a shop icon is clicked on, the corresponding tower item will be put in the players hand. 
     public bool validPlacement;
-
+    public GameObject tower;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,7 +21,7 @@ public class TowerItem : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //TODO change to Tower once placing tower works
-        if(collision.gameObject.GetComponent<TowerItem>() == null)
+        if(collision.gameObject.GetComponent<Tower>() == null)
         {
             return;
         }
@@ -31,7 +31,7 @@ public class TowerItem : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponent<TowerItem>() == null)
+        if (collision.gameObject.GetComponent<Tower>() == null)
         {
             return;
         }

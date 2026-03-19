@@ -3886,25 +3886,37 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
+      propertyPath: cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
+      propertyPath: enemyPrefab
+      value: 
+      objectReference: {fileID: 50970535997310898, guid: d89904f55395245448669e1a16ac5b19, type: 3}
+    - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
       propertyPath: 'waypoints.Array.data[0]'
       value: 
-      objectReference: {fileID: 1478896987}
+      objectReference: {fileID: 1478896989}
     - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
       propertyPath: 'waypoints.Array.data[1]'
       value: 
-      objectReference: {fileID: 1597126016}
+      objectReference: {fileID: 1597126018}
     - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
       propertyPath: 'waypoints.Array.data[2]'
       value: 
-      objectReference: {fileID: 68673364}
+      objectReference: {fileID: 68673366}
     - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
       propertyPath: 'waypoints.Array.data[3]'
       value: 
-      objectReference: {fileID: 920682024}
+      objectReference: {fileID: 920682026}
     - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
       propertyPath: 'waypoints.Array.data[4]'
       value: 
-      objectReference: {fileID: 1559815209}
+      objectReference: {fileID: 1559815211}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
