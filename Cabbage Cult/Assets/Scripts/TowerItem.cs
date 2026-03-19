@@ -20,16 +20,23 @@ public class TowerItem : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("OnTriggerEnter2D");
+        //TODO change to Tower once placing tower works
+        if(collision.gameObject.GetComponent<TowerItem>() == null)
+        {
+            return;
+        }
         validPlacement = false;
         GetComponent<SpriteRenderer>().color = Color.red;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("OnTriggerExit2D");
+        if (collision.gameObject.GetComponent<TowerItem>() == null)
+        {
+            return;
+        }
         validPlacement = true;
-        GetComponent<SpriteRenderer>().color = Color.white;
+        GetComponent<SpriteRenderer>().color = Color.green;
     }
 }
 
