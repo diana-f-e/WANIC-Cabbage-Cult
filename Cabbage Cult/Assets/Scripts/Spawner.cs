@@ -12,7 +12,7 @@ public class Spawner : MonoBehaviour
      * mini_wave[] mini_waves
      */
     public GameObject enemyPrefab;
-    public int cooldown; // cooldown in seconds
+    public float cooldown; // cooldown in seconds
     private float timerCounter;
     public Transform[] waypoints;
 
