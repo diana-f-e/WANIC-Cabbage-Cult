@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject heldObj;
     private GameObject clickedObj;
+    public Transform shopBorder;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,6 +16,8 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
         //get the mouse position
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePosition.z += Camera.main.nearClipPlane;
@@ -35,12 +38,7 @@ public class GameManager : MonoBehaviour
 
 
         //if smth in hand, track it to the mouse
-        if (heldObj != null)
-        {
-            
-            heldObj.transform.position = mousePosition;
-
-        }
+        if (heldObj != null) { heldObj.transform.position = mousePosition;}
         //click
         if (Input.GetMouseButtonDown(0))
         {
@@ -50,11 +48,11 @@ public class GameManager : MonoBehaviour
             {
                 //valid spot?
                 //if(validTowerSpot(mousePosition, heldObj))
-                if (heldObj.GetComponent<TowerItem>().validPlacement)
+                if (heldObj.GetComponent<TowerItem>().validPlacement && mousePosition.x < shopBorder.position.x)
                 {
                     //place it
-                    placeTower(mousePosition, heldObj);
-                    //heldObj = null;
+                        placeTower(mousePosition, heldObj);
+                        heldObj = null;
                 }
                     
             }

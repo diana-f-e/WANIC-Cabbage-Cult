@@ -1,4 +1,5 @@
 using UnityEngine;
+using static UnityEditor.PlayerSettings;
 
 public class Enemy : MonoBehaviour
 {
@@ -23,9 +24,10 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         //walk a step toward the next waypoint
-        myTF.position += speed * direction / 1000;
+        myTF.position += speed * direction * Time.deltaTime;
         //if im at/past the waypoint: reassign waypoint
-        if(ReachedWaypoint(direction, myTF.position, currentWaypoint.GetComponent<Transform>().position))
+        //if(ReachedWaypoint(direction, myTF.position, currentWaypoint.GetComponent<Transform>().position))
+        if(Vector3.Distance(transform.position, currentWaypoint.GetComponent<Transform>().position) < 1)
         {
             if (currentWaypointIndex == waypoints.Length - 1)
             {
@@ -52,54 +54,5 @@ public class Enemy : MonoBehaviour
         newDir /= newDir.magnitude;
         return newDir;
     }
-
-    //detect whether the enemy has reached the current waypoint
-    private bool ReachedWaypoint(Vector3 myDirection, Vector3 myPos, Vector3 wayPtPos)
-    {
-        //return false if i am behind the waypoint in any direction
-        //check x
-        if(!HelpReachedWaypoint(myDirection.x, myPos.x, wayPtPos.x))
-        {
-            return false;
-        }
-        //check y
-        if (!HelpReachedWaypoint(myDirection.y, myPos.y, wayPtPos.y))
-        {
-            return false;
-        }
-        //check z
-        if (!HelpReachedWaypoint(myDirection.z, myPos.z, wayPtPos.z))
-        {
-            return false;
-        }
-        return true;
-    }
-
-    //check if an enemy has passed a waypoint in a specific direction
-    private bool HelpReachedWaypoint(float myDir, float myNum, float wayPtNum)
-    {
-        //my position should be further right than the waypoint, so mypos-waypos matches the sign of my direction
-        if(myDir == 0)
-        {
-            return true;
-        }
-        float diffPos = myNum - wayPtNum;
-        if (myDir < 0)
-        {
-            if (diffPos > 0)
-            {
-                return false;
-            }
-        }
-        else if (myDir > 0)
-        {
-            if (diffPos < 0)
-            {
-                return false;
-            }
-        }
-        return true;
-    }
-
 
 }

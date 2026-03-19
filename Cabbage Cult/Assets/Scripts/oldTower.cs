@@ -1,8 +1,9 @@
 using UnityEngine;
 
-public class Tower : MonoBehaviour
+public class oldTower : MonoBehaviour
 {
     public TowerSO scriptVals;
+    public CircleCollider2D placingCollider;
     public CircleCollider2D attackingCollider;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -21,6 +22,7 @@ public class Tower : MonoBehaviour
     private void OnValidate()
     {
         //update vals based on scriptable object
+        placingCollider.radius = scriptVals.placeRadius;
         attackingCollider.radius = scriptVals.attackRadius;
     }
 
