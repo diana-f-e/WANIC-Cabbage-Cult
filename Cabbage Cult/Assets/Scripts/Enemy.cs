@@ -3,31 +3,28 @@ using static UnityEditor.PlayerSettings;
 
 public class Enemy : MonoBehaviour
 {
-    private Transform myTF;
-    public GameObject[] waypoints;
-    public float speed;
-
-    private Vector3 direction;
-    private GameObject currentWaypoint;
+    public Transform[] waypoints;
+    private Transform currentWaypoint;
     private int currentWaypointIndex;
+
+    public float speed;
+    private Vector3 direction;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        myTF = this.GetComponent<Transform>();
         currentWaypoint = waypoints[0];
         currentWaypointIndex = 0;
-        direction = GetNewDirection(myTF.position, currentWaypoint.GetComponent<Transform>().position);
+        direction = GetNewDirection(transform.position, currentWaypoint.position);
     }
 
     // Update is called once per frame
     void Update()
     {
         //walk a step toward the next waypoint
-        myTF.position += speed * direction * Time.deltaTime;
+        transform.position += speed * direction * Time.deltaTime;
         //if im at/past the waypoint: reassign waypoint
-        //if(ReachedWaypoint(direction, myTF.position, currentWaypoint.GetComponent<Transform>().position))
-        if(Vector3.Distance(transform.position, currentWaypoint.GetComponent<Transform>().position) < 1)
+        if(Vector3.Distance(transform.position, currentWaypoint.position) < 1)
         {
             if (currentWaypointIndex == waypoints.Length - 1)
             {
@@ -41,7 +38,7 @@ public class Enemy : MonoBehaviour
                 currentWaypointIndex += 1;
                 currentWaypoint = waypoints[currentWaypointIndex];
                 //reassign direction
-                direction = GetNewDirection(myTF.position, currentWaypoint.GetComponent<Transform>().position);
+                direction = GetNewDirection(transform.position, currentWaypoint.position);
             }
         }
     }

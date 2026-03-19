@@ -1693,6 +1693,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1788483878}
   m_CullTransparentMesh: 1
+--- !u!1001 &1969663537
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1027260851477854437, guid: 593f2b6e860adda4cbd4492aba2e6225, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027260851477854437, guid: 593f2b6e860adda4cbd4492aba2e6225, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.113844
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027260851477854437, guid: 593f2b6e860adda4cbd4492aba2e6225, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027260851477854437, guid: 593f2b6e860adda4cbd4492aba2e6225, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027260851477854437, guid: 593f2b6e860adda4cbd4492aba2e6225, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027260851477854437, guid: 593f2b6e860adda4cbd4492aba2e6225, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027260851477854437, guid: 593f2b6e860adda4cbd4492aba2e6225, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027260851477854437, guid: 593f2b6e860adda4cbd4492aba2e6225, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027260851477854437, guid: 593f2b6e860adda4cbd4492aba2e6225, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027260851477854437, guid: 593f2b6e860adda4cbd4492aba2e6225, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1094381087809105918, guid: 593f2b6e860adda4cbd4492aba2e6225, type: 3}
+      propertyPath: m_Name
+      value: Tower (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 593f2b6e860adda4cbd4492aba2e6225, type: 3}
 --- !u!1 &2082891233
 GameObject:
   m_ObjectHideFlags: 0
@@ -3886,25 +3943,37 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
+      propertyPath: cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
+      propertyPath: enemyPrefab
+      value: 
+      objectReference: {fileID: 50970535997310898, guid: d89904f55395245448669e1a16ac5b19, type: 3}
+    - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
       propertyPath: 'waypoints.Array.data[0]'
       value: 
-      objectReference: {fileID: 1478896987}
+      objectReference: {fileID: 1478896989}
     - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
       propertyPath: 'waypoints.Array.data[1]'
       value: 
-      objectReference: {fileID: 1597126016}
+      objectReference: {fileID: 1597126018}
     - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
       propertyPath: 'waypoints.Array.data[2]'
       value: 
-      objectReference: {fileID: 68673364}
+      objectReference: {fileID: 68673366}
     - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
       propertyPath: 'waypoints.Array.data[3]'
       value: 
-      objectReference: {fileID: 920682024}
+      objectReference: {fileID: 920682026}
     - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
       propertyPath: 'waypoints.Array.data[4]'
       value: 
-      objectReference: {fileID: 1559815209}
+      objectReference: {fileID: 1559815211}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3930,3 +3999,4 @@ SceneRoots:
   - {fileID: 6399118089648654739}
   - {fileID: 518620987344294901}
   - {fileID: 1381674868}
+  - {fileID: 1969663537}

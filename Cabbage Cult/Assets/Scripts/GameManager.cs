@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
                 if (heldObj.GetComponent<TowerItem>().validPlacement && mousePosition.x < shopBorder.position.x)
                 {
                     //place it
-                        placeTower(mousePosition, heldObj);
+                        placeTower(mousePosition, heldObj.GetComponent<TowerItem>().tower);
                         heldObj = null;
                 }
                     
