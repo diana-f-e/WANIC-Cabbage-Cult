@@ -1,5 +1,7 @@
 using UnityEngine;
 using static UnityEditor.PlayerSettings;
+using UnityEngine.SceneManagement;
+
 
 public class Enemy : MonoBehaviour
 {
@@ -9,6 +11,8 @@ public class Enemy : MonoBehaviour
 
     public float speed;
     private Vector3 direction;
+    public GameManager gameManager;
+    public int damage = 1; //TODO SO
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -30,6 +34,12 @@ public class Enemy : MonoBehaviour
             {
                 //Debug.Log("reached last waypoint");
                 direction = new Vector3(0, 0, 0);
+                gameManager.health -= damage;
+                //TODO make sceneswitcher have funcs for die/win
+                if(gameManager.health <= 0)
+                {
+                    SceneManager.LoadScene("LoseScene");
+                }
                 Destroy(this.gameObject);
 
             }
