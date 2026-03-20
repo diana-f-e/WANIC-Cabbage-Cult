@@ -1,11 +1,15 @@
 using Unity.Burst.CompilerServices;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject heldObj;
     private GameObject clickedObj;
     public Transform shopBorder;
+    public float health;
+    public float money;
+    public TextMeshProUGUI statsText;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,7 +20,8 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //update stats
+        statsText.text = "Health: "+ health + "\nMoney: " + money;
 
         //get the mouse position
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);

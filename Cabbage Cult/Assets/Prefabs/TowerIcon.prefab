@@ -149,3 +149,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
   towerItem: {fileID: 3785610107287518472, guid: 74b5b09a6914f4249b5e4e591560196f, type: 3}
+  cost: 1

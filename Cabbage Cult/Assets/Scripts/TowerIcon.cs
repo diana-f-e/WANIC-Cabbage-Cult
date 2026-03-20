@@ -4,6 +4,7 @@ public class TowerIcon : MonoBehaviour
 {
     public GameManager gameManager;
     public GameObject towerItem;
+    public int cost;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,13 +22,12 @@ public class TowerIcon : MonoBehaviour
     private void OnMouseDown()
     {
         //Debug.Log("OnMouseDown");
-        //if not holding anything
-        if (gameManager.heldObj != null)
+        //if not holding anything or dont have enough money
+        if (gameManager.heldObj != null || gameManager.money < cost)
         {
-            //Debug.Log("holding " + gameManager.heldObj.name);
             return;
         }
-        //TODO if have enough money
-        gameManager.heldObj = Instantiate(towerItem);
+            gameManager.heldObj = Instantiate(towerItem);
+            gameManager.money -= 1;
     }
 }

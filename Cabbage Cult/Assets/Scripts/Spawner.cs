@@ -14,7 +14,9 @@ public class Spawner : MonoBehaviour
     public GameObject enemyPrefab;
     public float cooldown; // cooldown in seconds
     private float timerCounter;
+    //to be given to newly spawned enemies
     public Transform[] waypoints;
+    public GameManager gameManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -55,7 +57,7 @@ public class Spawner : MonoBehaviour
     {
         GameObject newEnemy = Instantiate(enemyPrefab, gameObject.transform.position, Quaternion.identity);
         newEnemy.GetComponent<Enemy>().waypoints = waypoints;
-        
+        newEnemy.GetComponent<Enemy>().gameManager = gameManager;
     }
 }
 
