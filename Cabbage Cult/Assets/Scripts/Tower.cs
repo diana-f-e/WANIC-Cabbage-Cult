@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Tower : MonoBehaviour
@@ -7,6 +8,8 @@ public class Tower : MonoBehaviour
 
     public float cooldown; // cooldown in seconds
     private float timerCounter;
+    public List<Enemy> enemiesInRange = new List<Enemy>();
+    public int damage;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,6 +23,7 @@ public class Tower : MonoBehaviour
         timerCounter -= Time.deltaTime;
         if (timerCounter <= 0)
         {
+            //detect enemy in radius
             Attack();
             timerCounter = cooldown;
         }
@@ -34,6 +38,12 @@ public class Tower : MonoBehaviour
 
     public void Attack()
     {
+        if (enemiesInRange.Count <= 0)
+        {
+            return;
+        }
+        enemiesInRange[0].health -= damage;
         Debug.Log("pew pew");
+
     }
 }

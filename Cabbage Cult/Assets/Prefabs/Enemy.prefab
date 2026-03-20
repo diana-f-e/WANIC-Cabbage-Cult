@@ -103,7 +103,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints: []
-  speed: 5
+  speed: 2
+  gameManager: {fileID: 0}
+  damage: 1
+  health: 5
 --- !u!50 &896317262270712088
 Rigidbody2D:
   serializedVersion: 5

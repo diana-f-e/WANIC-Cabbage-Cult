@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
                 if (heldObj.GetComponent<TowerItem>().validPlacement && mousePosition.x < shopBorder.position.x)
                 {
                     //place it
-                        placeTower(mousePosition, heldObj.GetComponent<TowerItem>().tower);
+                        placeTower(mousePosition, heldObj.GetComponent<TowerItem>().tower, heldObj);
                         heldObj = null;
                 }
                     
@@ -74,10 +74,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void placeTower(Vector3 coords, GameObject tower)
+    private void placeTower(Vector3 coords, GameObject tower, GameObject towerItem)
     {
         //at the point im given, put a tower
         GameObject placedTower = Instantiate(tower, coords, Quaternion.identity);
+        Destroy(towerItem);
         //placedTower.GetComponent<Tower>().placingCollider.gameObject.SetActive(true);
         //placedTower.GetComponent<Tower>().attackingCollider.gameObject.SetActive(true);
     }

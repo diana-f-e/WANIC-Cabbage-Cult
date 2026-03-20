@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Spawner : MonoBehaviour
 {
@@ -13,20 +14,35 @@ public class Spawner : MonoBehaviour
      */
     public GameObject enemyPrefab;
     public float cooldown; // cooldown in seconds
-    private float timerCounter;
+    public float timerCounter;
     //to be given to newly spawned enemies
     public Transform[] waypoints;
     public GameManager gameManager;
+    private int enemyTotal;
+    public int enemyGoal;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         timerCounter = cooldown;
+        enemyTotal = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (enemyTotal >= enemyGoal)
+        {
+            if(FindFirstObjectByType<Enemy>() == null)
+            {
+                SceneManager.LoadScene("WinScene");
+            }
+            else
+            {
+                return;
+            }
+        }
+
         //increment timer, spawn enemy when timer done
         timerCounter -= Time.deltaTime;
         if(timerCounter <= 0)
@@ -50,6 +66,8 @@ public class Spawner : MonoBehaviour
                             //win!
                         //else
                             //go to shop phase
+        //temp win condition
+        
     }
 
     //spawn the next enemy
@@ -58,6 +76,7 @@ public class Spawner : MonoBehaviour
         GameObject newEnemy = Instantiate(enemyPrefab, gameObject.transform.position, Quaternion.identity);
         newEnemy.GetComponent<Enemy>().waypoints = waypoints;
         newEnemy.GetComponent<Enemy>().gameManager = gameManager;
+        enemyTotal += 1;
     }
 }
 
