@@ -1,5 +1,4 @@
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
 using UnityEngine.SceneManagement;
 
 
@@ -37,7 +36,7 @@ public class Enemy : MonoBehaviour
         //walk a step toward the next waypoint
         transform.position += speed * direction * Time.deltaTime;
         //if im at/past the waypoint: reassign waypoint
-        if(Vector3.Distance(transform.position, currentWaypoint.position) < 0.01)
+        if(Vector3.Distance(transform.position, currentWaypoint.position) < 0.1) //TODO fix in build
         {
             if (currentWaypointIndex == waypoints.Length - 1)
             {
