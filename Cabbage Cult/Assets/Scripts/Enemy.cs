@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
     private Vector3 direction;
     public GameManager gameManager;
     public int damage = 1; //TODO SO
+    public int health;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,10 +26,18 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //enemy health display
+        ShowHealth();
+        
+        if(health <= 0)
+        {
+            Destroy(this.gameObject);
+        }
+
         //walk a step toward the next waypoint
         transform.position += speed * direction * Time.deltaTime;
         //if im at/past the waypoint: reassign waypoint
-        if(Vector3.Distance(transform.position, currentWaypoint.position) < 1)
+        if(Vector3.Distance(transform.position, currentWaypoint.position) < 0.01)
         {
             if (currentWaypointIndex == waypoints.Length - 1)
             {
@@ -60,6 +69,16 @@ public class Enemy : MonoBehaviour
         Vector3 newDir = wayPtPos - myPos;
         newDir /= newDir.magnitude;
         return newDir;
+    }
+
+    private void ShowHealth()
+    {
+        float healthAlpha = health / 5.0f;
+        if (healthAlpha > 1)
+            healthAlpha = 1;
+        if (healthAlpha <= 0)
+            healthAlpha = 0.01f;
+        GetComponent<SpriteRenderer>().color = new Color(0.9f, 0.1f, 0.1f, healthAlpha);
     }
 
 }

@@ -21,7 +21,18 @@ public class TowerItem : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //TODO change to Tower once placing tower works
-        if(collision.gameObject.GetComponent<Tower>() == null)
+        if(collision.gameObject.GetComponent<Tower>() == null && collision.gameObject.tag != "BuildBlocker")
+        {
+            return;
+        }
+        validPlacement = false;
+        GetComponent<SpriteRenderer>().color = Color.red;
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        //TODO change to Tower once placing tower works
+        if (collision.gameObject.GetComponent<Tower>() == null && collision.gameObject.tag != "BuildBlocker")
         {
             return;
         }
@@ -31,7 +42,7 @@ public class TowerItem : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponent<Tower>() == null)
+        if (collision.gameObject.GetComponent<Tower>() == null && collision.gameObject.tag != "BuildBlocker")
         {
             return;
         }
