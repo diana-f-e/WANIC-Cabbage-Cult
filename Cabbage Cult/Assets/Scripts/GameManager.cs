@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public List<Tower> mergeList;
     public string mergeType;
     public int mergeLevel;
+    public string phase = "shop";
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
