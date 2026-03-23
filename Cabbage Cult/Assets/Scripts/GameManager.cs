@@ -1,15 +1,20 @@
 using Unity.Burst.CompilerServices;
 using UnityEngine;
 using TMPro;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject heldObj;
-    private GameObject clickedObj;
+    public GameObject clickedObj;
     public Transform shopBorder;
     public float health;
     public float money;
     public TextMeshProUGUI statsText;
+
+    public List<Tower> mergeList;
+    public string mergeType;
+    public int mergeLevel;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -56,8 +61,8 @@ public class GameManager : MonoBehaviour
                 if (heldObj.GetComponent<TowerItem>().validPlacement && mousePosition.x < shopBorder.position.x)
                 {
                     //place it
-                        placeTower(mousePosition, heldObj.GetComponent<TowerItem>().tower, heldObj);
-                        heldObj = null;
+                    PlaceTower(mousePosition, heldObj.GetComponent<TowerItem>().tower, heldObj);
+                    heldObj = null;
                 }
                     
             }
@@ -66,15 +71,37 @@ public class GameManager : MonoBehaviour
                 
                 //shop icon?
                 //grab it
-                //merge mode?
-                //toggle it
             }
 
 
         }
+        //right click
+        if (Input.GetMouseButtonDown(1))
+        {
+            Debug.Log("Input.GetMouseButtonDown(1");
+            Tower clickedTower = clickedObj.GetComponent<Tower>();
+            if (clickedTower == null){ clickedTower = clickedObj.GetComponent<TowerAttackCollider>().towerScript; }
+            //Is it a tower?
+            if (clickedTower != null)
+            {
+                Debug.Log("(clickedTower != null");
+                //Is it in the list? 
+                if (mergeList.Contains(clickedTower))
+                {
+                    RemoveFromMergeList(clickedTower);
+                }
+                else
+                {
+                    AddToMergeList(clickedTower);
+                }
+
+            }
+        }
+
+
     }
 
-    private void placeTower(Vector3 coords, GameObject tower, GameObject towerItem)
+    private void PlaceTower(Vector3 coords, GameObject tower, GameObject towerItem)
     {
         //at the point im given, put a tower
         GameObject placedTower = Instantiate(tower, coords, Quaternion.identity);
@@ -83,21 +110,63 @@ public class GameManager : MonoBehaviour
         //placedTower.GetComponent<Tower>().attackingCollider.gameObject.SetActive(true);
     }
 
-    private bool validTowerSpot(Vector3 coords, GameObject tower)
+    private bool ValidTowerSpot(Vector3 coords, GameObject tower)
     {
         if (tower.GetComponent<Tower>() == null)
         {
             Debug.Log("heldobj not a tower");
             return false;
         }
-        //if not on path
-        //if not too close to other towers (i didnt click a collider of another tower)
-        if(clickedObj != null)
+        //if not too close to other towers / path (i didnt click a collider of another tower)
+        if (clickedObj != null)
         {
             return false;
         }
         return true;
     }
+
+    private bool AddToMergeList(Tower tower)
+    {
+        //if this is the first thing in the list change mergeType
+        if (mergeList.Count == 0)
+        {
+            //Change mergeType to towerType
+            mergeType = tower.towerType;
+        }
+        //Does its type match mergeType? 
+        if (tower.towerType != mergeType)
+        {
+            //If not, return false
+            return false;
+        }
+        //no open spots: return false
+        if (mergeList.Count >= 3)
+        {
+            return false;
+        }
+        //if theres an open spot: add the tower, change to selected sprite and return true
+        mergeList.Add(tower);
+        tower.MergeSelect();
+
+
+        return true;
+    }
+
+    private bool RemoveFromMergeList(Tower tower)
+    {
+        //Remove it from the list
+        mergeList.Remove(tower);
+        //Change to unselected sprite
+        tower.MergeDeselect();
+        //If the list is empty
+        if (mergeList.Count <= 0)
+        {
+            //Change mergeType to null
+            mergeType = null;
+        }
+        return true;
+    }
+    
 
 
 

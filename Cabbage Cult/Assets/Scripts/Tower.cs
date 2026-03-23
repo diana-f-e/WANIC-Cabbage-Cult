@@ -11,10 +11,13 @@ public class Tower : MonoBehaviour
     public List<Enemy> enemiesInRange = new List<Enemy>();
     public int damage;
 
+    public string towerType;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         timerCounter = cooldown;
+        towerType = "default";
     }
 
     // Update is called once per frame
@@ -45,5 +48,15 @@ public class Tower : MonoBehaviour
         enemiesInRange[0].health -= damage;
         Debug.Log("pew pew");
 
+    }
+
+    public void MergeSelect()
+    {
+        GetComponent<SpriteRenderer>().color = new Color(0.3f, 0.3f, 0.9f);
+    }
+
+    public void MergeDeselect()
+    {
+        GetComponent<SpriteRenderer>().color = new Color(0.6f, 0.6f, 0.9f);
     }
 }
