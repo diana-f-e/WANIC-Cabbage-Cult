@@ -5,17 +5,17 @@ public class Spawner : MonoBehaviour
 {
     public struct MiniWave
     {
-        public Enemy[] enemies;
+        public string[] enemies;
         public float delay;
 
         // Optional: You can include a constructor for clean initialization
         public MiniWave(int count, float delayTime)
         {
             delay = delayTime;
-            enemies = new Enemy[count];
+            enemies = new string[count];
             for(int i = 0; i < count; i++)
             {
-                enemies[i] = new Enemy();
+                enemies[i] = "testEnemy";
             }
         }
     }
@@ -88,6 +88,7 @@ public class Spawner : MonoBehaviour
     void Update()
     {
         
+        /*
         if (enemyIndex >= enemyGoal)
         {
             if(FindFirstObjectByType<Enemy>() == null)
@@ -98,10 +99,17 @@ public class Spawner : MonoBehaviour
             {
                 return;
             }
-        }
+        }*/
 
         //increment timer, spawn enemy when timer done
-        timerCounter -= Time.deltaTime;
+        if(gameManager.phase == "wave")
+        {
+            timerCounter -= Time.deltaTime;
+        }
+        else
+        {
+            return;
+        }
         if(timerCounter <= 0)
         {
             timerCounter = cooldown;
@@ -115,20 +123,26 @@ public class Spawner : MonoBehaviour
             if(enemyIndex < enemyGoal)
             {
                 SpawnNextEnemy();
-                enemyIndex += 1;
             }
-            /*
+            
             else
             {
                 if(miniWaveIndex < miniWaveGoal)
                 {
-                    miniWaveIndex += 1;
+                    StartMiniWave();
                 }
                 else
                 {
+                    //(the wave is done)
+                        //spawner not active
+                        //if that was the last wave
+                            //win!
+                        //else
+                            //go to shop phase
                     if(waveIndex < waveGoal)
                     {
-                        waveIndex += 1;
+                        gameManager.phase = "shop";
+                        return;
                     }
                     else
                     {
@@ -142,22 +156,22 @@ public class Spawner : MonoBehaviour
                         }
                     }
                 }
-            }*/
-                    //spawn the enemy
-                //else (mini wave is done)
-                    //if another mini wave (if wave not done)
-                        //start that mini wave
-                    //else (the wave is done)
-                        //spawner not active
-                        //if that was the last wave
-                            //win!
-                        //else
-                            //go to shop phase
-                
-                    
+            }
+            //spawn the enemy
+            //else (mini wave is done)
+            //if another mini wave (if wave not done)
+            //start that mini wave
+            //else (the wave is done)
+            //spawner not active
+            //if that was the last wave
+            //win!
+            //else
+            //go to shop phase
+
+
         }
         //temp win condition
-        
+
     }
 
     //spawn the next enemy
@@ -167,6 +181,20 @@ public class Spawner : MonoBehaviour
         newEnemy.GetComponent<Enemy>().waypoints = waypoints;
         newEnemy.GetComponent<Enemy>().gameManager = gameManager;
         newEnemy.GetComponent<Enemy>().scriptVals = enemyScriptVals;
+        enemyIndex += 1;
+    }
+
+    public void StartMiniWave()
+    {
+        enemyIndex = 0;
+        miniWaveIndex += 1;
+    }
+
+    public void StartWave()
+    {
+        gameManager.phase = "wave";
+        miniWaveIndex = 0;
+        waveIndex += 1;
     }
 }
 
