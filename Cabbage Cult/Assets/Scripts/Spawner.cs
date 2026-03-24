@@ -52,8 +52,8 @@ public class Spawner : MonoBehaviour
     public Transform[] waypoints;
     public GameManager gameManager;
 
-
-    
+    public PlaytestingSO scriptVals;
+    public EnemySO enemyScriptVals;
 
     public Wave[] waves;
     public int waveGoal;
@@ -62,6 +62,12 @@ public class Spawner : MonoBehaviour
     public int miniWaveIndex;
     public int enemyGoal;
     public int enemyIndex;
+
+    private void OnValidate()
+    {
+        cooldown = scriptVals.enemySpawnCooldown;
+        enemyGoal = scriptVals.enemiesToSpawn;
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -160,6 +166,7 @@ public class Spawner : MonoBehaviour
         GameObject newEnemy = Instantiate(enemyPrefab, gameObject.transform.position, Quaternion.identity);
         newEnemy.GetComponent<Enemy>().waypoints = waypoints;
         newEnemy.GetComponent<Enemy>().gameManager = gameManager;
+        newEnemy.GetComponent<Enemy>().scriptVals = enemyScriptVals;
     }
 }
 

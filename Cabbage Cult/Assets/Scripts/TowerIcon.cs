@@ -2,9 +2,15 @@ using UnityEngine;
 
 public class TowerIcon : MonoBehaviour
 {
+    public TowerSO scriptVals;
     public GameManager gameManager;
     public GameObject towerItem;
     public int cost;
+
+    private void OnValidate()
+    {
+        cost = scriptVals.towerCost;
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,6 +34,6 @@ public class TowerIcon : MonoBehaviour
             return;
         }
             gameManager.heldObj = Instantiate(towerItem);
-            gameManager.money -= 1;
+            gameManager.money -= cost;
     }
 }

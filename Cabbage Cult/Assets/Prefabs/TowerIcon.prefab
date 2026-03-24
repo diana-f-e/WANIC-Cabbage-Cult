@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06db4564c614b5b46aff02e8bed414f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scriptVals: {fileID: 11400000, guid: e062c7ca2b0445045a6481c6197bb0cb, type: 2}
   gameManager: {fileID: 0}
   towerItem: {fileID: 3785610107287518472, guid: 74b5b09a6914f4249b5e4e591560196f, type: 3}
   cost: 1

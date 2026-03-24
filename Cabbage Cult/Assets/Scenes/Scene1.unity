@@ -4989,16 +4989,20 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: money
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: health
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: statsText
       value: 
       objectReference: {fileID: 426317561}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: scriptVals
+      value: 
+      objectReference: {fileID: 11400000, guid: b25b1e3715c86c345819f4a6be226e27, type: 2}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: shopBorder
       value: 
@@ -5110,12 +5114,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
       propertyPath: cooldown
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
       propertyPath: enemyGoal
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
+      propertyPath: scriptVals
+      value: 
+      objectReference: {fileID: 11400000, guid: b25b1e3715c86c345819f4a6be226e27, type: 2}
     - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
       propertyPath: enemyPrefab
       value: 
@@ -5124,6 +5132,10 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 526779001}
+    - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
+      propertyPath: enemyScriptVals
+      value: 
+      objectReference: {fileID: 11400000, guid: d9ca98e60f6afe14e8c8fc522ca9348e, type: 2}
     - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
       propertyPath: waypoints.Array.size
       value: 5
