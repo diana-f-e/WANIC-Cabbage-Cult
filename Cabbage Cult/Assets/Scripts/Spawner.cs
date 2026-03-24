@@ -81,7 +81,7 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
+        
         if (enemyIndex >= enemyGoal)
         {
             if(FindFirstObjectByType<Enemy>() == null)
@@ -92,7 +92,7 @@ public class Spawner : MonoBehaviour
             {
                 return;
             }
-        }*/
+        }
 
         //increment timer, spawn enemy when timer done
         timerCounter -= Time.deltaTime;
@@ -111,6 +111,7 @@ public class Spawner : MonoBehaviour
                 SpawnNextEnemy();
                 enemyIndex += 1;
             }
+            /*
             else
             {
                 if(miniWaveIndex < miniWaveGoal)
@@ -135,7 +136,7 @@ public class Spawner : MonoBehaviour
                         }
                     }
                 }
-            }
+            }*/
                     //spawn the enemy
                 //else (mini wave is done)
                     //if another mini wave (if wave not done)
