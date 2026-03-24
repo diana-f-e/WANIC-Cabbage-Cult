@@ -13,8 +13,10 @@ public class Enemy : MonoBehaviour
     public float speed;
     private Vector3 direction;
     public GameManager gameManager;
-    public int damage = 1; //TODO SO
+    public int damage;
     public int health;
+
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,6 +24,11 @@ public class Enemy : MonoBehaviour
         currentWaypoint = waypoints[0];
         currentWaypointIndex = 0;
         direction = GetNewDirection(transform.position, currentWaypoint.position);
+
+        damage = scriptVals.enemyDamage;
+        health = scriptVals.enemyHealth;
+        speed = scriptVals.enemySpeed;
+
     }
 
     // Update is called once per frame
