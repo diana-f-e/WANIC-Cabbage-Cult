@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: firstTest
   m_EditorClassIdentifier: 
   money: 7
-  health: 500
+  health: 50
   enemySpawnCooldown: 1
   enemiesToSpawn: 2

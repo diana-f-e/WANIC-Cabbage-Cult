@@ -81,7 +81,7 @@ public class Enemy : MonoBehaviour
 
     private void ShowHealth()
     {
-        float healthAlpha = health / 5.0f;
+        float healthAlpha = health / scriptVals.enemyHealth;
         if (healthAlpha > 1)
             healthAlpha = 1;
         if (healthAlpha <= 0)

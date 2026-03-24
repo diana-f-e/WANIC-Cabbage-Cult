@@ -192,6 +192,10 @@ public class Spawner : MonoBehaviour
 
     public void StartWave()
     {
+        if(gameManager.phase == "wave")
+        {
+            return;
+        }
         gameManager.phase = "wave";
         miniWaveIndex = 0;
         waveIndex += 1;
