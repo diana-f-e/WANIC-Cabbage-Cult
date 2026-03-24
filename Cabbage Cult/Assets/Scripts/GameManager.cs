@@ -17,6 +17,14 @@ public class GameManager : MonoBehaviour
     public int mergeLevel;
     public string phase = "shop";
 
+    public PlaytestingSO scriptVals;
+
+    private void OnValidate()
+    {
+        money = scriptVals.money;
+        health = scriptVals.health;
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

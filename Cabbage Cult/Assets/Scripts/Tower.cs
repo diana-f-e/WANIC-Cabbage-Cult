@@ -17,7 +17,16 @@ public class Tower : MonoBehaviour
     void Start()
     {
         timerCounter = cooldown;
-        towerType = "default";
+    }
+
+    //update in scene view when changed
+    private void OnValidate()
+    {
+        //update vals based on scriptable object
+        towerType = scriptVals.towerType;
+        cooldown = scriptVals.cooldown;
+        damage = scriptVals.damage;
+        attackingCollider.radius = scriptVals.attackRadius;
     }
 
     // Update is called once per frame
@@ -32,13 +41,7 @@ public class Tower : MonoBehaviour
         }
     }
 
-    //update in scene view when changed
-    private void OnValidate()
-    {
-        //update vals based on scriptable object
-        attackingCollider.radius = scriptVals.attackRadius;
-    }
-
+    
     public void Attack()
     {
         if (enemiesInRange.Count <= 0)

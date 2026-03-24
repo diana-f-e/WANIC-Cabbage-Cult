@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
+    public EnemySO scriptVals;
+
     public Transform[] waypoints;
     private Transform currentWaypoint;
     private int currentWaypointIndex;

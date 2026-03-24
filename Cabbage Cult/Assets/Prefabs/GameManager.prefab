@@ -45,4 +45,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heldObj: {fileID: 0}
+  clickedObj: {fileID: 0}
   shopBorder: {fileID: 0}
+  health: 5
+  money: 7
+  statsText: {fileID: 0}
+  mergeList: []
+  mergeType: 
+  mergeLevel: 0
+  phase: shop
+  scriptVals: {fileID: 11400000, guid: b25b1e3715c86c345819f4a6be226e27, type: 2}

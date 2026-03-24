@@ -102,9 +102,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 50970535997310898, guid: d89904f55395245448669e1a16ac5b19, type: 3}
   cooldown: 3
+  timerCounter: 0
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  gameManager: {fileID: 0}
+  scriptVals: {fileID: 11400000, guid: b25b1e3715c86c345819f4a6be226e27, type: 2}
+  enemyScriptVals: {fileID: 11400000, guid: d9ca98e60f6afe14e8c8fc522ca9348e, type: 2}
+  waveGoal: 0
+  waveIndex: 0
+  miniWaveGoal: 0
+  miniWaveIndex: 0
+  enemyGoal: 1
+  enemyIndex: 0

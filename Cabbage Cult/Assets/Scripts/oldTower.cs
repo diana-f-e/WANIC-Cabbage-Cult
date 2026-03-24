@@ -22,7 +22,7 @@ public class oldTower : MonoBehaviour
     private void OnValidate()
     {
         //update vals based on scriptable object
-        placingCollider.radius = scriptVals.placeRadius;
+        //placingCollider.radius = scriptVals.placeRadius;
         attackingCollider.radius = scriptVals.attackRadius;
     }
 
