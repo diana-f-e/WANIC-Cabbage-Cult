@@ -140,6 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   validPlacement: 1
   tower: {fileID: 1094381087809105918, guid: 593f2b6e860adda4cbd4492aba2e6225, type: 3}
+  towerScriptVals: {fileID: 11400000, guid: e062c7ca2b0445045a6481c6197bb0cb, type: 2}
 --- !u!50 &343385801272324818
 Rigidbody2D:
   serializedVersion: 5

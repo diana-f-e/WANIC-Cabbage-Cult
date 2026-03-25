@@ -141,7 +141,7 @@ public class Spawner : MonoBehaviour
                             //go to shop phase
                     if(waveIndex < waveGoal)
                     {
-                        gameManager.phase = "shop";
+                        gameManager.StartShopPhase();
                         return;
                     }
                     else

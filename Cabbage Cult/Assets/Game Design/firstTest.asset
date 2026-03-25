@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90bb9e56ebb0fb3459e39a27791f310b, type: 3}
   m_Name: firstTest
   m_EditorClassIdentifier: 
-  money: 7
-  health: 50
+  money: 5
+  health: 20
   enemySpawnCooldown: 1
   enemiesToSpawn: 2
+  moneyPerRound: 3
