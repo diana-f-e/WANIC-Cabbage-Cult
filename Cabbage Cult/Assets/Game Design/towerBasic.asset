@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerType: '"basic"'
   cooldown: 1
-  damage: 1
+  damage: 2
   attackRadius: 2
-  towerCost: 3
+  towerCost: 1

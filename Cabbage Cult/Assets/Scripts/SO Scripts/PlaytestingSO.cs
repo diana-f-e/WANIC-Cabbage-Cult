@@ -9,5 +9,7 @@ public class PlaytestingSO : ScriptableObject
     public float enemySpawnCooldown;
     public int enemiesToSpawn;
 
+    public int moneyPerRound;
+
 
 }

@@ -2,6 +2,7 @@ using Unity.Burst.CompilerServices;
 using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
@@ -35,7 +36,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         //update stats
-        statsText.text = "Health: "+ health + "\nMoney: " + money;
+        statsText.text = "Health: "+ health + "\nMoney: " + money + "\nPhase: " + phase;
 
         //get the mouse position
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -114,6 +115,7 @@ public class GameManager : MonoBehaviour
     {
         //at the point im given, put a tower
         GameObject placedTower = Instantiate(tower, coords, Quaternion.identity);
+        placedTower.GetComponent<Tower>().scriptVals = towerItem.GetComponent<TowerItem>().towerScriptVals;
         Destroy(towerItem);
         //placedTower.GetComponent<Tower>().placingCollider.gameObject.SetActive(true);
         //placedTower.GetComponent<Tower>().attackingCollider.gameObject.SetActive(true);
@@ -174,6 +176,12 @@ public class GameManager : MonoBehaviour
             mergeType = null;
         }
         return true;
+    }
+
+    public void StartShopPhase()
+    {
+        phase = "shop";
+        money += scriptVals.moneyPerRound;
     }
     
 

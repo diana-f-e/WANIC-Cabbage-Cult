@@ -5,6 +5,7 @@ public class TowerItem : MonoBehaviour
     //after a shop icon is clicked on, the corresponding tower item will be put in the players hand. 
     public bool validPlacement;
     public GameObject tower;
+    public TowerSO towerScriptVals;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
