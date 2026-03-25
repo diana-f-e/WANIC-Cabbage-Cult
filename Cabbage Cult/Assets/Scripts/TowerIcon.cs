@@ -33,7 +33,9 @@ public class TowerIcon : MonoBehaviour
         {
             return;
         }
-            gameManager.heldObj = Instantiate(towerItem);
-            gameManager.money -= cost;
+        GameObject newToweritem = Instantiate(towerItem);
+        newToweritem.GetComponent<TowerItem>().towerScriptVals = scriptVals;
+        gameManager.heldObj = newToweritem;
+        gameManager.money -= cost;
     }
 }

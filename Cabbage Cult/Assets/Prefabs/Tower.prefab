@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.25962973, g: 0.5656, b: 0.9622642, a: 1}
+  m_Color: {r: 0.20857947, g: 0.5222653, b: 0.81886786, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -143,6 +143,8 @@ MonoBehaviour:
   cooldown: 1
   enemiesInRange: []
   damage: 2
+  level: 1
+  towerType: '"basic"'
 --- !u!1 &2051844480552174626
 GameObject:
   m_ObjectHideFlags: 0

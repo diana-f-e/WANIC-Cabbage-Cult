@@ -10,6 +10,7 @@ public class Tower : MonoBehaviour
     private float timerCounter;
     public List<Enemy> enemiesInRange = new List<Enemy>();
     public int damage;
+    public int level;
 
     public string towerType;
 
@@ -17,6 +18,13 @@ public class Tower : MonoBehaviour
     void Start()
     {
         timerCounter = cooldown;
+
+        towerType = scriptVals.towerType;
+        cooldown = scriptVals.cooldown;
+        damage = scriptVals.damage;
+        level = scriptVals.towerLevel;
+        attackingCollider.radius = scriptVals.attackRadius;
+        GetComponent<SpriteRenderer>().color = scriptVals.towerColor;
     }
 
     //update in scene view when changed
@@ -26,7 +34,10 @@ public class Tower : MonoBehaviour
         towerType = scriptVals.towerType;
         cooldown = scriptVals.cooldown;
         damage = scriptVals.damage;
+        level = scriptVals.towerLevel;
         attackingCollider.radius = scriptVals.attackRadius;
+        GetComponent<SpriteRenderer>().color = scriptVals.towerColor;
+        
     }
 
     // Update is called once per frame

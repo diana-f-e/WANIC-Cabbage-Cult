@@ -5,8 +5,10 @@ using UnityEngine;
 public class TowerSO : ScriptableObject
 {
     public string towerType;
+    public int towerLevel;
     public float cooldown;
     public int damage;
     public float attackRadius;
     public int towerCost;
+    public Color towerColor;
 }

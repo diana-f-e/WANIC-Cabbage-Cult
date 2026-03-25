@@ -686,6 +686,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 526779001}
   towerItem: {fileID: 3785610107287518472, guid: 74b5b09a6914f4249b5e4e591560196f, type: 3}
+  defaultTowerScriptVals: {fileID: 0}
+  towerSOs: []
 --- !u!61 &274199021
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1221,6 +1223,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 526779001}
   towerItem: {fileID: 3785610107287518472, guid: 74b5b09a6914f4249b5e4e591560196f, type: 3}
+  defaultTowerScriptVals: {fileID: 11400000, guid: e062c7ca2b0445045a6481c6197bb0cb, type: 2}
+  towerSOs:
+  - {fileID: 11400000, guid: 4febebae959d9a24ab12495ddecd3f07, type: 2}
+  - {fileID: 11400000, guid: 22a9620f60a8bea4491168140210edb1, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -5256,8 +5262,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8853650047208137670, guid: 1392aa6df4c1c634095f665c5a093bf3, type: 3}
       propertyPath: cost
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8853650047208137670, guid: 1392aa6df4c1c634095f665c5a093bf3, type: 3}
+      propertyPath: scriptVals
+      value: 
+      objectReference: {fileID: 11400000, guid: 4febebae959d9a24ab12495ddecd3f07, type: 2}
     - target: {fileID: 8853650047208137670, guid: 1392aa6df4c1c634095f665c5a093bf3, type: 3}
       propertyPath: gameManager
       value: 
