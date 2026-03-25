@@ -1,14 +1,17 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class MergeButton : MonoBehaviour
 {
     public GameManager gameManager;
     public GameObject towerItem;
+    public TowerSO defaultTowerScriptVals;
+    public List<TowerSO> towerSOs;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -29,7 +32,11 @@ public class MergeButton : MonoBehaviour
     {
         if (ValidateMergeList())
         {
-            gameManager.heldObj = Instantiate(towerItem);
+            GameObject newTower = Instantiate(towerItem);
+            newTower.GetComponent<TowerItem>().towerScriptVals = GetUpgradedTowerSO();
+            gameManager.heldObj = newTower;
+
+            //clear the merge list
             foreach (Tower t in gameManager.mergeList)
             {
                 Destroy(t.gameObject);
@@ -38,10 +45,19 @@ public class MergeButton : MonoBehaviour
         }
     }
 
-    private GameObject GetUpgradedTower()
+    private TowerSO GetUpgradedTowerSO()
     {
         //TODO return the correct tower based on gamemanager type and level
-        return towerItem;
+        string towerType = gameManager.mergeType;
+        int level = gameManager.mergeLevel + 1;
+        foreach(TowerSO t in towerSOs)
+        {
+            if(t.towerLevel == level && t.towerType == towerType)
+            {
+                return t;
+            }
+        }
+        return defaultTowerScriptVals;
     }
 
     private bool ValidateMergeList()

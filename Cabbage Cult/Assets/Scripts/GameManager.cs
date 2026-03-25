@@ -88,13 +88,11 @@ public class GameManager : MonoBehaviour
         //right click
         if (Input.GetMouseButtonDown(1))
         {
-            Debug.Log("Input.GetMouseButtonDown(1");
             Tower clickedTower = clickedObj.GetComponent<Tower>();
             if (clickedTower == null){ clickedTower = clickedObj.GetComponent<TowerAttackCollider>().towerScript; }
             //Is it a tower?
             if (clickedTower != null)
             {
-                Debug.Log("(clickedTower != null");
                 //Is it in the list? 
                 if (mergeList.Contains(clickedTower))
                 {
@@ -117,8 +115,6 @@ public class GameManager : MonoBehaviour
         GameObject placedTower = Instantiate(tower, coords, Quaternion.identity);
         placedTower.GetComponent<Tower>().scriptVals = towerItem.GetComponent<TowerItem>().towerScriptVals;
         Destroy(towerItem);
-        //placedTower.GetComponent<Tower>().placingCollider.gameObject.SetActive(true);
-        //placedTower.GetComponent<Tower>().attackingCollider.gameObject.SetActive(true);
     }
 
     private bool ValidTowerSpot(Vector3 coords, GameObject tower)
@@ -143,6 +139,7 @@ public class GameManager : MonoBehaviour
         {
             //Change mergeType to towerType
             mergeType = tower.towerType;
+            mergeLevel = tower.level;
         }
         //Does its type match mergeType? 
         if (tower.towerType != mergeType)

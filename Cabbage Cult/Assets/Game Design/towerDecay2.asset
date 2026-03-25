@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6d9016dda2ad7aa4a952f58554d44add, type: 3}
-  m_Name: towerBasic
+  m_Name: towerDecay2
   m_EditorClassIdentifier: 
-  towerType: '"basic"'
-  towerLevel: 1
+  towerType: '"decay"'
+  towerLevel: 2
   cooldown: 1
-  damage: 2
+  damage: 4
   attackRadius: 2
   towerCost: 1
-  towerColor: {r: 0.20857947, g: 0.5222653, b: 0.81886786, a: 1}
+  towerColor: {r: 0.47166136, g: 0.2023994, b: 0.81886786, a: 1}
