@@ -17,9 +17,9 @@ public class Enemy : MonoBehaviour
     public int health;
 
     //effects
-    private bool decaying;
-    private bool slowed;
-    private int helmetHealth;
+    public bool decaying;
+    public bool slowed;
+    public int helmetHealth;
 
     public float decayCooldown;
     private float decayCounter;
@@ -132,9 +132,6 @@ public class Enemy : MonoBehaviour
             }
         }
         
-
-
-
     }
 
     public void Damage(int amount)
