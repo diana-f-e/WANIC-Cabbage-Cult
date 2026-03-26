@@ -16,6 +16,14 @@ public class Enemy : MonoBehaviour
     public int damage;
     public int health;
 
+    //effects
+    private bool decaying;
+    private bool slowed;
+    private int helmetHealth;
+
+    public float decayCooldown;
+    private float decayCounter;
+
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -41,6 +49,18 @@ public class Enemy : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+
+        //effects
+        if(decaying)
+        {
+            decayCounter -= Time.deltaTime;
+            if(decayCounter <= 0)
+            {
+                health -= 1;
+                decayCounter = decayCooldown;
+            }
+        }
+
 
         //walk a step toward the next waypoint
         transform.position += speed * direction * Time.deltaTime;
@@ -87,6 +107,51 @@ public class Enemy : MonoBehaviour
         if (healthAlpha <= 0)
             healthAlpha = 0.01f;
         GetComponent<SpriteRenderer>().color = new Color(0.9f, 0.1f, 0.1f, healthAlpha);
+    }
+
+    public void Damage(int amount, string effect)
+    {
+        Damage(amount);
+        //apply effect
+        if (effect == "slow")
+        {
+            if(!slowed)
+            {
+                speed /= 2;
+                slowed = true;
+            }
+        }
+        else if (effect == "decay")
+        {
+            if(!decaying)
+            {
+                gameObject.GetComponent<SpriteRenderer>().color -= new Color(0.1f, 0.4f, 0.1f);
+                decaying = true;
+                decayCooldown = 2;
+                decayCounter = decayCooldown;
+            }
+        }
+        
+
+
+
+    }
+
+    public void Damage(int amount)
+    {
+        if (helmetHealth >= 0)
+        {
+            helmetHealth -= 1;
+            if (helmetHealth == 0)
+            {
+                //TODO destroy helmet
+                gameObject.GetComponent<SpriteRenderer>().color += new Color(0.4f, 0.1f, 0.1f);
+            }
+        }
+        else
+        {
+            health -= amount;
+        }
     }
 
 }

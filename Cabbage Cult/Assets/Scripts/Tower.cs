@@ -59,7 +59,7 @@ public class Tower : MonoBehaviour
         {
             return;
         }
-        enemiesInRange[0].health -= damage;
+        enemiesInRange[0].Damage(damage);
         //Debug.Log("pew pew");
 
     }
