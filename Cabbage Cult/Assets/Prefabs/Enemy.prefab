@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.93962264, g: 0.1542399, b: 0.1542399, a: 1}
+  m_Color: {r: 0.4490565, g: 0.30756134, b: 0.30756134, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -102,11 +102,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81f9748b5bb4e8a42be7acb2f6e0b57b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scriptVals: {fileID: 0}
   waypoints: []
   speed: 2
   gameManager: {fileID: 0}
   damage: 1
   health: 5
+  decaying: 0
+  slowed: 0
+  helmetHealth: 0
+  decayCooldown: 0
 --- !u!50 &896317262270712088
 Rigidbody2D:
   serializedVersion: 5
@@ -164,7 +169,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

@@ -19,3 +19,4 @@ MonoBehaviour:
   attackRadius: 2
   towerCost: 1
   towerColor: {r: 0.47166136, g: 0.2023994, b: 0.81886786, a: 1}
+  effect: decay

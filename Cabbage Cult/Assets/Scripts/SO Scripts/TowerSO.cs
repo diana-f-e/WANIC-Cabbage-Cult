@@ -11,4 +11,5 @@ public class TowerSO : ScriptableObject
     public float attackRadius;
     public int towerCost;
     public Color towerColor;
+    public string effect;
 }

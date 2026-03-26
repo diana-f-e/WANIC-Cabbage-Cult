@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6d9016dda2ad7aa4a952f58554d44add, type: 3}
-  m_Name: towerDecay1
+  m_Name: towerLaser1
   m_EditorClassIdentifier: 
-  towerType: '"decay"'
+  towerType: laser
   towerLevel: 1
   cooldown: 1
   damage: 2
   attackRadius: 2
-  towerCost: 1
-  towerColor: {r: 0.2762501, g: 0.112972535, b: 0.4867924, a: 1}
-  effect: decay
+  towerCost: 2
+  towerColor: {r: 0.4862745, g: 0.20399772, b: 0.1137255, a: 1}
+  effect: 
