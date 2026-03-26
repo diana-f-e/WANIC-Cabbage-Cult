@@ -5,6 +5,30 @@ TextureImporter:
   - first:
       213: 5630537119274208447
     second: Cult of Cabbage_ShopOutline_Buttons_0
+  - first:
+      213: -4598252905771676542
+    second: Cult of Cabbage_ShopOutline_Buttons_1
+  - first:
+      213: 8527524100585946986
+    second: Cult of Cabbage_ShopOutline_Buttons_2
+  - first:
+      213: 5538264384312994753
+    second: Cult of Cabbage_ShopOutline_Buttons_3
+  - first:
+      213: 1706992338810325674
+    second: Cult of Cabbage_ShopOutline_Buttons_4
+  - first:
+      213: -4163992908153813428
+    second: Cult of Cabbage_ShopOutline_Buttons_5
+  - first:
+      213: 6184622174670087280
+    second: Cult of Cabbage_ShopOutline_Buttons_6
+  - first:
+      213: 5453486978374523487
+    second: Cult of Cabbage_ShopOutline_Buttons_7
+  - first:
+      213: -4884877268879118416
+    second: Cult of Cabbage_ShopOutline_Buttons_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,10 +140,10 @@ TextureImporter:
       name: Cult of Cabbage_ShopOutline_Buttons_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 965
-        height: 2160
+        x: 52
+        y: 1854
+        width: 235
+        height: 129
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,6 +154,182 @@ TextureImporter:
       bones: []
       spriteID: fbc8df89dafa32e40800000000000000
       internalID: 5630537119274208447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cult of Cabbage_ShopOutline_Buttons_1
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 1819
+        width: 558
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28c42144859bf20c0800000000000000
+      internalID: -4598252905771676542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cult of Cabbage_ShopOutline_Buttons_2
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1559
+        width: 923
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ff10d1df9d75670800000000000000
+      internalID: 8527524100585946986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cult of Cabbage_ShopOutline_Buttons_3
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1281
+        width: 923
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cb6c235d1edbdc40800000000000000
+      internalID: 5538264384312994753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cult of Cabbage_ShopOutline_Buttons_4
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 998
+        width: 923
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaa4a15fc7470b710800000000000000
+      internalID: 1706992338810325674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cult of Cabbage_ShopOutline_Buttons_5
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 656
+        width: 901
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c460f3603868636c0800000000000000
+      internalID: -4163992908153813428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cult of Cabbage_ShopOutline_Buttons_6
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 339
+        width: 898
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 074e63fa91134d550800000000000000
+      internalID: 6184622174670087280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cult of Cabbage_ShopOutline_Buttons_7
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 20
+        width: 475
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a5b35538daeab40800000000000000
+      internalID: 5453486978374523487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cult of Cabbage_ShopOutline_Buttons_8
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 20
+        width: 452
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bf6411510e653cb0800000000000000
+      internalID: -4884877268879118416
       vertices: []
       indices: 
       edges: []
@@ -149,6 +349,14 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Cult of Cabbage_ShopOutline_Buttons_0: 5630537119274208447
+      Cult of Cabbage_ShopOutline_Buttons_1: -4598252905771676542
+      Cult of Cabbage_ShopOutline_Buttons_2: 8527524100585946986
+      Cult of Cabbage_ShopOutline_Buttons_3: 5538264384312994753
+      Cult of Cabbage_ShopOutline_Buttons_4: 1706992338810325674
+      Cult of Cabbage_ShopOutline_Buttons_5: -4163992908153813428
+      Cult of Cabbage_ShopOutline_Buttons_6: 6184622174670087280
+      Cult of Cabbage_ShopOutline_Buttons_7: 5453486978374523487
+      Cult of Cabbage_ShopOutline_Buttons_8: -4884877268879118416
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
