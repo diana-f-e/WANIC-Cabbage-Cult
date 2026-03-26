@@ -125,7 +125,7 @@ public class Enemy : MonoBehaviour
         {
             if(!decaying)
             {
-                gameObject.GetComponent<SpriteRenderer>().color -= new Color(0.1f, 0.4f, 0.1f);
+                gameObject.GetComponent<SpriteRenderer>().color -= new Color(0f, 0.2f, 0f);
                 decaying = true;
                 decayCooldown = 2;
                 decayCounter = decayCooldown;
@@ -136,7 +136,7 @@ public class Enemy : MonoBehaviour
 
     public void Damage(int amount)
     {
-        if (helmetHealth >= 0)
+        if (helmetHealth > 0)
         {
             helmetHealth -= 1;
             if (helmetHealth == 0)

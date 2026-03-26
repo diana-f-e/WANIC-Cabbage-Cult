@@ -12,6 +12,8 @@ public class Tower : MonoBehaviour
     public int damage;
     public int level;
 
+    public string effect;
+
     public string towerType;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -24,6 +26,7 @@ public class Tower : MonoBehaviour
         damage = scriptVals.damage;
         level = scriptVals.towerLevel;
         attackingCollider.radius = scriptVals.attackRadius;
+        effect = scriptVals.effect;
         GetComponent<SpriteRenderer>().color = scriptVals.towerColor;
     }
 
@@ -59,7 +62,7 @@ public class Tower : MonoBehaviour
         {
             return;
         }
-        enemiesInRange[0].Damage(damage);
+        enemiesInRange[0].Damage(damage, effect);
         //Debug.Log("pew pew");
 
     }

@@ -196,6 +196,10 @@ public class Spawner : MonoBehaviour
         {
             return;
         }
+        if(!gameManager.alreadyTithed)
+        {
+            gameManager.Curse();
+        }
         gameManager.phase = "wave";
         miniWaveIndex = 0;
         waveIndex += 1;

@@ -20,10 +20,13 @@ public class GameManager : MonoBehaviour
 
     public PlaytestingSO scriptVals;
 
+    public bool alreadyTithed = false;
+    public int tax;
     private void OnValidate()
     {
         money = scriptVals.money;
         health = scriptVals.health;
+        tax = scriptVals.tax;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -179,8 +182,24 @@ public class GameManager : MonoBehaviour
     {
         phase = "shop";
         money += scriptVals.moneyPerRound;
+        alreadyTithed = false;
     }
-    
+
+    public void Curse()
+    {
+        Debug.Log("cursedy curse");
+    }
+
+    public void Tithe()
+    {
+        if (alreadyTithed) { return; }
+        if (phase != "shop") { return; }
+        Debug.Log("tithing...");
+        money -= tax;
+
+
+        alreadyTithed = true;
+    }
 
 
 
