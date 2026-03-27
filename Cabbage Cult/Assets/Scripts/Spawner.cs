@@ -32,7 +32,7 @@ public class Spawner : MonoBehaviour
             miniWaves = new MiniWave[count];
             for (int i = 0; i < count; i++)
             {
-                miniWaves[i] = new MiniWave(2, 1);
+                miniWaves[i] = new MiniWave(10, 1);
             }
         }
     }
@@ -66,12 +66,16 @@ public class Spawner : MonoBehaviour
     private void OnValidate()
     {
         cooldown = scriptVals.enemySpawnCooldown;
-        enemyGoal = scriptVals.enemiesToSpawn;
+        //enemyGoal = scriptVals.enemiesToSpawn;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        waveGoal = 5;
+        miniWaveGoal = 5;
+        enemyGoal = 5;
+
         timerCounter = cooldown;
         enemyIndex = 0;
         miniWaveIndex = 0;
