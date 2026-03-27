@@ -146,6 +146,8 @@ MonoBehaviour:
   level: 1
   effect: 
   towerType: '"basic"'
+  onAttack: {fileID: 0}
+  gameManager: {fileID: 0}
 --- !u!1 &2051844480552174626
 GameObject:
   m_ObjectHideFlags: 0
