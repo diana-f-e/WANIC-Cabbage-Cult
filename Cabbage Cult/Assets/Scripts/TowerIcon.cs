@@ -28,6 +28,13 @@ public class TowerIcon : MonoBehaviour
     private void OnMouseDown()
     {
         //Debug.Log("OnMouseDown");
+        onClicked();
+
+
+    }
+
+    public void onClicked()
+    {
         //if not holding anything or dont have enough money
         if (gameManager.heldObj != null || gameManager.money < cost)
         {
