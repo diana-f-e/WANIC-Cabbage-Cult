@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     public int tax;
 
 
+
     public AudioSource audioSource;
     private void OnValidate()
     {
@@ -205,6 +206,17 @@ public class GameManager : MonoBehaviour
         alreadyTithed = true;
     }
 
+    public void Pause()
+    {
+        if(Time.timeScale == 0)
+        {
+            Time.timeScale = 1;
+        }
+        else
+        {
+            Time.timeScale = 0;
+        }
+    }
 
 
 
