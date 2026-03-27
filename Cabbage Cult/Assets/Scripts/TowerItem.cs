@@ -7,10 +7,13 @@ public class TowerItem : MonoBehaviour
     public GameObject tower;
     public TowerSO towerScriptVals;
 
+    private Color invalidSpotColor;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        gameObject.GetComponent<SpriteRenderer>().color = towerScriptVals.towerColor;
+        invalidSpotColor = new Color(0.4f, 0.4f, 0.4f);
     }
 
     // Update is called once per frame
@@ -27,7 +30,7 @@ public class TowerItem : MonoBehaviour
             return;
         }
         validPlacement = false;
-        GetComponent<SpriteRenderer>().color = Color.red;
+        GetComponent<SpriteRenderer>().color = invalidSpotColor;
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -38,7 +41,7 @@ public class TowerItem : MonoBehaviour
             return;
         }
         validPlacement = false;
-        GetComponent<SpriteRenderer>().color = Color.red;
+        GetComponent<SpriteRenderer>().color = invalidSpotColor;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -48,7 +51,7 @@ public class TowerItem : MonoBehaviour
             return;
         }
         validPlacement = true;
-        GetComponent<SpriteRenderer>().color = Color.green;
+        GetComponent<SpriteRenderer>().color = towerScriptVals.towerColor;
     }
 }
 
