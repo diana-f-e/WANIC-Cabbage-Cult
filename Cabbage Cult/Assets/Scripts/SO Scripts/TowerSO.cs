@@ -12,4 +12,5 @@ public class TowerSO : ScriptableObject
     public int towerCost;
     public Color towerColor;
     public string effect;
+    public AudioClip onAttack;
 }

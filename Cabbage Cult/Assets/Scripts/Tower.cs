@@ -16,31 +16,23 @@ public class Tower : MonoBehaviour
 
     public string towerType;
 
+    public AudioClip onAttack;
+    public GameManager gameManager;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         timerCounter = cooldown;
 
-        towerType = scriptVals.towerType;
-        cooldown = scriptVals.cooldown;
-        damage = scriptVals.damage;
-        level = scriptVals.towerLevel;
-        attackingCollider.radius = scriptVals.attackRadius;
-        effect = scriptVals.effect;
-        GetComponent<SpriteRenderer>().color = scriptVals.towerColor;
+        assignScriptVals();
     }
 
     //update in scene view when changed
     private void OnValidate()
     {
-        //update vals based on scriptable object
-        towerType = scriptVals.towerType;
-        cooldown = scriptVals.cooldown;
-        damage = scriptVals.damage;
-        level = scriptVals.towerLevel;
-        attackingCollider.radius = scriptVals.attackRadius;
-        GetComponent<SpriteRenderer>().color = scriptVals.towerColor;
-        
+        assignScriptVals();
+
+
     }
 
     // Update is called once per frame
@@ -55,7 +47,20 @@ public class Tower : MonoBehaviour
         }
     }
 
-    
+    public void assignScriptVals()
+    {
+        //update vals based on scriptable object
+        towerType = scriptVals.towerType;
+        cooldown = scriptVals.cooldown;
+        damage = scriptVals.damage;
+        level = scriptVals.towerLevel;
+        attackingCollider.radius = scriptVals.attackRadius;
+        effect = scriptVals.effect;
+        GetComponent<SpriteRenderer>().color = scriptVals.towerColor;
+        onAttack = scriptVals.onAttack;
+    }
+
+
     public void Attack()
     {
         if (enemiesInRange.Count <= 0)
@@ -63,6 +68,7 @@ public class Tower : MonoBehaviour
             return;
         }
         enemiesInRange[0].Damage(damage, effect);
+        gameManager.audioSource.PlayOneShot(onAttack);
         //Debug.Log("pew pew");
 
     }

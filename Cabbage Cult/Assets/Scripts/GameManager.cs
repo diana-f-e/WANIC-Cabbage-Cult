@@ -22,6 +22,9 @@ public class GameManager : MonoBehaviour
 
     public bool alreadyTithed = false;
     public int tax;
+
+
+    public AudioSource audioSource;
     private void OnValidate()
     {
         money = scriptVals.money;
@@ -117,6 +120,7 @@ public class GameManager : MonoBehaviour
         //at the point im given, put a tower
         GameObject placedTower = Instantiate(tower, coords, Quaternion.identity);
         placedTower.GetComponent<Tower>().scriptVals = towerItem.GetComponent<TowerItem>().towerScriptVals;
+        placedTower.GetComponent<Tower>().gameManager = this;
         Destroy(towerItem);
     }
 
