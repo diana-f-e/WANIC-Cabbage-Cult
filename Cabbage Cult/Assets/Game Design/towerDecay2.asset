@@ -15,8 +15,9 @@ MonoBehaviour:
   towerType: '"decay"'
   towerLevel: 2
   cooldown: 1
-  damage: 4
-  attackRadius: 2
-  towerCost: 1
+  damage: 40
+  attackRadius: 3.5
+  towerCost: 0
   towerColor: {r: 0.47166136, g: 0.2023994, b: 0.81886786, a: 1}
   effect: decay
+  onAttack: {fileID: 0}
