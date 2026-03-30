@@ -9,8 +9,12 @@ public class TowerSO : ScriptableObject
     public float cooldown;
     public int damage;
     public float attackRadius;
+    public float placeRadius;
     public int towerCost;
     public Color towerColor;
     public string effect;
     public AudioClip onAttack;
+
+    public float effectNum;
+    public float effectCooldown;
 }

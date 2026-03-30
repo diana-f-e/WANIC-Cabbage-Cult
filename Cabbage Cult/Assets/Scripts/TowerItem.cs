@@ -19,6 +19,14 @@ public class TowerItem : MonoBehaviour
         AttackPreview.size = new Vector2(2*towerScriptVals.attackRadius, 2*towerScriptVals.attackRadius);
     }
 
+    private void OnValidate()
+    {
+        if (towerScriptVals.placeRadius != 0)
+        {
+            gameObject.GetComponent<CircleCollider2D>().radius = towerScriptVals.placeRadius;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
