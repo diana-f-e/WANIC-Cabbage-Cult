@@ -145,7 +145,10 @@ public class Spawner : MonoBehaviour
                             //go to shop phase
                     if(waveIndex < waveGoal)
                     {
-                        gameManager.StartShopPhase();
+                        if (FindFirstObjectByType<Enemy>() == null)
+                        {
+                            gameManager.StartShopPhase();
+                        }
                         return;
                     }
                     else

@@ -7,6 +7,8 @@ public class TowerItem : MonoBehaviour
     public GameObject tower;
     public TowerSO towerScriptVals;
 
+    public SpriteRenderer AttackPreview;
+
     private Color invalidSpotColor;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -14,6 +16,7 @@ public class TowerItem : MonoBehaviour
     {
         gameObject.GetComponent<SpriteRenderer>().color = towerScriptVals.towerColor;
         invalidSpotColor = new Color(0.4f, 0.4f, 0.4f);
+        AttackPreview.size = new Vector2(2*towerScriptVals.attackRadius, 2*towerScriptVals.attackRadius);
     }
 
     // Update is called once per frame

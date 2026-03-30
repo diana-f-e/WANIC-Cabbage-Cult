@@ -3,6 +3,7 @@ using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
 using UnityEngine.UIElements;
+using UnityEngine.WSA;
 
 public class GameManager : MonoBehaviour
 {
@@ -96,7 +97,20 @@ public class GameManager : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
             Tower clickedTower = clickedObj.GetComponent<Tower>();
-            if (clickedTower == null){ clickedTower = clickedObj.GetComponent<TowerAttackCollider>().towerScript; }
+            //loop through everything clicked to find the tower
+            if (clickedTower == null)
+            {
+                RaycastHit2D[] hits = Physics2D.RaycastAll(mousePosition, Vector3.zero);
+                foreach(RaycastHit2D h in hits)
+                {
+                    if (h.collider.gameObject.GetComponent<Tower>() != null)
+                    {
+                        clickedTower = h.collider.gameObject.GetComponent<Tower>();
+                        break;
+                    }
+                }
+                //clickedTower = clickedObj.GetComponent<TowerAttackCollider>().towerScript; 
+            }
             //Is it a tower?
             if (clickedTower != null)
             {
@@ -188,10 +202,28 @@ public class GameManager : MonoBehaviour
         phase = "shop";
         money += scriptVals.moneyPerRound;
         alreadyTithed = false;
+        //undo curse
+        Tower[] towers = FindObjectsByType<Tower>(FindObjectsSortMode.None);
+        foreach (Tower t in towers)
+        {
+            if(t.cursed)
+            {
+                t.cursed = false;
+                t.damage *= 2;
+                t.gameObject.GetComponent<SpriteRenderer>().color = t.scriptVals.towerColor;
+            }
+        }
     }
 
     public void Curse()
     {
+        Tower[] towers = FindObjectsByType<Tower>(FindObjectsSortMode.None);
+        foreach(Tower t in towers)
+        {
+            t.cursed = true;
+            t.damage /= 2;
+            t.gameObject.GetComponent<SpriteRenderer>().color = Color.cyan;
+        }
         Debug.Log("cursedy curse");
     }
 
@@ -206,15 +238,15 @@ public class GameManager : MonoBehaviour
         alreadyTithed = true;
     }
 
-    public void Pause()
+    public void ChangeTimeScale(float num)
     {
-        if(Time.timeScale == 0)
+        if(Time.timeScale == num)
         {
             Time.timeScale = 1;
         }
         else
         {
-            Time.timeScale = 0;
+            Time.timeScale = num;
         }
     }
 
