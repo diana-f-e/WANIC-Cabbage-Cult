@@ -7,7 +7,7 @@ public class TowerAttackCollider : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        GetComponent<SpriteRenderer>().size = GetComponent<CircleCollider2D>().bounds.size;
     }
 
     // Update is called once per frame

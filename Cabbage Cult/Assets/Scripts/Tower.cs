@@ -19,6 +19,8 @@ public class Tower : MonoBehaviour
     public AudioClip onAttack;
     public GameManager gameManager;
 
+    public bool cursed;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
