@@ -69,7 +69,14 @@ public class Tower : MonoBehaviour
         {
             return;
         }
-        enemiesInRange[0].Damage(damage, effect);
+        if(scriptVals.effectNum == 0 || scriptVals.effectCooldown == 0)
+        {
+            enemiesInRange[0].Damage(damage, effect);
+        }
+        else
+        {
+            enemiesInRange[0].Damage(damage, effect, scriptVals.effectNum, scriptVals.effectCooldown);
+        }
         gameManager.audioSource.PlayOneShot(onAttack);
         //Debug.Log("pew pew");
 

@@ -23,8 +23,13 @@ public class Enemy : MonoBehaviour
 
     public float decayCooldown;
     private float decayCounter;
+    private float decayDmg;
 
-    
+    public float slowCooldown;
+    private float slowCounter;
+    private float slowedAmt;
+
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -56,8 +61,17 @@ public class Enemy : MonoBehaviour
             decayCounter -= Time.deltaTime;
             if(decayCounter <= 0)
             {
-                health -= 1;
+                health -= (int)decayDmg;
                 decayCounter = decayCooldown;
+            }
+        }
+        if (slowed)
+        {
+            slowCounter -= Time.deltaTime;
+            if (slowCounter <= 0)
+            {
+                speed *= slowedAmt;
+                slowed = false;
             }
         }
 
@@ -109,28 +123,40 @@ public class Enemy : MonoBehaviour
         GetComponent<SpriteRenderer>().color = new Color(0.9f, 0.1f, 0.1f, healthAlpha);
     }
 
-    public void Damage(int amount, string effect)
+    public void Damage(int amount, string effect, float num, float cooldown)
     {
         Damage(amount);
         //apply effect
         if (effect == "slow")
         {
-            if(!slowed)
+            if (!slowed)
             {
-                speed /= 2;
+                slowedAmt = num;
+                speed /= slowedAmt;
+
                 slowed = true;
+                slowCooldown = cooldown;
+                slowCounter = slowCooldown;
             }
         }
         else if (effect == "decay")
         {
-            if(!decaying)
+            if (!decaying)
             {
+                decayDmg = num;
                 gameObject.GetComponent<SpriteRenderer>().color -= new Color(0f, 0.2f, 0f);
+
                 decaying = true;
                 decayCooldown = 2;
                 decayCounter = decayCooldown;
             }
         }
+
+    }
+
+    public void Damage(int amount, string effect)
+    {
+        Damage(amount, effect, 2, 2);
         
     }
 
