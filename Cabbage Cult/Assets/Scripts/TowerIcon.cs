@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class TowerIcon : MonoBehaviour
@@ -7,9 +8,16 @@ public class TowerIcon : MonoBehaviour
     public GameObject towerItem;
     public int cost;
 
+
+    //public TextMeshProUGUI textBox;
+
     private void OnValidate()
     {
         cost = scriptVals.towerCost;
+        //if(!textBox.text.Contains(cost.ToString()))
+        //{
+        //    textBox.text += ": " + cost;
+        //}
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
