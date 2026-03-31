@@ -14,10 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerType: laser
   towerLevel: 1
-  cooldown: 5
+  cooldown: 4
   damage: 100
-  attackRadius: 5
+  attackRadius: 4
+  placeRadius: 1
   towerCost: 250
   towerColor: {r: 0.4862745, g: 0.20399772, b: 0.1137255, a: 1}
   effect: 
   onAttack: {fileID: 0}
+  effectNum: 0
+  effectCooldown: 0
