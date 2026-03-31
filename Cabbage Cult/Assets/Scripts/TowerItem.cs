@@ -17,6 +17,7 @@ public class TowerItem : MonoBehaviour
         gameObject.GetComponent<SpriteRenderer>().color = towerScriptVals.towerColor;
         invalidSpotColor = new Color(0.4f, 0.4f, 0.4f);
         AttackPreview.size = new Vector2(2*towerScriptVals.attackRadius, 2*towerScriptVals.attackRadius);
+        gameObject.GetComponent<SpriteRenderer>().sprite = towerScriptVals.skin;
     }
 
     private void OnValidate()
@@ -24,6 +25,7 @@ public class TowerItem : MonoBehaviour
         if (towerScriptVals.placeRadius != 0)
         {
             gameObject.GetComponent<CircleCollider2D>().radius = towerScriptVals.placeRadius;
+            gameObject.GetComponent<SpriteRenderer>().sprite = towerScriptVals.skin;
         }
     }
 
