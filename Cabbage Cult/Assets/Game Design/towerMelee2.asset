@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerType: melee
   towerLevel: 2
-  cooldown: 2
+  cooldown: 1
   damage: 60
   attackRadius: 2.5
-  placeRadius: 1
+  placeRadius: 1.5
   towerCost: 0
-  towerColor: {r: 0.2882533, g: 0.81886786, b: 0.23948011, a: 1}
+  towerColor: {r: 1, g: 1, b: 1, a: 1}
   effect: slow
   onAttack: {fileID: 0}
-  effectNum: 0
-  effectCooldown: 0
+  skin: {fileID: -3695747079076597807, guid: bdc1c7d25781e464d91e80d1446427f2, type: 3}
+  effectNum: 3
+  effectCooldown: 3

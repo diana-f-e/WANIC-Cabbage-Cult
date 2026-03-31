@@ -19,8 +19,9 @@ MonoBehaviour:
   attackRadius: 2
   placeRadius: 1
   towerCost: 150
-  towerColor: {r: 0.26054108, g: 0.5924529, b: 0.16879319, a: 1}
+  towerColor: {r: 1, g: 1, b: 1, a: 1}
   effect: slow
   onAttack: {fileID: 0}
-  effectNum: 0
-  effectCooldown: 0
+  skin: {fileID: 6411831788956534599, guid: 55150bafb56bbe44cba17eafc06cff7b, type: 3}
+  effectNum: 2
+  effectCooldown: 2
