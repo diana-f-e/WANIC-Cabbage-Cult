@@ -1,21 +1,96 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static Spawner;
+using Random = UnityEngine.Random;
 
 public class Spawner : MonoBehaviour
 {
+    
     public struct MiniWave
     {
-        public string[] enemies;
+        public EnemySO[] enemies;
         public float delay;
 
         // Optional: You can include a constructor for clean initialization
+        /*
         public MiniWave(int count, float delayTime)
         {
             delay = delayTime;
-            enemies = new string[count];
+            enemies = new EnemySO[count];
             for(int i = 0; i < count; i++)
             {
                 enemies[i] = "testEnemy";
+            }
+        }*/
+
+        public MiniWave(MiniWaveSO so)
+        {
+            delay = so.delay;
+            if (so.construction == "ratio")
+            {
+                //for ratio, each miniWave type should only be listed once, with the corresponding index in")]
+                //the chances array denoting the chance of the type spawning.")]
+                //generate cuttoffs for randomization: get magnitude etc etc
+                float chanceMagnitude = 0;
+                for (int i = 0; i < so.chances.Length; i++)
+                {
+                    chanceMagnitude += so.chances[i];
+                }
+                float[] cutoffs = new float[so.chances.Length];
+                float runningTotal = 0;
+                for (int i = 0; i < so.chances.Length; i++)
+                {
+                    cutoffs[i] = runningTotal / chanceMagnitude;
+                    runningTotal += so.chances[i];
+                }
+                float myRand = 0;
+
+                enemies = new EnemySO[so.count];
+                for (int i = 0; i < so.count; i++)
+                {
+                    //to randomly generate: for each enemy, random val, and cutoff decides type
+                    myRand = Random.value;
+                    for (int j = 0; j < cutoffs.Length; j++)
+                    {
+                        if (myRand >= cutoffs[j])
+                        {
+                            enemies[i] = so.types[j];
+                            break;
+                        }
+                        else
+                        {
+                            enemies[i] = so.types[0];
+                        }
+                    }
+                }
+
+            }
+            else if (so.construction == "complex")
+            {
+                //[Header("- for complex, the miniWaves array will spawn a number of enemies of that type")]
+                //[Header("equal to the corresponding index in the chances array. count will be disregarded.")]
+                List<EnemySO> enemySOs = new List<EnemySO>();
+                for (int i = 0; i < so.types.Length; i++)
+                {
+                    for (int j = 0; j < so.chances[i]; j++)
+                    {
+                        enemySOs.Add(so.types[i]);
+                    }
+                }
+
+                enemies = new EnemySO[enemySOs.Count];
+                for (int i = 0; i < enemies.Length; i++)
+                {
+                    enemies[i] = enemySOs[i];
+                }
+            }
+            else
+            {
+                Debug.Log("invalid construction type");
+                enemies = null;
+                delay = 1;
             }
         }
     }
@@ -26,13 +101,13 @@ public class Spawner : MonoBehaviour
         public float delay;
 
         // Optional: You can include a constructor for clean initialization
-        public Wave(int count, float delayTime)
+        public Wave(WaveSO so)
         {
-            delay = delayTime;
-            miniWaves = new MiniWave[count];
-            for (int i = 0; i < count; i++)
+            delay = so.delay;
+            miniWaves = new MiniWave[so.miniWaves.Length];
+            for (int i = 0; i < miniWaves.Length; i++)
             {
-                miniWaves[i] = new MiniWave(10, 1);
+                miniWaves[i] = new MiniWave(so.miniWaves[i]);
             }
         }
     }
@@ -55,7 +130,7 @@ public class Spawner : MonoBehaviour
     public PlaytestingSO scriptVals;
     public EnemySO enemyScriptVals;
 
-    public Wave[] waves;
+    public WaveSO[] waves;
     public int waveGoal;
     public int waveIndex;
     public int miniWaveGoal;
@@ -81,11 +156,12 @@ public class Spawner : MonoBehaviour
         miniWaveIndex = 0;
         waveIndex = 0;
         //TODO make waves
+        /*
         waves = new Wave[waveGoal];
         for (int i = 0; i < waveGoal; i++)
         {
             waves[i] = new Wave(3, 3);
-        }
+        }*/
     }
 
     // Update is called once per frame
@@ -210,6 +286,12 @@ public class Spawner : MonoBehaviour
         gameManager.phase = "wave";
         miniWaveIndex = 0;
         waveIndex += 1;
+    }
+
+    public void CreateWave()
+    {
+        //take the current waveSO. create a 
+        //enemy script vals
     }
 }
 
