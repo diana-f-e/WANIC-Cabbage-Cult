@@ -14,7 +14,7 @@ public class TowerIcon : MonoBehaviour
     private void OnValidate()
     {
         cost = scriptVals.towerCost;
-        // gameObject.GetComponent<SpriteRenderer>().sprite = scriptVals.skin;
+        //gameObject.GetComponent<SpriteRenderer>().sprite = scriptVals.skin;
         //if(!textBox.text.Contains(cost.ToString()))
         //{
         //    textBox.text += ": " + cost;
