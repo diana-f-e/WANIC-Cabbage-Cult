@@ -60,6 +60,7 @@ public class Tower : MonoBehaviour
         effect = scriptVals.effect;
         GetComponent<SpriteRenderer>().color = scriptVals.towerColor;
         onAttack = scriptVals.onAttack;
+        gameObject.GetComponent<SpriteRenderer>().sprite = scriptVals.skin;
     }
 
 
