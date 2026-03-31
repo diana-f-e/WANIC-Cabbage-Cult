@@ -130,7 +130,8 @@ public class Spawner : MonoBehaviour
     public PlaytestingSO scriptVals;
     public EnemySO enemyScriptVals;
 
-    public WaveSO[] waves;
+    public WaveSO[] waveSOs;
+    private Wave[] waves;
     public int waveGoal;
     public int waveIndex;
     public int miniWaveGoal;
@@ -147,7 +148,13 @@ public class Spawner : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        waveGoal = 5;
+        //waves = new Wave[waveSOs.Length];
+        //for(int i = 0; i < waves.Length; i++)
+        //{
+        //    waves[i] = new Wave(waveSOs[i]);
+        //}
+
+        waveGoal = 5;//waves.Length;
         miniWaveGoal = 5;
         enemyGoal = 5;
 
@@ -260,6 +267,7 @@ public class Spawner : MonoBehaviour
     //spawn the next enemy
     public void SpawnNextEnemy()
     {
+        //enemyScriptVals = waves[waveIndex].miniWaves[miniWaveIndex].enemies[enemyIndex];
         GameObject newEnemy = Instantiate(enemyPrefab, gameObject.transform.position, Quaternion.identity);
         newEnemy.GetComponent<Enemy>().waypoints = waypoints;
         newEnemy.GetComponent<Enemy>().gameManager = gameManager;
@@ -271,6 +279,7 @@ public class Spawner : MonoBehaviour
     {
         enemyIndex = 0;
         miniWaveIndex += 1;
+        //enemyGoal = waves[waveIndex].miniWaves[miniWaveIndex].enemies.Length;
     }
 
     public void StartWave()
@@ -286,12 +295,8 @@ public class Spawner : MonoBehaviour
         gameManager.phase = "wave";
         miniWaveIndex = 0;
         waveIndex += 1;
+        //miniWaveGoal = waves[waveIndex].miniWaves.Length;
     }
 
-    public void CreateWave()
-    {
-        //take the current waveSO. create a 
-        //enemy script vals
-    }
 }
 

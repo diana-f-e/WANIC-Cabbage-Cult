@@ -3,7 +3,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "MiniWaveSO", menuName = "Scriptable Objects/MiniWaveSO")]
 public class MiniWaveSO : ScriptableObject
 {
-    public string miniWaveType;
     //different implementations: 
     [Header("how to: 2 construction types - ratio and complex.")]
     [Header("- for ratio, each type should only be listed once, with the corresponding index in")]
