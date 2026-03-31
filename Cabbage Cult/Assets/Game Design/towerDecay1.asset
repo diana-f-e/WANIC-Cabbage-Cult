@@ -17,7 +17,10 @@ MonoBehaviour:
   cooldown: 1
   damage: 20
   attackRadius: 3
+  placeRadius: 1
   towerCost: 100
   towerColor: {r: 1, g: 1, b: 1, a: 1}
   effect: decay
   onAttack: {fileID: 8300000, guid: 0085bf832b2435e489cc404ccaad0f6d, type: 3}
+  effectNum: 10
+  effectCooldown: 1

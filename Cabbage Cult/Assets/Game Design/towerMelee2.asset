@@ -17,7 +17,10 @@ MonoBehaviour:
   cooldown: 2
   damage: 60
   attackRadius: 2.5
+  placeRadius: 1
   towerCost: 0
   towerColor: {r: 0.2882533, g: 0.81886786, b: 0.23948011, a: 1}
   effect: slow
   onAttack: {fileID: 0}
+  effectNum: 0
+  effectCooldown: 0
