@@ -3,7 +3,6 @@ using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
 using UnityEngine.UIElements;
-using UnityEngine.WSA;
 
 public class GameManager : MonoBehaviour
 {
@@ -24,7 +23,7 @@ public class GameManager : MonoBehaviour
     public bool alreadyTithed = false;
     public int tax;
 
-
+    public GameObject titheButton;
 
     public AudioSource audioSource;
     private void OnValidate()
@@ -163,8 +162,8 @@ public class GameManager : MonoBehaviour
             mergeType = tower.towerType;
             mergeLevel = tower.level;
         }
-        //Does its type match mergeType? 
-        if (tower.towerType != mergeType)
+        //Does its type and level match merge type and level? 
+        if (tower.towerType != mergeType || tower.level != mergeLevel)
         {
             //If not, return false
             return false;
@@ -213,6 +212,8 @@ public class GameManager : MonoBehaviour
                 t.gameObject.GetComponent<SpriteRenderer>().color = t.scriptVals.towerColor;
             }
         }
+        // show tithe button
+        titheButton.SetActive(true);
     }
 
     public void Curse()
@@ -231,11 +232,23 @@ public class GameManager : MonoBehaviour
     {
         if (alreadyTithed) { return; }
         if (phase != "shop") { return; }
+
+        //hide tithe button
+        titheButton.SetActive(false);
         Debug.Log("tithing...");
         money -= tax;
-
+        if(money < 0)
+        {
+            money = 0;
+        }
 
         alreadyTithed = true;
+    }
+
+    public void DontTithe()
+    {
+        //hide tithe button
+        titheButton.SetActive(false);
     }
 
     public void ChangeTimeScale(float num)
