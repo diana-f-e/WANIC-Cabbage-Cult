@@ -6,26 +6,28 @@ using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
+    public PlaytestingSO scriptVals;
+
     public GameObject heldObj;
     public GameObject clickedObj;
-    public Transform shopBorder;
+
     public float health;
     public float money;
+    public string phase = "shop";
+
     public TextMeshProUGUI statsText;
+    public Transform shopBorder;
 
     public List<Tower> mergeList;
     public string mergeType;
     public int mergeLevel;
-    public string phase = "shop";
-
-    public PlaytestingSO scriptVals;
 
     public bool alreadyTithed = false;
     public int tax;
-
     public GameObject titheButton;
 
     public AudioSource audioSource;
+
     private void OnValidate()
     {
         money = scriptVals.money;
@@ -51,9 +53,6 @@ public class GameManager : MonoBehaviour
 
         //what am i clicking?
         RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector3.zero);
-        //Debug.Log(hit.collider);
-
-
         if (hit.collider != null)
         {
             clickedObj = hit.collider.gameObject;
@@ -63,13 +62,11 @@ public class GameManager : MonoBehaviour
             clickedObj = null;
         }
 
-
         //if smth in hand, track it to the mouse
         if (heldObj != null) { heldObj.transform.position = mousePosition;}
         //click
         if (Input.GetMouseButtonDown(0))
         {
-            
             //holding smth?
             if (heldObj != null)
             {
@@ -83,13 +80,6 @@ public class GameManager : MonoBehaviour
                 }
                     
             }
-            else
-            {
-                
-                //shop icon?
-                //grab it
-            }
-
 
         }
         //right click
@@ -108,7 +98,6 @@ public class GameManager : MonoBehaviour
                         break;
                     }
                 }
-                //clickedTower = clickedObj.GetComponent<TowerAttackCollider>().towerScript; 
             }
             //Is it a tower?
             if (clickedTower != null)
@@ -136,21 +125,6 @@ public class GameManager : MonoBehaviour
         placedTower.GetComponent<Tower>().scriptVals = towerItem.GetComponent<TowerItem>().towerScriptVals;
         placedTower.GetComponent<Tower>().gameManager = this;
         Destroy(towerItem);
-    }
-
-    private bool ValidTowerSpot(Vector3 coords, GameObject tower)
-    {
-        if (tower.GetComponent<Tower>() == null)
-        {
-            Debug.Log("heldobj not a tower");
-            return false;
-        }
-        //if not too close to other towers / path (i didnt click a collider of another tower)
-        if (clickedObj != null)
-        {
-            return false;
-        }
-        return true;
     }
 
     private bool AddToMergeList(Tower tower)
@@ -218,6 +192,7 @@ public class GameManager : MonoBehaviour
 
     public void Curse()
     {
+        //example curse: reduce
         Tower[] towers = FindObjectsByType<Tower>(FindObjectsSortMode.None);
         foreach(Tower t in towers)
         {
