@@ -8,7 +8,6 @@ public class TowerIcon : MonoBehaviour
     public GameObject towerItem;
     public int cost;
 
-
     //public TextMeshProUGUI textBox;
 
     private void OnValidate()
@@ -45,7 +44,7 @@ public class TowerIcon : MonoBehaviour
     public void onClicked()
     {
         //if not holding anything or dont have enough money
-        if (gameManager.heldObj != null || gameManager.money < cost)
+        if (gameManager.heldObj != null || gameManager.money < cost || gameManager.titheButton.activeInHierarchy)
         {
             return;
         }
