@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class Enemy : MonoBehaviour
 {
     public EnemySO scriptVals;
+    public GameManager gameManager;
 
     public Transform[] waypoints;
     private Transform currentWaypoint;
@@ -12,7 +13,6 @@ public class Enemy : MonoBehaviour
 
     public float speed;
     private Vector3 direction;
-    public GameManager gameManager;
     public int damage;
     public int health;
 
@@ -83,7 +83,7 @@ public class Enemy : MonoBehaviour
         {
             if (currentWaypointIndex == waypoints.Length - 1)
             {
-                //Debug.Log("reached last waypoint");
+                //reached last waypoint
                 direction = new Vector3(0, 0, 0);
                 gameManager.health -= damage;
                 //TODO make sceneswitcher have funcs for die/win
@@ -115,6 +115,7 @@ public class Enemy : MonoBehaviour
 
     private void ShowHealth()
     {
+        //change transparency of sprite to show health
         float healthAlpha = 1.0f * health / scriptVals.enemyHealth;
         if (healthAlpha > 1)
             healthAlpha = 1;

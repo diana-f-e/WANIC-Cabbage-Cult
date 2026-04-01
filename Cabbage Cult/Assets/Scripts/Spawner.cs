@@ -63,6 +63,7 @@ public class Spawner : MonoBehaviour
                         {
                             enemies[i] = so.types[0];
                         }
+                        Debug.Log("MiniWave builder: i = "+i+", j = "+j+", enemies[i] = " + enemies[i].name);
                     }
                 }
 
@@ -84,11 +85,12 @@ public class Spawner : MonoBehaviour
                 for (int i = 0; i < enemies.Length; i++)
                 {
                     enemies[i] = enemySOs[i];
+                    //Debug.Log("MiniWave builder: i = " + i  + ", enemies[i] = " + enemies[i].name);
                 }
             }
             else
             {
-                Debug.Log("invalid construction type");
+                //Debug.Log("invalid construction type");
                 enemies = null;
                 delay = 1;
             }
@@ -108,6 +110,7 @@ public class Spawner : MonoBehaviour
             for (int i = 0; i < miniWaves.Length; i++)
             {
                 miniWaves[i] = new MiniWave(so.miniWaves[i]);
+                //Debug.Log("Wave builder: i = " + i + ", miniWaves[i].delay = " + miniWaves[i].delay);
             }
         }
     }
@@ -148,20 +151,21 @@ public class Spawner : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //waves = new Wave[waveSOs.Length];
-        //for(int i = 0; i < waves.Length; i++)
-        //{
-        //    waves[i] = new Wave(waveSOs[i]);
-        //}
+        Debug.Log("started");
+        waves = new Wave[waveSOs.Length];
+        for(int i = 0; i < waves.Length; i++)
+        {
+            waves[i] = new Wave(waveSOs[i]);
+        }
 
-        waveGoal = 5;//waves.Length;
+        waveGoal = waves.Length;
         miniWaveGoal = 5;
         enemyGoal = 5;
 
         timerCounter = cooldown;
         enemyIndex = 0;
         miniWaveIndex = 0;
-        waveIndex = 0;
+        waveIndex = -1; //fix?
         //TODO make waves
         /*
         waves = new Wave[waveGoal];
@@ -174,9 +178,7 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        /*
-        if (enemyIndex >= enemyGoal)
+        /*if (enemyIndex >= enemyGoal)
         {
             if(FindFirstObjectByType<Enemy>() == null)
             {
@@ -211,22 +213,25 @@ public class Spawner : MonoBehaviour
             {
                 SpawnNextEnemy();
             }
-            
             else
             {
+                miniWaveIndex += 1;
+                //Debug.Log("enemyIndex >= enemyGoal");
                 if(miniWaveIndex < miniWaveGoal)
                 {
+                    //Debug.Log("miniWaveIndex < miniWaveGoal");
                     StartMiniWave();
                 }
                 else
                 {
+                    //Debug.Log("miniWaveIndex >= miniWaveGoal");
                     //(the wave is done)
                         //spawner not active
                         //if that was the last wave
                             //win!
                         //else
                             //go to shop phase
-                    if(waveIndex < waveGoal)
+                    if(waveIndex < waveGoal-1)
                     {
                         if (FindFirstObjectByType<Enemy>() == null)
                         {
@@ -267,7 +272,7 @@ public class Spawner : MonoBehaviour
     //spawn the next enemy
     public void SpawnNextEnemy()
     {
-        //enemyScriptVals = waves[waveIndex].miniWaves[miniWaveIndex].enemies[enemyIndex];
+        enemyScriptVals = waves[waveIndex].miniWaves[miniWaveIndex].enemies[enemyIndex];
         GameObject newEnemy = Instantiate(enemyPrefab, gameObject.transform.position, Quaternion.identity);
         newEnemy.GetComponent<Enemy>().waypoints = waypoints;
         newEnemy.GetComponent<Enemy>().gameManager = gameManager;
@@ -278,13 +283,15 @@ public class Spawner : MonoBehaviour
     public void StartMiniWave()
     {
         enemyIndex = 0;
-        miniWaveIndex += 1;
-        //enemyGoal = waves[waveIndex].miniWaves[miniWaveIndex].enemies.Length;
+        Debug.Log("miniWaveIndex = " + miniWaveIndex);
+        Wave testa = waves[waveIndex];
+        MiniWave testb = testa.miniWaves[miniWaveIndex];
+        enemyGoal = testb.enemies.Length;
     }
 
     public void StartWave()
     {
-        if(gameManager.phase == "wave")
+        if (gameManager.phase == "wave")
         {
             return;
         }
@@ -292,10 +299,15 @@ public class Spawner : MonoBehaviour
         {
             gameManager.Curse();
         }
-        gameManager.phase = "wave";
-        miniWaveIndex = 0;
         waveIndex += 1;
-        //miniWaveGoal = waves[waveIndex].miniWaves.Length;
+        gameManager.phase = "wave";
+        enemyIndex = 0;
+        miniWaveIndex = 0;
+        miniWaveGoal = waves[waveIndex].miniWaves.Length;
+        enemyGoal = waves[waveIndex].miniWaves[miniWaveIndex].enemies.Length;
+        Debug.Log("waveIndex = " + waveIndex);
+
+
     }
 
 }
