@@ -252,17 +252,14 @@ public class GameManager : MonoBehaviour
         debugMenu.SetActive(!debugMenu.activeInHierarchy);
     }
 
-    public void MyDebug(string var, int amount)
+    public void MyDebugHealth(float amount)
     {
-        debugMenu.SetActive(!debugMenu.activeInHierarchy);
-        if(var == "health")
-        {
-            health += amount;
-        }
-        if (var == "money")
-        {
-            money += amount;
-        }
+        health += amount;
+    }
+
+    public void MyDebugMoney(float amount)
+    {
+        money += amount;
     }
 
 
