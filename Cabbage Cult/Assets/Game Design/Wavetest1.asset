@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d97a96537ca73f4ebf8e7d31e99e4ba, type: 3}
   m_Name: Wavetest1
   m_EditorClassIdentifier: 
-  delay: 3
   miniWaves:
   - {fileID: 11400000, guid: a251cbbaf40337745bfaa9a12b49fda4, type: 2}
-  - {fileID: 11400000, guid: a251cbbaf40337745bfaa9a12b49fda4, type: 2}
+  - {fileID: 11400000, guid: 1153948602ec97f44b4fbfc979d1e6ad, type: 2}
   - {fileID: 11400000, guid: a251cbbaf40337745bfaa9a12b49fda4, type: 2}

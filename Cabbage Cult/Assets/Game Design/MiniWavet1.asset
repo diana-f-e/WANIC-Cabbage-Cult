@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86e8c3ccdb042a248abd20226d05eb26, type: 3}
-  m_Name: MiniWavetest1
+  m_Name: MiniWavet1
   m_EditorClassIdentifier: 
   construction: complex
   count: 0
