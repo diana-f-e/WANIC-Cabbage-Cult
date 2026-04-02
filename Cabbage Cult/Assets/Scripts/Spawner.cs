@@ -39,12 +39,16 @@ public class Spawner : MonoBehaviour
                     chanceMagnitude += so.chances[i];
                 }
                 float[] cutoffs = new float[so.chances.Length];
+
+                Debug.Log("cutoffs: ");
                 float runningTotal = 0;
                 for (int i = 0; i < so.chances.Length; i++)
                 {
                     cutoffs[i] = runningTotal / chanceMagnitude;
+                    Debug.Log("[" + i + "]: " + cutoffs[i]);
                     runningTotal += so.chances[i];
                 }
+
                 float myRand = 0;
 
                 enemies = new EnemySO[so.count];
@@ -57,13 +61,18 @@ public class Spawner : MonoBehaviour
                         if (myRand >= cutoffs[j])
                         {
                             enemies[i] = so.types[j];
-                            break;
                         }
                         else
                         {
-                            enemies[i] = so.types[0];
+                            break;
                         }
-                        Debug.Log("MiniWave builder: i = "+i+", j = "+j+", enemies[i] = " + enemies[i].name);
+                        //Debug.Log("MiniWave builder: i = "+i+", j = "+j+", enemies[i] = " + enemies[i].name);
+                    }
+                    if(enemies[i] == null)
+                    {
+                        Debug.Log("myRand failed:  " + myRand);
+                        enemies[i] = so.types[0];
+                        
                     }
                 }
 
@@ -100,12 +109,10 @@ public class Spawner : MonoBehaviour
     public struct Wave
     {
         public MiniWave[] miniWaves;
-        public float delay;
 
         // Optional: You can include a constructor for clean initialization
         public Wave(WaveSO so)
         {
-            delay = so.delay;
             miniWaves = new MiniWave[so.miniWaves.Length];
             for (int i = 0; i < miniWaves.Length; i++)
             {
@@ -283,10 +290,13 @@ public class Spawner : MonoBehaviour
     public void StartMiniWave()
     {
         enemyIndex = 0;
-        Debug.Log("miniWaveIndex = " + miniWaveIndex);
         Wave testa = waves[waveIndex];
         MiniWave testb = testa.miniWaves[miniWaveIndex];
         enemyGoal = testb.enemies.Length;
+        if(testb.delay > 0)
+        {
+            cooldown = testb.delay;
+        }
     }
 
     public void StartWave()
@@ -305,7 +315,6 @@ public class Spawner : MonoBehaviour
         miniWaveIndex = 0;
         miniWaveGoal = waves[waveIndex].miniWaves.Length;
         enemyGoal = waves[waveIndex].miniWaves[miniWaveIndex].enemies.Length;
-        Debug.Log("waveIndex = " + waveIndex);
 
 
     }
