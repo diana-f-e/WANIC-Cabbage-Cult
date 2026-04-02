@@ -1748,10 +1748,13 @@ MonoBehaviour:
   towerSOs:
   - {fileID: 11400000, guid: 4febebae959d9a24ab12495ddecd3f07, type: 2}
   - {fileID: 11400000, guid: 22a9620f60a8bea4491168140210edb1, type: 2}
+  - {fileID: 11400000, guid: b1d73e63a7e6d824c9224e27d3d0fdfd, type: 2}
   - {fileID: 11400000, guid: 6f6f9b881c54bf24c8352e14dfec023b, type: 2}
   - {fileID: 11400000, guid: d363c072461f4954a90b1c9f3560dc78, type: 2}
+  - {fileID: 11400000, guid: 17d9cd9c6b996044c986f939df4c5185, type: 2}
   - {fileID: 11400000, guid: f440be422526f6c4c9a82cdff5dbaaad, type: 2}
   - {fileID: 11400000, guid: 37507aa61ae54f943ad49a7337b0b260, type: 2}
+  - {fileID: 11400000, guid: 4dc346c165e043249a733879e099744f, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -8911,21 +8914,25 @@ PrefabInstance:
     - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
       propertyPath: 'waveSOs.Array.data[0]'
       value: 
-      objectReference: {fileID: 11400000, guid: 9eed0ee303a2adb44817c185748b2a2c, type: 2}
+      objectReference: {fileID: 11400000, guid: d35779913c70b6f4abe287d6a59cce84, type: 2}
     - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
       propertyPath: 'waveSOs.Array.data[1]'
       value: 
-      objectReference: {fileID: 11400000, guid: 9eed0ee303a2adb44817c185748b2a2c, type: 2}
+      objectReference: {fileID: 11400000, guid: d35779913c70b6f4abe287d6a59cce84, type: 2}
     - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
       propertyPath: 'waveSOs.Array.data[2]'
       value: 
-      objectReference: {fileID: 11400000, guid: 9eed0ee303a2adb44817c185748b2a2c, type: 2}
+      objectReference: {fileID: 11400000, guid: b9d525aa361091f4bad4d9dbffce2656, type: 2}
     - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
       propertyPath: 'waveSOs.Array.data[3]'
       value: 
-      objectReference: {fileID: 11400000, guid: 9eed0ee303a2adb44817c185748b2a2c, type: 2}
+      objectReference: {fileID: 11400000, guid: b9d525aa361091f4bad4d9dbffce2656, type: 2}
     - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
       propertyPath: 'waveSOs.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: b9d525aa361091f4bad4d9dbffce2656, type: 2}
+    - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
+      propertyPath: 'waveSOs.Array.data[5]'
       value: 
       objectReference: {fileID: 11400000, guid: 9eed0ee303a2adb44817c185748b2a2c, type: 2}
     - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
