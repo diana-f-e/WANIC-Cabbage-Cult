@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour
 
     public AudioSource audioSource;
 
+    public GameObject debugMenu;
+
     private void OnValidate()
     {
         money = scriptVals.money;
@@ -44,6 +46,12 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //check if debug menu being opened
+        if (Input.GetKey(KeyCode.D) && Input.GetKeyDown(KeyCode.B))
+        {
+            ShowDebug();
+        }
+
         //update stats
         statsText.text = "Health: "+ health + "\nMoney: " + money + "\nPhase: " + phase;
 
@@ -124,6 +132,7 @@ public class GameManager : MonoBehaviour
         GameObject placedTower = Instantiate(tower, coords, Quaternion.identity);
         placedTower.GetComponent<Tower>().scriptVals = towerItem.GetComponent<TowerItem>().towerScriptVals;
         placedTower.GetComponent<Tower>().gameManager = this;
+        audioSource.PlayOneShot(placedTower.GetComponent<Tower>().scriptVals.onBuy);
         Destroy(towerItem);
     }
 
@@ -235,6 +244,24 @@ public class GameManager : MonoBehaviour
         else
         {
             Time.timeScale = num;
+        }
+    }
+
+    public void ShowDebug()
+    {
+        debugMenu.SetActive(!debugMenu.activeInHierarchy);
+    }
+
+    public void MyDebug(string var, int amount)
+    {
+        debugMenu.SetActive(!debugMenu.activeInHierarchy);
+        if(var == "health")
+        {
+            health += amount;
+        }
+        if (var == "money")
+        {
+            money += amount;
         }
     }
 

@@ -14,6 +14,8 @@ public class TowerSO : ScriptableObject
     public Color towerColor;
     public string effect;
     public AudioClip onAttack;
+    public AudioClip onPlace;
+    public AudioClip onBuy;
     public Sprite skin;
 
 

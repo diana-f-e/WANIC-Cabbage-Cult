@@ -52,5 +52,6 @@ public class TowerIcon : MonoBehaviour
         newToweritem.GetComponent<TowerItem>().towerScriptVals = scriptVals;
         gameManager.heldObj = newToweritem;
         gameManager.money -= cost;
+        gameManager.audioSource.PlayOneShot(scriptVals.onBuy);
     }
 }
