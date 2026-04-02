@@ -41,6 +41,10 @@ public class Enemy : MonoBehaviour
         damage = scriptVals.enemyDamage;
         health = scriptVals.enemyHealth;
         speed = scriptVals.enemySpeed;
+        if(scriptVals.skin != null)
+        {
+            GetComponent<SpriteRenderer>().sprite = scriptVals.skin;
+        }
 
     }
 
@@ -91,6 +95,7 @@ public class Enemy : MonoBehaviour
                 {
                     SceneManager.LoadScene("LoseScene");
                 }
+                gameManager.audioSource.PlayOneShot(scriptVals.onDeath);
                 Destroy(this.gameObject);
 
             }
@@ -175,7 +180,9 @@ public class Enemy : MonoBehaviour
         else
         {
             health -= amount;
+            gameManager.audioSource.PlayOneShot(scriptVals.onHurt);
         }
+
     }
 
 }
