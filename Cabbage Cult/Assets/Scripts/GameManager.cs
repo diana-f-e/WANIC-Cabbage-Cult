@@ -30,6 +30,11 @@ public class GameManager : MonoBehaviour
 
     public GameObject debugMenu;
 
+    public string currentCurse;
+
+    public CurseSO[] curseSOs;
+    public float[] curseWeights;
+
     private void OnValidate()
     {
         money = scriptVals.money;
@@ -53,8 +58,8 @@ public class GameManager : MonoBehaviour
         }
 
         //update stats
-        statsText.text = "Health: "+ health + "\nMoney: " + money + "\nPhase: " + phase;
-
+        statsText.text = "Health: "+ health + "\nMoney: " + money + "\nPhase: " + phase + "\nCurse: " + currentCurse;
+        
         //get the mouse position
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePosition.z += Camera.main.nearClipPlane;
@@ -185,14 +190,14 @@ public class GameManager : MonoBehaviour
         money += scriptVals.moneyPerRound;
         alreadyTithed = false;
         //undo curse
+        currentCurse = "none";
         Tower[] towers = FindObjectsByType<Tower>(FindObjectsSortMode.None);
         foreach (Tower t in towers)
         {
             if(t.cursed)
             {
                 t.cursed = false;
-                t.damage *= 2;
-                t.gameObject.GetComponent<SpriteRenderer>().color = t.scriptVals.towerColor;
+                t.assignScriptVals();
             }
         }
         // show tithe button
@@ -202,8 +207,21 @@ public class GameManager : MonoBehaviour
     public void Curse()
     {
         //example curse: reduce
+        currentCurse = "ex. " + curseSOs[0].curseName;
         Tower[] towers = FindObjectsByType<Tower>(FindObjectsSortMode.None);
         foreach(Tower t in towers)
+        {
+            t.cursed = true;
+            t.ApplyCurse(curseSOs[0]);
+        }
+    }
+
+    public void OldCurse()
+    {
+        //example curse: reduce
+        currentCurse = "ex. SO reduce";
+        Tower[] towers = FindObjectsByType<Tower>(FindObjectsSortMode.None);
+        foreach (Tower t in towers)
         {
             t.cursed = true;
             t.damage /= 2;

@@ -22,6 +22,9 @@ public class Tower : MonoBehaviour
     public bool cursed;
     public LineRenderer attackLine;
 
+    public float effectNum;
+    public float effectCooldown;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -67,6 +70,8 @@ public class Tower : MonoBehaviour
         effect = scriptVals.effect;
         GetComponent<SpriteRenderer>().color = scriptVals.towerColor;
         onAttack = scriptVals.onAttack;
+        effectNum = scriptVals.effectNum;
+        effectCooldown = scriptVals.effectCooldown;
         if (scriptVals.skin != null)
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = scriptVals.skin;
@@ -80,13 +85,13 @@ public class Tower : MonoBehaviour
         {
             return;
         }
-        if(scriptVals.effectNum == 0 || scriptVals.effectCooldown == 0)
+        if(effectNum == 0 || effectCooldown == 0)
         {
             enemiesInRange[0].Damage(damage, effect);
         }
         else
         {
-            enemiesInRange[0].Damage(damage, effect, scriptVals.effectNum, scriptVals.effectCooldown);
+            enemiesInRange[0].Damage(damage, effect, effectNum, effectCooldown);
         }
         gameManager.audioSource.PlayOneShot(onAttack);
         AnimateAttack(enemiesInRange[0]);
@@ -119,4 +124,38 @@ public class Tower : MonoBehaviour
         GetComponent<SpriteRenderer>().color -= new Color(0.2f, 0.2f, 0.4f);
         //GetComponent<SpriteRenderer>().color = new Color(0.6f, 0.6f, 0.9f);
     }
+
+    public void ApplyCurse(CurseSO curse)
+    {
+        GetComponent<SpriteRenderer>().color = Color.cyan;
+        if (curse.cooldown != 0)
+        {
+            cooldown *= curse.cooldown;
+        }
+        if (curse.damage != 0)
+        {
+            damage = (int)(curse.damage * damage);
+        }
+        if (curse.attackRadius != 0)
+        {
+            attackingCollider.radius *= curse.attackRadius;
+        }
+        if (curse.effectNum != 0)
+        {
+            effectNum *= curse.effectNum;
+        }
+        if (curse.effectCooldown != 0)
+        {
+            effectCooldown *= curse.effectCooldown;
+        }
+        /*
+        towerLevel;
+    cooldown;
+    damage;
+    attackRadius;
+    effectNum;
+    effectCooldown;*/
+
+    }
+    
 }
