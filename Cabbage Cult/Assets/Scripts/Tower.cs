@@ -20,6 +20,7 @@ public class Tower : MonoBehaviour
     public GameManager gameManager;
 
     public bool cursed;
+    public LineRenderer attackLine;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -47,6 +48,12 @@ public class Tower : MonoBehaviour
             Attack();
             timerCounter = cooldown;
         }
+        //animation lasts .1 of the cooldown
+        if(timerCounter <= cooldown * 0.9)
+        {
+            attackLine.gameObject.SetActive(false);
+        }
+        
     }
 
     public void assignScriptVals()
@@ -82,8 +89,23 @@ public class Tower : MonoBehaviour
             enemiesInRange[0].Damage(damage, effect, scriptVals.effectNum, scriptVals.effectCooldown);
         }
         gameManager.audioSource.PlayOneShot(onAttack);
+        AnimateAttack(enemiesInRange[0]);
         //Debug.Log("pew pew");
 
+    }
+
+    public void AnimateAttack(Enemy target)
+    {
+        // draw line between tower and target
+        if (towerType == "laser")
+        {
+            attackLine.gameObject.SetActive(true);
+            Debug.Log("laser pew pew");
+            attackLine.positionCount = 2;
+
+            attackLine.SetPosition(0, transform.position);
+            attackLine.SetPosition(1, target.gameObject.transform.position);
+        }
     }
 
     public void MergeSelect()
