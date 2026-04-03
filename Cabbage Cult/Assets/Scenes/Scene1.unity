@@ -10505,7 +10505,7 @@ PrefabInstance:
     - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
       propertyPath: 'waveSOs.Array.data[0]'
       value: 
-      objectReference: {fileID: 11400000, guid: d35779913c70b6f4abe287d6a59cce84, type: 2}
+      objectReference: {fileID: 11400000, guid: b9d525aa361091f4bad4d9dbffce2656, type: 2}
     - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
       propertyPath: 'waveSOs.Array.data[1]'
       value: 
@@ -10513,15 +10513,15 @@ PrefabInstance:
     - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
       propertyPath: 'waveSOs.Array.data[2]'
       value: 
-      objectReference: {fileID: 11400000, guid: b9d525aa361091f4bad4d9dbffce2656, type: 2}
+      objectReference: {fileID: 11400000, guid: a7c249482259f3946a83eb4d5a992a8c, type: 2}
     - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
       propertyPath: 'waveSOs.Array.data[3]'
       value: 
-      objectReference: {fileID: 11400000, guid: b9d525aa361091f4bad4d9dbffce2656, type: 2}
+      objectReference: {fileID: 11400000, guid: 6ce66b5daa7b04747a19883545d940dc, type: 2}
     - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
       propertyPath: 'waveSOs.Array.data[4]'
       value: 
-      objectReference: {fileID: 11400000, guid: b9d525aa361091f4bad4d9dbffce2656, type: 2}
+      objectReference: {fileID: 11400000, guid: d35779913c70b6f4abe287d6a59cce84, type: 2}
     - target: {fileID: 4678633255660527753, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
       propertyPath: 'waveSOs.Array.data[5]'
       value: 

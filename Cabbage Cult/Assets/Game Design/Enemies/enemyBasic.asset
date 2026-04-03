@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyDamage: 10
   enemyHealth: 100
-  enemySpeed: 1
+  enemySpeed: 1.5
+  onHurt: {fileID: 0}
+  onDeath: {fileID: 0}
+  skin: {fileID: 0}

@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   miniWaves:
   - {fileID: 11400000, guid: e964cfa09353d144fa69765a9e451575, type: 2}
+  note: -Basic first wave, should make the player feel powerful and like the wave
+    was really easy

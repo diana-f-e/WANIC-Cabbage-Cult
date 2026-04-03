@@ -4,4 +4,7 @@ using UnityEngine;
 public class WaveSO : ScriptableObject
 {
     public MiniWaveSO[] miniWaves;
+
+    [TextArea]
+    public string note;
 }

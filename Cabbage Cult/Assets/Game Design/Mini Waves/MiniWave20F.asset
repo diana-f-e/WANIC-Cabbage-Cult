@@ -9,12 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d1f73a63a2096b4b8c80ab5ad8978bd, type: 3}
-  m_Name: enemyTank
+  m_Script: {fileID: 11500000, guid: 86e8c3ccdb042a248abd20226d05eb26, type: 3}
+  m_Name: MiniWave20F
   m_EditorClassIdentifier: 
-  enemyDamage: 25
-  enemyHealth: 250
-  enemySpeed: 1
-  onHurt: {fileID: 0}
-  onDeath: {fileID: 0}
-  skin: {fileID: 0}
+  construction: complex
+  count: 0
+  delay: 1
+  types:
+  - {fileID: 11400000, guid: 7619fddf6365acb4ba2436916fe52998, type: 2}
+  chances:
+  - 20
