@@ -17,11 +17,13 @@ MonoBehaviour:
   cooldown: 1
   damage: 60
   attackRadius: 2.5
-  placeRadius: 1.5
+  placeRadius: 1
   towerCost: 0
   towerColor: {r: 1, g: 1, b: 1, a: 1}
   effect: slow
   onAttack: {fileID: 0}
+  onPlace: {fileID: 0}
+  onBuy: {fileID: 0}
   skin: {fileID: -3695747079076597807, guid: bdc1c7d25781e464d91e80d1446427f2, type: 3}
   effectNum: 3
   effectCooldown: 3

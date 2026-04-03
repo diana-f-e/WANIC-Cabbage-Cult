@@ -18,14 +18,27 @@ public class TowerItem : MonoBehaviour
         invalidSpotColor = new Color(0.4f, 0.4f, 0.4f);
         AttackPreview.size = new Vector2(2*towerScriptVals.attackRadius, 2*towerScriptVals.attackRadius);
         gameObject.GetComponent<SpriteRenderer>().sprite = towerScriptVals.skin;
+        setRadius();
     }
 
     private void OnValidate()
     {
+        setRadius();
+    }
+
+    private void setRadius()
+    {
         if (towerScriptVals.placeRadius != 0)
         {
-            gameObject.GetComponent<CircleCollider2D>().radius = towerScriptVals.placeRadius;
+            Debug.Log("start radius: " + gameObject.GetComponent<CircleCollider2D>().radius);
+            Debug.Log("sprite.bounds.size.y: " + gameObject.GetComponent<SpriteRenderer>().sprite.bounds.size.y);
+            Debug.Log("towerScriptVals.placeRadius: " + towerScriptVals.placeRadius);
+
             gameObject.GetComponent<SpriteRenderer>().sprite = towerScriptVals.skin;
+            gameObject.GetComponent<CircleCollider2D>().radius = gameObject.GetComponent<SpriteRenderer>().sprite.bounds.size.y / 2;
+            gameObject.GetComponent<CircleCollider2D>().radius *= towerScriptVals.placeRadius;
+            gameObject.GetComponent<CircleCollider2D>().radius *= 1.1f;
+            Debug.Log("end radius: " + gameObject.GetComponent<CircleCollider2D>().radius);
         }
     }
 
