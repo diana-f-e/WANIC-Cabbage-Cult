@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d97a96537ca73f4ebf8e7d31e99e4ba, type: 3}
   m_Name: Wave3
   m_EditorClassIdentifier: 
-  miniWaves: []
+  miniWaves:
+  - {fileID: 11400000, guid: 7e7dce649edb0e342ab96f1034e68633, type: 2}
+  - {fileID: 11400000, guid: 690b7f3e3489d684c8fbcdd3998cf408, type: 2}
+  - {fileID: 11400000, guid: 870409f79a4ef2447b7ffbcee80040da, type: 2}
+  note: -Starts mixing together basic and fast enemies in the third wave before ending
+    with a barrage of over twenty fast enemies to really test the preparations of
+    the player

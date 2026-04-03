@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: enemyFast
   m_EditorClassIdentifier: 
   enemyDamage: 5
-  enemyHealth: 90
+  enemyHealth: 60
   enemySpeed: 5
+  onHurt: {fileID: 0}
+  onDeath: {fileID: 0}
+  skin: {fileID: 0}

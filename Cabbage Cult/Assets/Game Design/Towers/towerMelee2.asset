@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerType: melee
   towerLevel: 2
-  cooldown: 1
+  cooldown: 1.5
   damage: 60
   attackRadius: 2.5
   placeRadius: 1

@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d97a96537ca73f4ebf8e7d31e99e4ba, type: 3}
-  m_Name: Wave2
+  m_Name: Wave4
   m_EditorClassIdentifier: 
   miniWaves:
   - {fileID: 11400000, guid: ddf44f46d7d07cd479d40d08350d84ec, type: 2}
-  - {fileID: 11400000, guid: e964cfa09353d144fa69765a9e451575, type: 2}
   - {fileID: 11400000, guid: ddf44f46d7d07cd479d40d08350d84ec, type: 2}
-  - {fileID: 11400000, guid: 7e7dce649edb0e342ab96f1034e68633, type: 2}
-  note: -Should be harder than the first wave and introduce a single fast enemy at
-    the end to throw the player off and prepare them for the next wave
+  - {fileID: 11400000, guid: ddf44f46d7d07cd479d40d08350d84ec, type: 2}
+  - {fileID: 11400000, guid: 152f73aa8365e6a4ebaadce5f940379e, type: 2}
+  - {fileID: 11400000, guid: 152f73aa8365e6a4ebaadce5f940379e, type: 2}
+  - {fileID: 11400000, guid: 870409f79a4ef2447b7ffbcee80040da, type: 2}
+  - {fileID: 11400000, guid: 7ceaff587df17bc489bf6dff864c4fb7, type: 2}
+  note: 
