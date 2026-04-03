@@ -12916,7 +12916,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: money
-      value: 2.1474836e+9
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: health
@@ -12947,9 +12947,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1314066320}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: curseSOs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: mergeList.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: 'curseSOs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 6b9431f713054f944a812e2a15cd21c8, type: 2}
     - target: {fileID: 3575855361152369184, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.037883714
