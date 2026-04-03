@@ -12,5 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d97a96537ca73f4ebf8e7d31e99e4ba, type: 3}
   m_Name: Wave5
   m_EditorClassIdentifier: 
-  miniWaves: []
+  miniWaves:
+  - {fileID: 11400000, guid: 95da6d3cdb2ed9241bef1fb1d7382151, type: 2}
+  - {fileID: 11400000, guid: ddf44f46d7d07cd479d40d08350d84ec, type: 2}
+  - {fileID: 11400000, guid: ddf44f46d7d07cd479d40d08350d84ec, type: 2}
+  - {fileID: 11400000, guid: 95da6d3cdb2ed9241bef1fb1d7382151, type: 2}
+  - {fileID: 11400000, guid: 152f73aa8365e6a4ebaadce5f940379e, type: 2}
+  - {fileID: 11400000, guid: 152f73aa8365e6a4ebaadce5f940379e, type: 2}
+  - {fileID: 11400000, guid: ef1214d4d907f24428b12ce6be622c59, type: 2}
   note: 
