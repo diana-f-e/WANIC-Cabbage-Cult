@@ -148,6 +148,7 @@ public class Tower : MonoBehaviour
         {
             effectCooldown *= curse.effectCooldown;
         }
+        cursed = true;
         /*
         towerLevel;
     cooldown;

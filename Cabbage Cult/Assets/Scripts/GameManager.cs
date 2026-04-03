@@ -30,7 +30,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject debugMenu;
 
-    public string currentCurse;
+    public string currentCurseName;
+    public CurseSO currentCurse;
 
     public CurseSO[] curseSOs;
     public float[] curseWeights;
@@ -58,7 +59,7 @@ public class GameManager : MonoBehaviour
         }
 
         //update stats
-        statsText.text = "Health: "+ health + "\nMoney: " + money + "\nPhase: " + phase + "\nCurse: " + currentCurse;
+        statsText.text = "Health: "+ health + "\nMoney: " + money + "\nPhase: " + phase + "\nCurse: " + currentCurseName;
         
         //get the mouse position
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -138,6 +139,13 @@ public class GameManager : MonoBehaviour
         placedTower.GetComponent<Tower>().scriptVals = towerItem.GetComponent<TowerItem>().towerScriptVals;
         placedTower.GetComponent<Tower>().gameManager = this;
         audioSource.PlayOneShot(placedTower.GetComponent<Tower>().scriptVals.onBuy);
+        //apply curse
+        if(currentCurse != null)
+        {
+            Debug.Log("currentCurse != null");
+            placedTower.GetComponent<Tower>().ApplyCurse(currentCurse);
+        }
+
         Destroy(towerItem);
     }
 
@@ -190,7 +198,8 @@ public class GameManager : MonoBehaviour
         money += scriptVals.moneyPerRound;
         alreadyTithed = false;
         //undo curse
-        currentCurse = "none";
+        currentCurseName = "none";
+        currentCurse = null;
         Tower[] towers = FindObjectsByType<Tower>(FindObjectsSortMode.None);
         foreach (Tower t in towers)
         {
@@ -207,11 +216,11 @@ public class GameManager : MonoBehaviour
     public void Curse()
     {
         //example curse: reduce
-        currentCurse = "ex. " + curseSOs[0].curseName;
+        currentCurseName = "ex. " + curseSOs[0].curseName;
+        currentCurse = curseSOs[0];
         Tower[] towers = FindObjectsByType<Tower>(FindObjectsSortMode.None);
         foreach(Tower t in towers)
         {
-            t.cursed = true;
             t.ApplyCurse(curseSOs[0]);
         }
     }
@@ -219,7 +228,7 @@ public class GameManager : MonoBehaviour
     public void OldCurse()
     {
         //example curse: reduce
-        currentCurse = "ex. SO reduce";
+        currentCurseName = "ex. SO reduce";
         Tower[] towers = FindObjectsByType<Tower>(FindObjectsSortMode.None);
         foreach (Tower t in towers)
         {
