@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using static Spawner;
@@ -7,9 +8,11 @@ using Random = UnityEngine.Random;
 
 public class Spawner : MonoBehaviour
 {
+    public TextMeshProUGUI statsTextWave;
     
     public struct MiniWave
     {
+
         public EnemySO[] enemies;
         public float delay;
 
@@ -185,6 +188,7 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         /*if (enemyIndex >= enemyGoal)
         {
             if(FindFirstObjectByType<Enemy>() == null)
@@ -198,7 +202,7 @@ public class Spawner : MonoBehaviour
         }*/
 
         //increment timer, spawn enemy when timer done
-        if(gameManager.phase == "wave")
+        if (gameManager.phase == "wave")
         {
             timerCounter -= Time.deltaTime;
         }
@@ -315,6 +319,7 @@ public class Spawner : MonoBehaviour
         miniWaveIndex = 0;
         miniWaveGoal = waves[waveIndex].miniWaves.Length;
         enemyGoal = waves[waveIndex].miniWaves[miniWaveIndex].enemies.Length;
+        statsTextWave.text = "Wave\n" + (waveIndex + 1);
 
 
     }
