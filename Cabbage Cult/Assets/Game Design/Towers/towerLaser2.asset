@@ -21,8 +21,8 @@ MonoBehaviour:
   towerCost: 0
   towerColor: {r: 0.81960785, g: 0.43697786, b: 0.20392154, a: 1}
   effect: 
-  onAttack: {fileID: 0}
-  onPlace: {fileID: 0}
+  onAttack: {fileID: 8300000, guid: a0128dc2277938a4bb07d89e749b3a18, type: 3}
+  onPlace: {fileID: 8300000, guid: 5254f968a15ad4942999b610c0c15737, type: 3}
   onBuy: {fileID: 0}
   skin: {fileID: 4137744052999057349, guid: d7d3e2be59f0f134fb243f9d11ff00bc, type: 3}
   effectNum: 0

@@ -21,8 +21,8 @@ MonoBehaviour:
   towerCost: 0
   towerColor: {r: 0.47166136, g: 0.2023994, b: 0.81886786, a: 1}
   effect: decay
-  onAttack: {fileID: 0}
-  onPlace: {fileID: 0}
+  onAttack: {fileID: 8300000, guid: 0085bf832b2435e489cc404ccaad0f6d, type: 3}
+  onPlace: {fileID: 8300000, guid: 5254f968a15ad4942999b610c0c15737, type: 3}
   onBuy: {fileID: 0}
   skin: {fileID: 4137744052999057349, guid: d7d3e2be59f0f134fb243f9d11ff00bc, type: 3}
   effectNum: 20
