@@ -2,7 +2,7 @@ using Unity.Burst.CompilerServices;
 using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     public float money;
     public string phase = "shop";
 
-    public TextMeshProUGUI statsText;
+    public TextMeshProUGUI statsTextMoney;
     public Transform shopBorder;
 
     public List<Tower> mergeList;
@@ -36,6 +36,8 @@ public class GameManager : MonoBehaviour
     public CurseSO[] curseSOs;
     public float[] curseWeights;
 
+    public Image healthBar;
+    public GameObject pauseMenu;
     private void OnValidate()
     {
         money = scriptVals.money;
@@ -59,8 +61,10 @@ public class GameManager : MonoBehaviour
         }
 
         //update stats
-        statsText.text = "Health: "+ health + "\nMoney: " + money + "\nPhase: " + phase + "\nCurse: " + currentCurseName;
-        
+        //statsText.text = "Health: "+ health + "\nMoney: " + money + "\nPhase: " + phase + "\nCurse: " + currentCurseName;
+        statsTextMoney.text = "" + money;
+        healthBar.fillAmount = health / scriptVals.health;
+
         //get the mouse position
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePosition.z += Camera.main.nearClipPlane;
@@ -271,6 +275,10 @@ public class GameManager : MonoBehaviour
         else
         {
             Time.timeScale = num;
+        }
+        if (num == 0)
+        {
+            pauseMenu.SetActive(Time.timeScale == num);
         }
     }
 
