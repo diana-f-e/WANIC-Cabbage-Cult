@@ -21,7 +21,9 @@ MonoBehaviour:
   towerCost: 150
   towerColor: {r: 1, g: 1, b: 1, a: 1}
   effect: slow
-  onAttack: {fileID: 0}
+  onAttack: {fileID: 8300000, guid: b2a6007724a56c449a61383aca98c122, type: 3}
+  onPlace: {fileID: 8300000, guid: 50a7d3de857baae4c9361b5dc1925e32, type: 3}
+  onBuy: {fileID: 0}
   skin: {fileID: 6411831788956534599, guid: 55150bafb56bbe44cba17eafc06cff7b, type: 3}
   effectNum: 2
   effectCooldown: 2
