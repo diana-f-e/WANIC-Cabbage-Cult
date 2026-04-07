@@ -15,7 +15,7 @@ MonoBehaviour:
   towerType: '"decay"'
   towerLevel: 2
   cooldown: 1
-  damage: 35
+  damage: 0
   attackRadius: 3.5
   placeRadius: 1
   towerCost: 0
@@ -24,6 +24,6 @@ MonoBehaviour:
   onAttack: {fileID: 8300000, guid: 0085bf832b2435e489cc404ccaad0f6d, type: 3}
   onPlace: {fileID: 8300000, guid: 5254f968a15ad4942999b610c0c15737, type: 3}
   onBuy: {fileID: 0}
-  skin: {fileID: 4137744052999057349, guid: d7d3e2be59f0f134fb243f9d11ff00bc, type: 3}
-  effectNum: 20
+  skin: {fileID: -2503201390149090699, guid: f77c97ef7c7b4bd43afb8c11390120c6, type: 3}
+  effectNum: 40
   effectCooldown: 1
