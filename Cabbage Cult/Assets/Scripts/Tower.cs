@@ -85,16 +85,30 @@ public class Tower : MonoBehaviour
         {
             return;
         }
+        Enemy target = enemiesInRange[0];
+        if (effect == "decay")
+        {
+            Debug.Log("effect == \"decay\"");
+            foreach(Enemy e in enemiesInRange)
+            {
+                if(!e.decaying)
+                {
+                    target = e;
+                    break;
+                }
+            }
+        }
+
         if(effectNum == 0 || effectCooldown == 0)
         {
-            enemiesInRange[0].Damage(damage, effect);
+            target.Damage(damage, effect);
         }
         else
         {
-            enemiesInRange[0].Damage(damage, effect, effectNum, effectCooldown);
+            target.Damage(damage, effect, effectNum, effectCooldown);
         }
         gameManager.audioSource.PlayOneShot(onAttack);
-        AnimateAttack(enemiesInRange[0]);
+        AnimateAttack(target);
         //Debug.Log("pew pew");
 
     }

@@ -47,7 +47,7 @@ public class TowerIcon : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     public void onClicked()
     {
         //if not holding anything or dont have enough money
-        if (gameManager.heldObj != null || gameManager.money < cost || gameManager.titheButton.activeInHierarchy)
+        if (gameManager.heldObj != null || gameManager.money < cost || gameManager.titheUI.activeInHierarchy)
         {
             return;
         }
