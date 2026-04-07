@@ -24,7 +24,10 @@ public class GameManager : MonoBehaviour
 
     public bool alreadyTithed = false;
     public int tax;
-    public GameObject titheButton;
+    public GameObject titheUI;
+    public TextMeshProUGUI statsTextTitheTowers;
+    public TextMeshProUGUI statsTextTitheMult;
+    public TextMeshProUGUI statsTextTitheCurse;
 
     public AudioSource audioSource;
 
@@ -44,6 +47,7 @@ public class GameManager : MonoBehaviour
         health = scriptVals.health;
         tax = scriptVals.tax;
     }
+    public List<Tower> towers;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -64,6 +68,12 @@ public class GameManager : MonoBehaviour
         //statsText.text = "Health: "+ health + "\nMoney: " + money + "\nPhase: " + phase + "\nCurse: " + currentCurseName;
         statsTextMoney.text = "" + money;
         healthBar.fillAmount = health / scriptVals.health;
+        if(titheUI.activeInHierarchy)
+        {
+            statsTextTitheTowers.text = "Towers:\n" + towers.Count;
+            statsTextTitheMult.text = "Multiplier:\n"+ (int)tax +"x";
+            statsTextTitheCurse.text = "Curse Info:\n--- TODO\n---\n---\n---";
+        }
 
         //get the mouse position
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -151,6 +161,17 @@ public class GameManager : MonoBehaviour
         }
 
         Destroy(towerItem);
+        //UpdateTowerList
+        UpdateTowerList();
+    }
+
+    public void UpdateTowerList()
+    {
+        towers.Clear();
+        foreach(Tower t in FindObjectsByType<Tower>(FindObjectsSortMode.None))
+        {
+            towers.Add(t);
+        }
     }
 
     private bool AddToMergeList(Tower tower)
@@ -214,7 +235,7 @@ public class GameManager : MonoBehaviour
             }
         }
         // show tithe button
-        titheButton.SetActive(true);
+        titheUI.SetActive(true);
     }
 
     public void Curse()
@@ -249,7 +270,7 @@ public class GameManager : MonoBehaviour
         if (phase != "shop") { return; }
 
         //hide tithe button
-        titheButton.SetActive(false);
+        titheUI.SetActive(false);
         Debug.Log("tithing...");
         money -= tax;
         if(money < 0)
@@ -263,7 +284,7 @@ public class GameManager : MonoBehaviour
     public void DontTithe()
     {
         //hide tithe button
-        titheButton.SetActive(false);
+        titheUI.SetActive(false);
     }
 
     public void ChangeTimeScale(float num)

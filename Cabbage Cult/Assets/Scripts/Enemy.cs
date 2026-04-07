@@ -74,7 +74,7 @@ public class Enemy : MonoBehaviour
             slowCounter -= Time.deltaTime;
             if (slowCounter <= 0)
             {
-                speed *= slowedAmt;
+                speed /= slowedAmt;
                 slowed = false;
             }
         }
@@ -121,12 +121,12 @@ public class Enemy : MonoBehaviour
     private void ShowHealth()
     {
         //change transparency of sprite to show health
-        float healthAlpha = 1.0f * health / scriptVals.enemyHealth;
-        if (healthAlpha > 1)
-            healthAlpha = 1;
-        if (healthAlpha <= 0)
-            healthAlpha = 0.01f;
-        GetComponent<SpriteRenderer>().color = new Color(0.9f, 0.1f, 0.1f, healthAlpha);
+        float healthColor = 1.0f * health / scriptVals.enemyHealth;
+        if (healthColor > 1)
+            healthColor = 1;
+        if (healthColor <= 0)
+            healthColor = 0.001f;
+        GetComponent<SpriteRenderer>().color = new Color(1.0f, healthColor, healthColor);
     }
 
     public void Damage(int amount, string effect, float num, float cooldown)
@@ -138,7 +138,7 @@ public class Enemy : MonoBehaviour
             if (!slowed)
             {
                 slowedAmt = num;
-                speed /= slowedAmt;
+                speed *= slowedAmt;
 
                 slowed = true;
                 slowCooldown = cooldown;

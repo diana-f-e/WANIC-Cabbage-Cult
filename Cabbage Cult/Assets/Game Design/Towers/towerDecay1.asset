@@ -19,7 +19,7 @@ MonoBehaviour:
   attackRadius: 3
   placeRadius: 1
   towerCost: 100
-  towerColor: {r: 0.3602035, g: 0, b: 0.4566037, a: 1}
+  towerColor: {r: 1, g: 1, b: 1, a: 1}
   effect: decay
   onAttack: {fileID: 8300000, guid: 0085bf832b2435e489cc404ccaad0f6d, type: 3}
   onPlace: {fileID: 8300000, guid: 50a7d3de857baae4c9361b5dc1925e32, type: 3}
