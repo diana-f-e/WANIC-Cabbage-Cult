@@ -17,4 +17,4 @@ MonoBehaviour:
   enemySpeed: 1
   onHurt: {fileID: 0}
   onDeath: {fileID: 0}
-  skin: {fileID: 0}
+  skin: {fileID: -6701165621028275949, guid: be9ae7b874b59084aaf13041bf74b67e, type: 3}
