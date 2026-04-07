@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI statsTextTitheTowers;
     public TextMeshProUGUI statsTextTitheMult;
     public TextMeshProUGUI statsTextTitheCurse;
+    public TextMeshProUGUI statsTextTithe;
 
     public AudioSource audioSource;
 
@@ -73,6 +74,7 @@ public class GameManager : MonoBehaviour
             statsTextTitheTowers.text = "Towers:\n" + towers.Count;
             statsTextTitheMult.text = "Multiplier:\n"+ (int)tax +"x";
             statsTextTitheCurse.text = "Curse Info:\n--- TODO\n---\n---\n---";
+            statsTextTithe.text = "Pay the " + towers.Count * (int)tax + " Soul Dust Tithe?";
         }
 
         //get the mouse position
@@ -268,16 +270,15 @@ public class GameManager : MonoBehaviour
     {
         if (alreadyTithed) { return; }
         if (phase != "shop") { return; }
+        if(tax * towers.Count > money)
+        {
+            return;
+        }
 
         //hide tithe button
         titheUI.SetActive(false);
         Debug.Log("tithing...");
-        money -= tax;
-        if(money < 0)
-        {
-            money = 0;
-        }
-
+        money -= tax * towers.Count;
         alreadyTithed = true;
     }
 
