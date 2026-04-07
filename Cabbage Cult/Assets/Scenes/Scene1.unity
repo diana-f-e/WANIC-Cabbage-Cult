@@ -214,6 +214,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2672276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4070,7 +4082,6 @@ MonoBehaviour:
   towerItem: {fileID: 3785610107287518472, guid: 74b5b09a6914f4249b5e4e591560196f, type: 3}
   cost: 100
   infoDisplay: {fileID: 1093824749}
-  textBox: {fileID: 0}
 --- !u!114 &236911913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5650,8 +5661,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -343, y: 0}
-  m_SizeDelta: {x: 100, y: 177.48691}
+  m_AnchoredPosition: {x: -345, y: 0.000021935}
+  m_SizeDelta: {x: 148.8, y: 159.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &559130531
 MonoBehaviour:
@@ -5666,14 +5677,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.75228024, g: 0, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4137744052999057349, guid: d7d3e2be59f0f134fb243f9d11ff00bc, type: 3}
+  m_Sprite: {fileID: -2503201390149090699, guid: f77c97ef7c7b4bd43afb8c11390120c6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6465,7 +6476,6 @@ MonoBehaviour:
   towerItem: {fileID: 3785610107287518472, guid: 74b5b09a6914f4249b5e4e591560196f, type: 3}
   cost: 250
   infoDisplay: {fileID: 1093824749}
-  textBox: {fileID: 0}
 --- !u!114 &719894994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9238,6 +9248,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 526779001}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ChangeSpeedButtonColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1360861329}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1360861330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9707,7 +9729,6 @@ MonoBehaviour:
   towerItem: {fileID: 3785610107287518472, guid: 74b5b09a6914f4249b5e4e591560196f, type: 3}
   cost: 150
   infoDisplay: {fileID: 1093824749}
-  textBox: {fileID: 0}
 --- !u!114 &1454119367
 MonoBehaviour:
   m_ObjectHideFlags: 0
