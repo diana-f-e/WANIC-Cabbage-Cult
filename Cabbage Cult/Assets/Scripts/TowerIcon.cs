@@ -25,7 +25,8 @@ public class TowerIcon : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        this.GetComponentInChildren<TextMeshProUGUI>().text = "" + scriptVals.towerType + ": " + scriptVals.towerCost;
+
     }
 
     // Update is called once per frame
