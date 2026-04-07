@@ -297,6 +297,18 @@ public class GameManager : MonoBehaviour
         money += amount;
     }
 
+    public void ChangeSpeedButtonColor(Button myButton)
+    {
+        if (Time.timeScale == 1)
+        {
+            myButton.GetComponentInChildren<TextMeshProUGUI>().color = Color.black;
+        }
+        else
+        {
+            myButton.GetComponentInChildren<TextMeshProUGUI>().color = Color.white;
+        }
+    }
+
 
 
 
