@@ -141,7 +141,7 @@ public class Tower : MonoBehaviour
 
     public void ApplyCurse(CurseSO curse)
     {
-        GetComponent<SpriteRenderer>().color = Color.cyan;
+        GetComponent<SpriteRenderer>().color = curse.curseColor;
         if (curse.cooldown != 0)
         {
             cooldown *= curse.cooldown;

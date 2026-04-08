@@ -3,6 +3,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "CurseSO", menuName = "Scriptable Objects/CurseSO")]
 public class CurseSO : ScriptableObject
 {
+    [Header("If we have curses that cannot be implemented with this, tell me the name and")]
+    [Header("leave everything else as 0. I will implement it in code.")]
     public string curseName;
     public Color curseColor;
 
