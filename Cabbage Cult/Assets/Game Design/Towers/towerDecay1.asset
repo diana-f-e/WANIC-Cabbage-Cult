@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d9016dda2ad7aa4a952f58554d44add, type: 3}
   m_Name: towerDecay1
   m_EditorClassIdentifier: 
-  towerType: '"decay"'
+  towerType: decay
   towerLevel: 1
   cooldown: 1
   damage: 0
