@@ -153,6 +153,7 @@ public class Tower : MonoBehaviour
         if (curse.attackRadius != 0)
         {
             attackingCollider.radius *= curse.attackRadius;
+            attackingCollider.gameObject.GetComponent<SpriteRenderer>().size = attackingCollider.gameObject.GetComponent<CircleCollider2D>().bounds.size;
         }
         if (curse.effectNum != 0)
         {
