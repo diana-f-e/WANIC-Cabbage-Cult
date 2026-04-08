@@ -21,6 +21,9 @@ public class GameManager : MonoBehaviour
     public List<Tower> mergeList;
     public string mergeType;
     public int mergeLevel;
+    public Image[] mergePreviewMinis;
+    //public Image mergePreview;
+
 
     public bool alreadyTithed = false;
     public int tax;
@@ -224,6 +227,7 @@ public class GameManager : MonoBehaviour
         }
         //if theres an open spot: add the tower, change to selected sprite and return true
         mergeList.Add(tower);
+        displayMergeList();
         tower.MergeSelect();
 
 
@@ -242,7 +246,39 @@ public class GameManager : MonoBehaviour
             //Change mergeType to null
             mergeType = null;
         }
+        displayMergeList();
         return true;
+    }
+
+    public void displayMergeList()
+    {
+        //display merge list
+        int index = 0;
+        foreach (Image i in mergePreviewMinis)
+        {
+            if(mergeList.Count < index + 1)
+            {
+                i.gameObject.SetActive(false);
+                break;
+            }
+            else
+            {
+                Sprite newSprite = mergeList[index].GetComponent<SpriteRenderer>().sprite;
+                i.gameObject.gameObject.SetActive(true);
+                i.sprite = newSprite;
+            }
+            index++;
+        }
+        /*
+        if (mergeList.Count == 3)
+        {
+            mergePreview.gameObject.SetActive(true);
+            mergePreview.sprite = FindFirstObjectByType<MergeButton>().GetUpgradedTowerSO().skin;
+        }
+        else
+        {
+            mergePreview.gameObject.SetActive(false);
+        }*/
     }
 
     public void StartShopPhase()
