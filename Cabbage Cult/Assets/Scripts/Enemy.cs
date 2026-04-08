@@ -41,6 +41,7 @@ public class Enemy : MonoBehaviour
         damage = scriptVals.enemyDamage;
         health = scriptVals.enemyHealth;
         speed = scriptVals.enemySpeed;
+        helmetHealth = scriptVals.helmetHealth;
         if(scriptVals.skin != null)
         {
             GetComponent<SpriteRenderer>().sprite = scriptVals.skin;

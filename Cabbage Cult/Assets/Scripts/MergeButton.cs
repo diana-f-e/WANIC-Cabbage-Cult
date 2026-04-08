@@ -47,7 +47,7 @@ public class MergeButton : MonoBehaviour
         gameManager.UpdateTowerList();
     }
 
-    private TowerSO GetUpgradedTowerSO()
+    public TowerSO GetUpgradedTowerSO()
     {
         //TODO return the correct tower based on gamemanager type and level
         string towerType = gameManager.mergeType;

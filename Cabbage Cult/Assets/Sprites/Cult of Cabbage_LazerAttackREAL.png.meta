@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 62acbefb4cd599049a06d1e97e1045fe
+guid: 8fe92502bbb0f5345853410b3bcb1273
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1828416675007922217
-    second: mouth_stage1_0
+      213: 6502952492356474659
+    second: Cult of Cabbage_LazerAttackREAL_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 250
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mouth_stage1_0
+      name: Cult of Cabbage_LazerAttackREAL_0
       rect:
         serializedVersion: 2
-        x: 47
-        y: 23
-        width: 248
-        height: 373
+        x: 0
+        y: 0
+        width: 379
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9208f3f4747df5910800000000000000
-      internalID: 1828416675007922217
+      spriteID: 327162276d02f3a50800000000000000
+      internalID: 6502952492356474659
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      mouth_stage1_0: 1828416675007922217
+      Cult of Cabbage_LazerAttackREAL_0: 6502952492356474659
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
