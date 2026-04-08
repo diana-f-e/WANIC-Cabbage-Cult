@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
 
     public CurseSO[] curseSOs;
     public float[] curseWeights;
+    public float[] curseCutoffs;
 
     public Image healthBar;
     public GameObject pauseMenu;
@@ -53,7 +54,33 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
+        //generate cuttoffs for randomization: get magnitude etc etc
+        float chanceMagnitude = 0;
+        for (int i = 0; i < curseWeights.Length; i++)
+        {
+            chanceMagnitude += curseWeights[i];
+        }
+        curseCutoffs = new float[curseWeights.Length];
+
+        Debug.Log("cutoffs: ");
+        float runningTotal = 0;
+        for (int i = 0; i < curseWeights.Length; i++)
+        {
+            curseCutoffs[i] = runningTotal / chanceMagnitude;
+            Debug.Log("[" + i + "]: " + curseCutoffs[i]);
+            runningTotal += curseWeights[i];
+        }
+
+        statsTextTitheCurse.text = "Curse Info:\n";
+        int currentIndex = 0;
+        foreach (CurseSO c in curseSOs)
+        {
+            statsTextTitheCurse.text += "" + c.curseName + ": " + (int)(curseWeights[currentIndex] / chanceMagnitude * 100) + "%\n";
+            currentIndex++;
+        }
+
+
     }
 
     // Update is called once per frame
@@ -73,7 +100,6 @@ public class GameManager : MonoBehaviour
         {
             statsTextTitheTowers.text = "Towers:\n" + towers.Count;
             statsTextTitheMult.text = "Multiplier:\n"+ (int)tax +"x";
-            statsTextTitheCurse.text = "Curse Info:\n--- TODO\n---\n---\n---";
             statsTextTithe.text = "Pay the " + towers.Count * (int)tax + " Soul Dust Tithe?";
         }
 
@@ -242,13 +268,35 @@ public class GameManager : MonoBehaviour
 
     public void Curse()
     {
-        //example curse: reduce
-        currentCurseName = "ex. " + curseSOs[0].curseName;
-        currentCurse = curseSOs[0];
+        float myRand = 0;
+        CurseSO chosenCurseSO = null;
+        //to randomly generate: for each enemy, random val, and cutoff decides type
+        myRand = Random.value;
+        for (int j = 0; j < curseCutoffs.Length; j++)
+        {
+            if (myRand >= curseCutoffs[j])
+            {
+                chosenCurseSO = curseSOs[j];
+            }
+            else
+            {
+                break;
+            }
+            //Debug.Log("MiniWave builder: i = "+i+", j = "+j+", enemies[i] = " + enemies[i].name);
+        }
+        if (chosenCurseSO == null)
+        {
+            Debug.Log("myRand failed:  " + myRand);
+            chosenCurseSO = curseSOs[0];
+
+        }
+
+        currentCurseName = chosenCurseSO.curseName;
+        currentCurse = chosenCurseSO;//curseSOs[0];
         Tower[] towers = FindObjectsByType<Tower>(FindObjectsSortMode.None);
         foreach(Tower t in towers)
         {
-            t.ApplyCurse(curseSOs[0]);
+            t.ApplyCurse(chosenCurseSO);
         }
     }
 
