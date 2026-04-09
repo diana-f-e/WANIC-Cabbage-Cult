@@ -15,9 +15,10 @@ public class TowerInfoDisplayHider : MonoBehaviour, IPointerExitHandler
     {
 
     }
+
     public void OnPointerExit(PointerEventData eventData)
     {
-        Debug.Log("AA");
-        infoDisplay.SetActive(false);
+        //Debug.Log("AA");
+        //infoDisplay.SetActive(false);
     }
 }

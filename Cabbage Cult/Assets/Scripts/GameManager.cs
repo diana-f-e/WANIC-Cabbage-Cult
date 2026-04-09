@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     public string mergeType;
     public int mergeLevel;
     public Image[] mergePreviewMinis;
+    public Image[] mergePreviewMiniCopies;
     //public Image mergePreview;
 
 
@@ -259,7 +260,6 @@ public class GameManager : MonoBehaviour
             if(mergeList.Count < index + 1)
             {
                 i.gameObject.SetActive(false);
-                break;
             }
             else
             {
@@ -267,6 +267,8 @@ public class GameManager : MonoBehaviour
                 i.gameObject.gameObject.SetActive(true);
                 i.sprite = newSprite;
             }
+            mergePreviewMiniCopies[index].sprite = i.sprite;
+            mergePreviewMiniCopies[index].gameObject.SetActive(i.gameObject.activeSelf);
             index++;
         }
         /*

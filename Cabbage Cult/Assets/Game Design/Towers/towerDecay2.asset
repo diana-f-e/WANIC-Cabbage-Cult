@@ -19,11 +19,11 @@ MonoBehaviour:
   attackRadius: 3
   placeRadius: 1
   towerCost: 0
-  towerColor: {r: 0.47166136, g: 0.2023994, b: 0.81886786, a: 1}
+  towerColor: {r: 1, g: 1, b: 1, a: 1}
   effect: decay
   onAttack: {fileID: 8300000, guid: 0085bf832b2435e489cc404ccaad0f6d, type: 3}
   onPlace: {fileID: 8300000, guid: 5254f968a15ad4942999b610c0c15737, type: 3}
   onBuy: {fileID: 0}
-  skin: {fileID: -2503201390149090699, guid: f77c97ef7c7b4bd43afb8c11390120c6, type: 3}
+  skin: {fileID: 9149414102983926309, guid: 6502f2e1b0c0db442b81e9af21a8b814, type: 3}
   effectNum: 40
   effectCooldown: 0.75
