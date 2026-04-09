@@ -259,7 +259,6 @@ public class GameManager : MonoBehaviour
             if(mergeList.Count < index + 1)
             {
                 i.gameObject.SetActive(false);
-                break;
             }
             else
             {
