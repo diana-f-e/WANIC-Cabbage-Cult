@@ -45,6 +45,7 @@ public class MergeButton : MonoBehaviour
         }
         //UpdateTowerList
         gameManager.UpdateTowerList();
+        gameManager.displayMergeList();
     }
 
     public TowerSO GetUpgradedTowerSO()
