@@ -17262,7 +17262,7 @@ PrefabInstance:
       objectReference: {fileID: 582781636}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: curseSOs.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: statsTextTitheCurse
@@ -17289,8 +17289,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 3cd7b15322bfdb6488f290adc9a7111d, type: 2}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: 'curseSOs.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: a9bebfbbc99848e4d96bd2fba873089f, type: 2}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: 'curseSOs.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: a9bebfbbc99848e4d96bd2fba873089f, type: 2}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: curseWeights.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: 'curseWeights.Array.data[0]'
@@ -17303,6 +17311,10 @@ PrefabInstance:
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: 'curseWeights.Array.data[2]'
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: 'curseWeights.Array.data[3]'
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: mergePreviewMinis.Array.size

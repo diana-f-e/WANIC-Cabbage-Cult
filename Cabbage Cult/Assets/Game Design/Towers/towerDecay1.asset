@@ -16,7 +16,7 @@ MonoBehaviour:
   towerLevel: 1
   cooldown: 1
   damage: 0
-  attackRadius: 3
+  attackRadius: 2.5
   placeRadius: 1
   towerCost: 100
   towerColor: {r: 1, g: 1, b: 1, a: 1}
@@ -25,5 +25,5 @@ MonoBehaviour:
   onPlace: {fileID: 8300000, guid: 50a7d3de857baae4c9361b5dc1925e32, type: 3}
   onBuy: {fileID: 0}
   skin: {fileID: -2503201390149090699, guid: f77c97ef7c7b4bd43afb8c11390120c6, type: 3}
-  effectNum: 20
+  effectNum: 10
   effectCooldown: 1
