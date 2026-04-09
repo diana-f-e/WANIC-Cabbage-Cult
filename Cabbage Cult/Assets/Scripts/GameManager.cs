@@ -409,11 +409,11 @@ public class GameManager : MonoBehaviour
     {
         if (Time.timeScale == 1)
         {
-            myButton.GetComponentInChildren<Image>().color = Color.gray;
+            myButton.GetComponentInChildren<Image>().color = Color.white;
         }
         else
         {
-            myButton.GetComponentInChildren<Image>().color = Color.white;
+            myButton.GetComponentInChildren<Image>().color = Color.gray;
         }
     }
 
