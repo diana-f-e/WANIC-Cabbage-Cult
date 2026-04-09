@@ -15,7 +15,7 @@ MonoBehaviour:
   towerType: melee
   towerLevel: 3
   cooldown: 0.5
-  damage: 40
+  damage: 90
   attackRadius: 3
   placeRadius: 1
   towerCost: 0
