@@ -319,7 +319,7 @@ public class Spawner : MonoBehaviour
         miniWaveIndex = 0;
         miniWaveGoal = waves[waveIndex].miniWaves.Length;
         enemyGoal = waves[waveIndex].miniWaves[miniWaveIndex].enemies.Length;
-        statsTextWave.text = "Wave\n" + (waveIndex + 1);
+        statsTextWave.text = "Day\n" + (waveIndex + 1);
 
 
     }
