@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   miniWaves:
   - {fileID: 11400000, guid: ea4742e1022d12c4b8e6fb9d5286435c, type: 2}
-  - {fileID: 11400000, guid: 7ceaff587df17bc489bf6dff864c4fb7, type: 2}
-  - {fileID: 11400000, guid: 7ceaff587df17bc489bf6dff864c4fb7, type: 2}
+  - {fileID: 11400000, guid: e964cfa09353d144fa69765a9e451575, type: 2}
   - {fileID: 11400000, guid: ef1214d4d907f24428b12ce6be622c59, type: 2}
   - {fileID: 11400000, guid: 870409f79a4ef2447b7ffbcee80040da, type: 2}
   note: 

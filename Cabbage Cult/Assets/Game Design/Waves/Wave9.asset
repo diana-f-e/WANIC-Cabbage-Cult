@@ -15,9 +15,6 @@ MonoBehaviour:
   miniWaves:
   - {fileID: 11400000, guid: 95da6d3cdb2ed9241bef1fb1d7382151, type: 2}
   - {fileID: 11400000, guid: ea4742e1022d12c4b8e6fb9d5286435c, type: 2}
-  - {fileID: 11400000, guid: 7ceaff587df17bc489bf6dff864c4fb7, type: 2}
   - {fileID: 11400000, guid: 870409f79a4ef2447b7ffbcee80040da, type: 2}
-  - {fileID: 11400000, guid: ea4742e1022d12c4b8e6fb9d5286435c, type: 2}
-  - {fileID: 11400000, guid: ea4742e1022d12c4b8e6fb9d5286435c, type: 2}
   - {fileID: 11400000, guid: ea4742e1022d12c4b8e6fb9d5286435c, type: 2}
   note: 

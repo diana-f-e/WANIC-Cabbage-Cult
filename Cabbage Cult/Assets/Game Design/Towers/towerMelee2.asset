@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerType: melee
   towerLevel: 2
-  cooldown: 1.5
-  damage: 60
+  cooldown: 1
+  damage: 25
   attackRadius: 2.5
   placeRadius: 1
   towerCost: 0
@@ -24,6 +24,6 @@ MonoBehaviour:
   onAttack: {fileID: 8300000, guid: b2a6007724a56c449a61383aca98c122, type: 3}
   onPlace: {fileID: 8300000, guid: 5254f968a15ad4942999b610c0c15737, type: 3}
   onBuy: {fileID: 0}
-  skin: {fileID: 1019658227202165358, guid: 7e2a0812128facc4ebabc7b5e79fdc9e, type: 3}
-  effectNum: 0.7
+  skin: {fileID: -3695747079076597807, guid: bdc1c7d25781e464d91e80d1446427f2, type: 3}
+  effectNum: 0.5
   effectCooldown: 3
