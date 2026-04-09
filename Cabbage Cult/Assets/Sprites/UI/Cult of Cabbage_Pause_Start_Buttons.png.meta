@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: 29461d55afc669f4784e878e67636010
+guid: cf71d750ed455ef48807797f95b18c5e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7656974713994529759
-    second: mouth1_0
+      213: -8755714045044458723
+    second: Cult of Cabbage_Pause_Start_Buttons_0
   - first:
-      213: 7564538146242512995
-    second: mouth1_1
-  - first:
-      213: 3159875014893740609
-    second: mouth1_2
+      213: -8489624342562911570
+    second: Cult of Cabbage_Pause_Start_Buttons_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 250
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -119,57 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mouth1_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 368
-        width: 348
-        height: 368
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1243536e016fcb590800000000000000
-      internalID: -7656974713994529759
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mouth1_1
-      rect:
-        serializedVersion: 2
-        x: 348
-        y: 368
-        width: 348
-        height: 368
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3684da88d53aaf860800000000000000
-      internalID: 7564538146242512995
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mouth1_2
+      name: Cult of Cabbage_Pause_Start_Buttons_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 348
-        height: 368
+        width: 147
+        height: 147
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 142af5595912adb20800000000000000
-      internalID: 3159875014893740609
+      spriteID: d1bf93e37747d7680800000000000000
+      internalID: -8755714045044458723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cult of Cabbage_Pause_Start_Buttons_1
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 0
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaa4701f3abce2a80800000000000000
+      internalID: -8489624342562911570
       vertices: []
       indices: 
       edges: []
@@ -188,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4db153b2115bdb8449db2f239f19640a
+    spriteID: c86dd7ffaa4c16d46857b05e00618e7f
     internalID: 0
     vertices: []
     indices: 
@@ -198,9 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      mouth1_0: -7656974713994529759
-      mouth1_1: 7564538146242512995
-      mouth1_2: 3159875014893740609
+      Cult of Cabbage_Pause_Start_Buttons_0: -8755714045044458723
+      Cult of Cabbage_Pause_Start_Buttons_1: -8489624342562911570
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
