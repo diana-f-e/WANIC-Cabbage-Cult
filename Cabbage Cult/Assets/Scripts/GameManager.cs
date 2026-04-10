@@ -34,6 +34,9 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI statsTextTitheCurse;
     public TextMeshProUGUI statsTextTithe;
 
+    public GameObject waveUI;
+    public TextMeshProUGUI curseText;
+
     public AudioSource audioSource;
 
     public GameObject debugMenu;
@@ -302,6 +305,8 @@ public class GameManager : MonoBehaviour
         }
         // show tithe button
         titheUI.SetActive(true);
+        curseText.text = "You are not cursed. Cva'pfel-roth has been appeased.";
+        waveUI.SetActive(false);
     }
 
     public void Curse()
@@ -336,6 +341,8 @@ public class GameManager : MonoBehaviour
         {
             t.ApplyCurse(chosenCurseSO);
         }
+        //show curse
+        curseText.text = "You are cursed! Cva'pfel-roth has inflicted "+ chosenCurseSO.curseName + ".";
     }
 
     public void OldCurse()
