@@ -321,6 +321,8 @@ public class Spawner : MonoBehaviour
         enemyGoal = waves[waveIndex].miniWaves[miniWaveIndex].enemies.Length;
         statsTextWave.text = "Day\n" + (waveIndex + 1);
 
+        gameManager.waveUI.SetActive(true);
+
 
     }
 
