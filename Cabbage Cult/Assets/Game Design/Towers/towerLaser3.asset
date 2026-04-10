@@ -17,7 +17,7 @@ MonoBehaviour:
   cooldown: 2.5
   damage: 500
   attackRadius: 6
-  placeRadius: 1
+  placeRadius: 0.5
   towerCost: 0
   towerColor: {r: 1, g: 0.7766574, b: 0.47358483, a: 1}
   effect: 
