@@ -29,6 +29,8 @@ public class Enemy : MonoBehaviour
     private float slowCounter;
     private float slowedAmt;
 
+    
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -136,6 +138,8 @@ public class Enemy : MonoBehaviour
         //apply effect
         if (effect == "slow")
         {
+            //TODO animation
+            
             if (!slowed)
             {
                 slowedAmt = num;
@@ -158,6 +162,7 @@ public class Enemy : MonoBehaviour
                 decayCounter = decayCooldown;
             }
         }
+        PlayAnimation(effect);
 
     }
 
@@ -184,6 +189,17 @@ public class Enemy : MonoBehaviour
             gameManager.audioSource.PlayOneShot(scriptVals.onHurt);
         }
 
+    }
+
+    public void PlayAnimation(string effect)
+    {
+        //TODO
+        /*
+        Animator anim = GetComponentInChildren<Animator>();
+        if(effect == "decay")
+        {
+            anim.Play("AnimationClipName");
+        }*/
     }
 
 }
