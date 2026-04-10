@@ -1,7 +1,9 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class Tower : MonoBehaviour
+public class Tower : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public TowerSO scriptVals;
     public CircleCollider2D attackingCollider;
@@ -25,11 +27,13 @@ public class Tower : MonoBehaviour
     public float effectNum;
     public float effectCooldown;
 
+    public GameObject infoDisplay;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         timerCounter = cooldown;
-
+        infoDisplay = gameManager.towerInfoDisplay;
         assignScriptVals();
     }
 
@@ -107,7 +111,7 @@ public class Tower : MonoBehaviour
         {
             target.Damage(damage, effect, effectNum, effectCooldown);
         }
-        gameManager.audioSource.PlayOneShot(onAttack);
+        GetComponent<AudioSource>().PlayOneShot(onAttack);
         AnimateAttack(target);
         //Debug.Log("pew pew");
 
@@ -173,5 +177,17 @@ public class Tower : MonoBehaviour
     effectCooldown;*/
 
     }
-    
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        Debug.Log("gumba OnPointerEnter");
+        infoDisplay.GetComponentInChildren<TextMeshProUGUI>().text = gameManager.GetTowerDisplayText(scriptVals);
+        infoDisplay.SetActive(true);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        Debug.Log("gumba OnPointerExit");
+        infoDisplay.SetActive(false);
+    }
+
 }

@@ -8,7 +8,7 @@ public class TowerIcon : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     public GameManager gameManager;
     public GameObject towerItem;
     public int cost;
-    public GameObject infoDisplay;
+    private GameObject infoDisplay;
 
     //public TextMeshProUGUI textBox;
 
@@ -26,6 +26,7 @@ public class TowerIcon : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     void Start()
     {
         this.GetComponentInChildren<TextMeshProUGUI>().text = "" + scriptVals.towerType + ": " + scriptVals.towerCost;
+        infoDisplay = gameManager.towerInfoDisplay;
 
     }
 
@@ -61,15 +62,7 @@ public class TowerIcon : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     //display the tower's stats 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        string displayText = "";
-        displayText += scriptVals.towerType + " Tower \n";
-        displayText += " - damage per attack: " + scriptVals.damage + "\n";
-        displayText += " - attack cooldown: " + scriptVals.cooldown + " seconds\n";
-        if(scriptVals.effect != "" && scriptVals.effect != null)
-        {
-            displayText += " - attack effect: " + scriptVals.effect + "\n";
-        }
-        infoDisplay.GetComponentInChildren<TextMeshProUGUI>().text = displayText;
+        infoDisplay.GetComponentInChildren<TextMeshProUGUI>().text = gameManager.GetTowerDisplayText(scriptVals);
         infoDisplay.SetActive(true);
     }
 

@@ -50,6 +50,10 @@ public class GameManager : MonoBehaviour
 
     public Image healthBar;
     public GameObject pauseMenu;
+
+    public AudioClip shopMusic;
+    public AudioClip waveMusic;
+
     private void OnValidate()
     {
         money = scriptVals.money;
@@ -57,6 +61,7 @@ public class GameManager : MonoBehaviour
         tax = scriptVals.tax;
     }
     public List<Tower> towers;
+    public GameObject towerInfoDisplay;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -307,6 +312,8 @@ public class GameManager : MonoBehaviour
         titheUI.SetActive(true);
         curseText.text = "You are not cursed. Cva'pfel-roth has been appeased.";
         waveUI.SetActive(false);
+        audioSource.clip = shopMusic;
+        audioSource.Play();
     }
 
     public void Curse()
@@ -422,6 +429,19 @@ public class GameManager : MonoBehaviour
         {
             myButton.GetComponentInChildren<Image>().color = Color.gray;
         }
+    }
+
+    public string GetTowerDisplayText(TowerSO scriptVals)
+    {
+        string displayText = "";
+        displayText += scriptVals.towerType + " Tower \n";
+        displayText += " - damage per attack: " + scriptVals.damage + "\n";
+        displayText += " - attack cooldown: " + scriptVals.cooldown + " seconds\n";
+        if (scriptVals.effect != "" && scriptVals.effect != null)
+        {
+            displayText += " - attack effect: " + scriptVals.effect + "\n";
+        }
+        return displayText;
     }
 
 

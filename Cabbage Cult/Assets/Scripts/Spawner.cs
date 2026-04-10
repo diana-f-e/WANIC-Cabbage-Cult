@@ -323,6 +323,9 @@ public class Spawner : MonoBehaviour
 
         gameManager.waveUI.SetActive(true);
 
+        gameManager.audioSource.clip = gameManager.waveMusic;
+        gameManager.audioSource.Play();
+
 
     }
 
