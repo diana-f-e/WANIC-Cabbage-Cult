@@ -85,7 +85,7 @@ public class GameManager : MonoBehaviour
             runningTotal += curseWeights[i];
         }
 
-        statsTextTitheCurse.text = "Curse Info:\n";
+        statsTextTitheCurse.text = "Curse Chances:\n";
         int currentIndex = 0;
         foreach (CurseSO c in curseSOs)
         {
