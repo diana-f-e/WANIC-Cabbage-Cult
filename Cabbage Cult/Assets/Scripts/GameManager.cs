@@ -64,6 +64,8 @@ public class GameManager : MonoBehaviour
     public List<Tower> towers;
     public GameObject towerInfoDisplay;
 
+    public GameObject[] hitEffects;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -497,6 +499,11 @@ Attack CD: Average
 Effect DMG: ?????
 This tower applies the Decay effect to hit enemies, dealing 10>40>80 damage every second it’s applied at level 1>2>3.
          */
+    }
+
+    public GameObject getHitEffectPrefab(string effect)
+    {
+        return hitEffects[0];
     }
 
 
