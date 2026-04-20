@@ -194,12 +194,12 @@ public class Enemy : MonoBehaviour
     public void PlayAnimation(string effect)
     {
         //TODO
-        /*
+        
         Animator anim = GetComponentInChildren<Animator>();
-        if(effect == "decay")
+        if(effect == "laser")
         {
-            anim.Play("AnimationClipName");
-        }*/
+            anim.Play("LaserClip");
+        }
     }
 
 }
