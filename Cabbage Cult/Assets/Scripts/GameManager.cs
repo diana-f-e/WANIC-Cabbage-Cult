@@ -85,7 +85,7 @@ public class GameManager : MonoBehaviour
             runningTotal += curseWeights[i];
         }
 
-        statsTextTitheCurse.text = "Curse Info:\n";
+        statsTextTitheCurse.text = "Curse Chances:\n";
         int currentIndex = 0;
         foreach (CurseSO c in curseSOs)
         {
@@ -442,11 +442,11 @@ public class GameManager : MonoBehaviour
         {
             if(scriptVals.damage > 20 * i)
             {
-                displayText += "?";
+                displayText += "\u2605";
             }
             else
             {
-                displayText += "?";
+                displayText += "\u2606";
             }
         }
         displayText += "\n";
@@ -477,11 +477,11 @@ public class GameManager : MonoBehaviour
             {
                 if (scriptVals.effectNum > 20 * i)
                 {
-                    displayText += "?";
+                    displayText += "\u2605";
                 }
                 else
                 {
-                    displayText += "?";
+                    displayText += "\u2606";
                 }
             }
             displayText += "\n";
