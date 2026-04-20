@@ -3,6 +3,7 @@ using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using NUnit.Framework.Internal;
 
 public class GameManager : MonoBehaviour
 {
@@ -435,13 +436,67 @@ public class GameManager : MonoBehaviour
     {
         string displayText = "";
         displayText += scriptVals.towerType + " Tower \n";
-        displayText += " - damage per attack: " + scriptVals.damage + "\n";
-        displayText += " - attack cooldown: " + scriptVals.cooldown + " seconds\n";
+        //damage display
+        displayText += "DMG: ";
+        for(int i = 0; i < 5; i++)
+        {
+            if(scriptVals.damage > 20 * i)
+            {
+                displayText += "?";
+            }
+            else
+            {
+                displayText += "?";
+            }
+        }
+        displayText += "\n";
+        displayText += "ATK Cooldown: " + scriptVals.cooldown;
+        if(scriptVals.cooldown > 1)
+        {
+            displayText += " seconds\n";
+        }
+        else
+        {
+            displayText += " second\n";
+        }
+        //display effect
         if (scriptVals.effect != "" && scriptVals.effect != null)
         {
-            displayText += " - attack effect: " + scriptVals.effect + "\n";
+            
+            if (scriptVals.effect == "decay")
+            {
+                displayText += "Effect DMG: ";
+                
+            }
+            else if (scriptVals.effect == "slow")
+            {
+                displayText += "Effect Slow: ";
+            }
+
+            for (int i = 0; i < 5; i++)
+            {
+                if (scriptVals.effectNum > 20 * i)
+                {
+                    displayText += "?";
+                }
+                else
+                {
+                    displayText += "?";
+                }
+            }
+            displayText += "\n";
         }
+        
+        displayText += scriptVals.description;
         return displayText;
+
+        /*
+         * Decay Tower
+DMG: ?????
+Attack CD: Average
+Effect DMG: ?????
+This tower applies the Decay effect to hit enemies, dealing 10>40>80 damage every second it’s applied at level 1>2>3.
+         */
     }
 
 

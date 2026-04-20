@@ -21,4 +21,6 @@ public class TowerSO : ScriptableObject
 
     public float effectNum;
     public float effectCooldown;
+
+    public string description;
 }
