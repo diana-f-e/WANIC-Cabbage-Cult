@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc45781756f9c0f468772d9c3e5d6797, type: 3}
   m_Name: C_SmallRadius
   m_EditorClassIdentifier: 
-  curseName: Small Radius
+  curseName: Lesser Range
   curseColor: {r: 1, g: 0.51450044, b: 0, a: 1}
   cooldown: 0
   damage: 0
