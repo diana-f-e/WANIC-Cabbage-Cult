@@ -4995,7 +4995,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Once you have placed three followers of the same type, you can select them
-    using right click to merge into an even more powerful being!
+    through right click and then click the MERGE button to merge them.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: afa0a66607c20c142ba8d9a384e21f7c, type: 2}
   m_sharedMaterial: {fileID: -8018622220918054729, guid: afa0a66607c20c142ba8d9a384e21f7c, type: 2}
@@ -6635,8 +6635,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Before you can transmutate your followers, you must pay a tithe to the
-    Cva'pfel-roth the Old One. Should you refuse, your followers will be cursed during
+  m_text: Before you can summon new followers, you must pay a tithe to Cva'pfel-roth
+    the Old One. Should you refuse, your followers will receive a random curse during
     the following onslaught.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: afa0a66607c20c142ba8d9a384e21f7c, type: 2}
@@ -6997,7 +6997,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: In 30 days, the planets will align perfectly for you to summon Cva'pfel-roth!
+  m_text: In 10 days, the planets will align perfectly for you to summon Cva'pfel-roth!
     However, the townspeople know of your plan, and will attack you in onslaughts
     each night.
   m_isRightToLeft: 0
@@ -8054,7 +8054,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: To transform your cultists, you must spend soul dust, shown here.
+  m_text: To summon new cultists, you must spend soul dust, shown here.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: afa0a66607c20c142ba8d9a384e21f7c, type: 2}
   m_sharedMaterial: {fileID: -8018622220918054729, guid: afa0a66607c20c142ba8d9a384e21f7c, type: 2}
@@ -8546,7 +8546,7 @@ MonoBehaviour:
   scriptVals: {fileID: 11400000, guid: 6f6f9b881c54bf24c8352e14dfec023b, type: 2}
   gameManager: {fileID: 526779001}
   towerItem: {fileID: 3785610107287518472, guid: 74b5b09a6914f4249b5e4e591560196f, type: 3}
-  cost: 250
+  cost: 300
 --- !u!114 &719894994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15797,8 +15797,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15.777, y: -63.908}
-  m_SizeDelta: {x: 1598.025, y: 579.733}
+  m_AnchoredPosition: {x: 15.777, y: -180.266}
+  m_SizeDelta: {x: 1598.025, y: 812.462}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1780867137
 MonoBehaviour:

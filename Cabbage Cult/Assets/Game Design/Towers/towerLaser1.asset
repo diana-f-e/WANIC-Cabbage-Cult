@@ -18,7 +18,7 @@ MonoBehaviour:
   damage: 100
   attackRadius: 3.5
   placeRadius: 0.5
-  towerCost: 250
+  towerCost: 300
   towerColor: {r: 1, g: 1, b: 1, a: 1}
   effect: 
   onAttack: {fileID: 8300000, guid: a0128dc2277938a4bb07d89e749b3a18, type: 3}
