@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviour
     private float slowCounter;
     private float slowedAmt;
 
-    
+    private GameObject hitEffect;
 
 
 
@@ -48,6 +48,7 @@ public class Enemy : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().sprite = scriptVals.skin;
         }
+
 
     }
 
@@ -194,12 +195,14 @@ public class Enemy : MonoBehaviour
     public void PlayAnimation(string effect)
     {
         //TODO
-        
+        //GameObject newHitEffect = Instantiate(gameManager.getHitEffectPrefab(effect), transform.position, Quaternion.identity);
+
+        /*
         Animator anim = GetComponentInChildren<Animator>();
         if(effect == "laser")
         {
             anim.Play("LaserClip");
-        }
+        }*/
     }
 
 }
