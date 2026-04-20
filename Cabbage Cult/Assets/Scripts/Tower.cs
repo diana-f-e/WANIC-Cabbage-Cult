@@ -80,6 +80,7 @@ public class Tower : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = scriptVals.skin;
         }
+        attackingCollider.gameObject.GetComponent<SpriteRenderer>().size = attackingCollider.gameObject.GetComponent<CircleCollider2D>().bounds.size;
     }
 
 
