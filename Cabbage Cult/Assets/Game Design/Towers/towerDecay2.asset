@@ -27,3 +27,5 @@ MonoBehaviour:
   skin: {fileID: 9149414102983926309, guid: 6502f2e1b0c0db442b81e9af21a8b814, type: 3}
   effectNum: 40
   effectCooldown: 0.75
+  description: "Applies the Decay effect to hit enemies, dealing 20>40>80 damage
+    for every second it\u2019s applied at level 1>2>3."

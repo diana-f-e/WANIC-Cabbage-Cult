@@ -27,3 +27,4 @@ MonoBehaviour:
   skin: {fileID: -8954459809086255966, guid: 8a6351fefe2b5ed41b7a638f7e8695fe, type: 3}
   effectNum: 0
   effectCooldown: 0
+  description: Does massive damage to a single target in exchange for a longer cooldown.

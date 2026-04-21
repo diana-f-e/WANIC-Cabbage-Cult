@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: Wave10
   m_EditorClassIdentifier: 
   miniWaves:
+  - {fileID: 11400000, guid: bddc8b6155ef2d9499dea32f15f60d01, type: 2}
   - {fileID: 11400000, guid: ea4742e1022d12c4b8e6fb9d5286435c, type: 2}
   - {fileID: 11400000, guid: ea4742e1022d12c4b8e6fb9d5286435c, type: 2}
   - {fileID: 11400000, guid: ea4742e1022d12c4b8e6fb9d5286435c, type: 2}
-  note: 
+  note: '-For the final wave, it now consists of only the hardest enemy type: tanks,
+    made to ensure that the player''s defense is airtight and able to withstand this
+    pressure utilizing their towers to make the most of the damage and effects they
+    do'

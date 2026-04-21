@@ -17,4 +17,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e964cfa09353d144fa69765a9e451575, type: 2}
   - {fileID: 11400000, guid: ef1214d4d907f24428b12ce6be622c59, type: 2}
   - {fileID: 11400000, guid: 870409f79a4ef2447b7ffbcee80040da, type: 2}
-  note: 
+  note: -Wave 7 starts mixing together all the enemy types and is the first of its
+    kind to do so, testing the defense of the player to see if they've been accustoming
+    to the weakness of each enemy type
