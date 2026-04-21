@@ -16,4 +16,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 47256b3c67a03eb4d92f1b088fac1936, type: 2}
   - {fileID: 11400000, guid: 870409f79a4ef2447b7ffbcee80040da, type: 2}
   - {fileID: 11400000, guid: ea4742e1022d12c4b8e6fb9d5286435c, type: 2}
-  note: 
+  note: -Now the next wave removes the basic enemy type completely to make the final
+    few waves consist entirely of fast and tank enemies since basic enemies wouldn't
+    make any difference at this point

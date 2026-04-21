@@ -17,4 +17,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ea4742e1022d12c4b8e6fb9d5286435c, type: 2}
   - {fileID: 11400000, guid: 870409f79a4ef2447b7ffbcee80040da, type: 2}
   - {fileID: 11400000, guid: ea4742e1022d12c4b8e6fb9d5286435c, type: 2}
-  note: 
+  note: -Wave 9 brings on a relentless wave of tank and fast enemies, mixing them
+    to constantly apply pressure and make sure the defense of the player is adequate

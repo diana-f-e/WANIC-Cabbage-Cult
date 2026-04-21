@@ -15,7 +15,7 @@ MonoBehaviour:
   towerType: laser
   towerLevel: 3
   cooldown: 2.5
-  damage: 500
+  damage: 777
   attackRadius: 6
   placeRadius: 0.5
   towerCost: 0
@@ -27,3 +27,4 @@ MonoBehaviour:
   skin: {fileID: 4137744052999057349, guid: d7d3e2be59f0f134fb243f9d11ff00bc, type: 3}
   effectNum: 0
   effectCooldown: 0
+  description: Does massive damage to a single target in exchange for a longer cooldown.
