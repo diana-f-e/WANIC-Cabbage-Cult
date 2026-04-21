@@ -81,6 +81,7 @@ public class Tower : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
             gameObject.GetComponent<SpriteRenderer>().sprite = scriptVals.skin;
         }
         attackingCollider.gameObject.GetComponent<SpriteRenderer>().size = attackingCollider.gameObject.GetComponent<CircleCollider2D>().bounds.size;
+        GetComponent<Animator>().runtimeAnimatorController = scriptVals.runtimeAnimator;
     }
 
 
@@ -113,6 +114,8 @@ public class Tower : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
             target.Damage(damage, effect, effectNum, effectCooldown);
         }
         GetComponent<AudioSource>().PlayOneShot(onAttack);
+        Debug.Log("trying to play animation: " + scriptVals.towerType + "Atk");
+        GetComponent<Animator>().Play(scriptVals.towerType + "Atk", 0);
         AnimateAttack(target);
         //Debug.Log("pew pew");
 
