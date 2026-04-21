@@ -25,5 +25,6 @@ MonoBehaviour:
   onPlace: {fileID: 8300000, guid: 50a7d3de857baae4c9361b5dc1925e32, type: 3}
   onBuy: {fileID: 0}
   skin: {fileID: -2503201390149090699, guid: f77c97ef7c7b4bd43afb8c11390120c6, type: 3}
-  effectNum: 10
+  effectNum: 20
   effectCooldown: 1
+  description: 
