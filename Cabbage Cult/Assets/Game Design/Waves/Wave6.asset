@@ -16,4 +16,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ef1214d4d907f24428b12ce6be622c59, type: 2}
   - {fileID: 11400000, guid: f277444e25ce8c5458edd68eb4625294, type: 2}
   - {fileID: 11400000, guid: af0faa640e73ec1458c76fda86b71308, type: 2}
-  note: 
+  note: -The next wave adds more tank enemies and mixes them together with basic
+    enemies to introduce an increase of the tanks

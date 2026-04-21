@@ -17,4 +17,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 152f73aa8365e6a4ebaadce5f940379e, type: 2}
   - {fileID: 11400000, guid: 870409f79a4ef2447b7ffbcee80040da, type: 2}
   - {fileID: 11400000, guid: ddf44f46d7d07cd479d40d08350d84ec, type: 2}
-  note: 
+  note: -This will be the wave that tests the readiness of the player in terms of
+    preparing for the incoming onslaught of fast enemies
