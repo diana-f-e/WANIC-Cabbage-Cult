@@ -27,3 +27,4 @@ MonoBehaviour:
   skin: {fileID: -3695747079076597807, guid: bdc1c7d25781e464d91e80d1446427f2, type: 3}
   effectNum: 0.5
   effectCooldown: 3
+  description: 
