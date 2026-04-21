@@ -114,7 +114,7 @@ public class Tower : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
             target.Damage(damage, effect, effectNum, effectCooldown);
         }
         GetComponent<AudioSource>().PlayOneShot(onAttack);
-        Debug.Log("trying to play animation: " + scriptVals.towerType + "Atk");
+        //Debug.Log("trying to play animation: " + scriptVals.towerType + "Atk");
         GetComponent<Animator>().Play(scriptVals.towerType + "Atk", 0);
         AnimateAttack(target);
         //Debug.Log("pew pew");
@@ -127,7 +127,7 @@ public class Tower : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         if (towerType == "laser")
         {
             attackLine.gameObject.SetActive(true);
-            Debug.Log("laser pew pew");
+            //Debug.Log("laser pew pew");
             attackLine.positionCount = 2;
 
             attackLine.SetPosition(0, transform.position);

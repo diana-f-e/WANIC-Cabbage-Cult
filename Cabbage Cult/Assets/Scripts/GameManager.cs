@@ -64,7 +64,8 @@ public class GameManager : MonoBehaviour
     public List<Tower> towers;
     public GameObject towerInfoDisplay;
 
-    public GameObject[] hitEffects;
+    public GameObject hitEffectPrefab;
+    public RuntimeAnimatorController[] hitAnimControllers;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -501,9 +502,9 @@ This tower applies the Decay effect to hit enemies, dealing 10>40>80 damage ever
          */
     }
 
-    public GameObject getHitEffectPrefab(string effect)
+    public RuntimeAnimatorController getHitAnimController(string hitType)
     {
-        return hitEffects[0];
+        return hitAnimControllers[0];
     }
 
 
