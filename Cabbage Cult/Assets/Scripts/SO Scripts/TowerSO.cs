@@ -17,7 +17,7 @@ public class TowerSO : ScriptableObject
     public AudioClip onPlace;
     public AudioClip onBuy;
     public Sprite skin;
-
+    public RuntimeAnimatorController runtimeAnimator;
 
     public float effectNum;
     public float effectCooldown;
