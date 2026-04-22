@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Tower : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class Tower : MonoBehaviour
 {
     public TowerSO scriptVals;
     public CircleCollider2D attackingCollider;
@@ -29,12 +29,16 @@ public class Tower : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public GameObject infoDisplay;
 
+    private Color storedColor;
+    private bool showingInfo = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         timerCounter = cooldown;
         infoDisplay = gameManager.towerInfoDisplay;
         assignScriptVals();
+        attackingCollider.gameObject.GetComponent<SpriteRenderer>().enabled = false;
     }
 
     //update in scene view when changed
@@ -59,6 +63,21 @@ public class Tower : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         if(timerCounter <= cooldown * 0.9)
         {
             attackLine.gameObject.SetActive(false);
+        }
+        //show stats when moused over
+        if(gameManager.clickedObj == gameObject)
+        {
+            if(!showingInfo)
+            {
+                showInfo(); 
+            }
+        }
+        else
+        {
+            if (showingInfo)
+            {
+                hideInfo();
+            }
         }
         
     }
@@ -159,13 +178,22 @@ public class Tower : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public void MergeSelect()
     {
-        GetComponent<SpriteRenderer>().color += new Color(0.2f, 0.2f, 0.4f);
+        storedColor = GetComponent<SpriteRenderer>().color;
+        GetComponent<SpriteRenderer>().color = new Color(2, 2, 2);
         //GetComponent<SpriteRenderer>().color = new Color(0.3f, 0.3f, 0.9f);
     }
 
     public void MergeDeselect()
     {
-        GetComponent<SpriteRenderer>().color -= new Color(0.2f, 0.2f, 0.4f);
+        if(storedColor != null)
+        {
+            GetComponent<SpriteRenderer>().color = storedColor;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().color = Color.white;
+        }
+        //new Color(0.2f, 0.2f, 0.4f);
         //GetComponent<SpriteRenderer>().color = new Color(0.6f, 0.6f, 0.9f);
     }
 
@@ -203,17 +231,33 @@ public class Tower : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     effectCooldown;*/
 
     }
+
+    /*old
     public void OnPointerEnter(PointerEventData eventData)
     {
         Debug.Log("gumba OnPointerEnter");
-        infoDisplay.GetComponentInChildren<TextMeshProUGUI>().text = gameManager.GetTowerDisplayText(scriptVals);
-        infoDisplay.SetActive(true);
+        showInfo();
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         Debug.Log("gumba OnPointerExit");
+        hideInfo();
+    }*/
+
+    public void showInfo()
+    {
+        infoDisplay.GetComponentInChildren<TextMeshProUGUI>().text = gameManager.GetTowerDisplayText(scriptVals);
+        infoDisplay.SetActive(true);
+        attackingCollider.gameObject.GetComponent<SpriteRenderer>().enabled = true;
+        showingInfo = true;
+    }
+
+    public void hideInfo()
+    {
         infoDisplay.SetActive(false);
+        attackingCollider.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        showingInfo = false;
     }
 
 }
