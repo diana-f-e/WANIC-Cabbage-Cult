@@ -1,124 +1,103 @@
 fileFormatVersion: 2
-guid: cb0624817b1dd7c4da0340d621e72be2
+guid: 37b61098b6673c1418d2e470bee8a03d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7681696739100527514
-    second: Cult of Cabbage_FloorPath_0
+      213: 8498978498821086792
+    second: level idk_path 1_0
   - first:
-      213: -351931089742357129
-    second: Cult of Cabbage_FloorPath_1
+      213: -7425653571171837101
+    second: level idk_path 1_1
   - first:
-      213: 4032903818876119906
-    second: Cult of Cabbage_FloorPath_2
+      213: -8887455734309456034
+    second: level idk_path 1_2
   - first:
-      213: -6764025330178704165
-    second: Cult of Cabbage_FloorPath_3
+      213: 7002460110477737950
+    second: level idk_path 1_3
   - first:
-      213: 6174538470986826401
-    second: Cult of Cabbage_FloorPath_4
+      213: 4782901119084553764
+    second: level idk_path 1_4
   - first:
-      213: 911489719977560593
-    second: Cult of Cabbage_FloorPath_5
+      213: 3245687386365080482
+    second: level idk_path 1_5
   - first:
-      213: 3605161625342317673
-    second: Cult of Cabbage_FloorPath_6
+      213: 5807432081872532412
+    second: level idk_path 1_6
   - first:
-      213: 3267084654738149661
-    second: Cult of Cabbage_FloorPath_7
+      213: 7118302936610574737
+    second: level idk_path 1_7
   - first:
-      213: 3438165885067580498
-    second: Cult of Cabbage_FloorPath_8
+      213: -4280892583088251211
+    second: level idk_path 1_8
   - first:
-      213: -4751125093444482053
-    second: Cult of Cabbage_FloorPath_9
+      213: -8442563240487219265
+    second: level idk_path 1_9
   - first:
-      213: -7635970627625113396
-    second: Cult of Cabbage_FloorPath_10
+      213: 4870972958719382196
+    second: level idk_path 1_10
   - first:
-      213: -8583635567878702011
-    second: Cult of Cabbage_FloorPath_11
+      213: -8861253789892685017
+    second: level idk_path 1_11
   - first:
-      213: -7866992964593011287
-    second: Cult of Cabbage_FloorPath_12
+      213: -7109223765727000450
+    second: level idk_path 1_12
   - first:
-      213: -3787231834924323756
-    second: Cult of Cabbage_FloorPath_13
+      213: 7347999298132925749
+    second: level idk_path 1_13
   - first:
-      213: 7058606230899748448
-    second: Cult of Cabbage_FloorPath_14
+      213: -2301107696729106245
+    second: level idk_path 1_14
   - first:
-      213: 6135826052644289472
-    second: Cult of Cabbage_FloorPath_15
+      213: -7163226141086736877
+    second: level idk_path 1_15
   - first:
-      213: -6228073021363626047
-    second: Cult of Cabbage_FloorPath_16
+      213: -8427510262114038790
+    second: level idk_path 1_16
   - first:
-      213: -925323162748228483
-    second: Cult of Cabbage_FloorPath_17
+      213: 6770886349989990869
+    second: level idk_path 1_17
   - first:
-      213: -4748385344954522818
-    second: Cult of Cabbage_FloorPath_18
+      213: 4522647889763263259
+    second: level idk_path 1_18
   - first:
-      213: -855151413848412643
-    second: Cult of Cabbage_FloorPath_19
+      213: -666815545476251616
+    second: level idk_path 1_19
   - first:
-      213: -7548768812500753266
-    second: Cult of Cabbage_FloorPath_20
+      213: 7072717868315019546
+    second: level idk_path 1_20
   - first:
-      213: 7291914337407888592
-    second: Cult of Cabbage_FloorPath_21
+      213: -2681345111647148012
+    second: level idk_path 1_21
   - first:
-      213: -1810703032040240910
-    second: Cult of Cabbage_FloorPath_22
+      213: -846075517322189966
+    second: level idk_path 1_22
   - first:
-      213: -9118551020344881092
-    second: Cult of Cabbage_FloorPath_23
+      213: -3983349853209368996
+    second: level idk_path 1_23
   - first:
-      213: 3156435585264450447
-    second: Cult of Cabbage_FloorPath_24
+      213: -7864007655170606838
+    second: level idk_path 1_24
   - first:
-      213: 6400305737224960573
-    second: Cult of Cabbage_FloorPath_25
+      213: 327102273876030227
+    second: level idk_path 1_25
   - first:
-      213: 4599922467300135253
-    second: Cult of Cabbage_FloorPath_26
+      213: 105208243287284648
+    second: level idk_path 1_26
   - first:
-      213: 5814830655099589304
-    second: Cult of Cabbage_FloorPath_27
+      213: 6839874814778686617
+    second: level idk_path 1_27
   - first:
-      213: -6902048515236892355
-    second: Cult of Cabbage_FloorPath_28
+      213: 5536397080667442204
+    second: level idk_path 1_28
   - first:
-      213: 767743076129729120
-    second: Cult of Cabbage_FloorPath_29
+      213: -7082220355394018550
+    second: level idk_path 1_29
   - first:
-      213: -3765021876385315732
-    second: Cult of Cabbage_FloorPath_30
+      213: 6803087624203044512
+    second: level idk_path 1_30
   - first:
-      213: -7281205731630996499
-    second: Cult of Cabbage_FloorPath_31
-  - first:
-      213: 4012653031856544487
-    second: Cult of Cabbage_FloorPath_32
-  - first:
-      213: -3421248375965183479
-    second: Cult of Cabbage_FloorPath_33
-  - first:
-      213: 245518729164587667
-    second: Cult of Cabbage_FloorPath_34
-  - first:
-      213: 1968616382579047185
-    second: Cult of Cabbage_FloorPath_35
-  - first:
-      213: 872256560571197315
-    second: Cult of Cabbage_FloorPath_36
-  - first:
-      213: 512831179894303952
-    second: Cult of Cabbage_FloorPath_37
-  - first:
-      213: 6056368290295316496
-    second: Cult of Cabbage_FloorPath_38
+      213: 1310302196602064430
+    second: level idk_path 1_31
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -227,13 +206,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cult of Cabbage_FloorPath_0
+      name: level idk_path 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2395
-        height: 2093
+        width: 3840
+        height: 2160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,8 +221,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a9b0d5e1c7eda9a60800000000000000
-      internalID: 7681696739100527514
+      spriteID: 84ed9e74aef62f570800000000000000
+      internalID: 8498978498821086792
       vertices: []
       indices: 
       edges: []
@@ -252,7 +231,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 7244ebb4e218d6d42af5552001a61904
+    spriteID: d005809c4f1e40a45bd46d4ab45b8a0a
     internalID: 0
     vertices: []
     indices: 
@@ -262,7 +241,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Cult of Cabbage_FloorPath_0: 7681696739100527514
+      level idk_path 1_0: 8498978498821086792
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
