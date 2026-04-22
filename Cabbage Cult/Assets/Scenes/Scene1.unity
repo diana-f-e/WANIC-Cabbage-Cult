@@ -23789,6 +23789,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1782613521}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: hitEffectPrefab
+      value: 
+      objectReference: {fileID: 4069428957314610932, guid: 2f3a987d1907f5441a53dedc4f1877d4, type: 3}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: towerInfoDisplay
       value: 
       objectReference: {fileID: 1093824749}
@@ -23893,6 +23897,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: hitAnimControllers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: 'mergePreviewMinis.Array.data[0]'
       value: 
       objectReference: {fileID: 903950928}
@@ -23904,6 +23912,14 @@ PrefabInstance:
       propertyPath: 'mergePreviewMinis.Array.data[2]'
       value: 
       objectReference: {fileID: 446471129}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: 'hitAnimControllers.Array.data[0]'
+      value: 
+      objectReference: {fileID: 9100000, guid: 6217805c219e0ee408701df075aadebf, type: 2}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: 'hitAnimControllers.Array.data[1]'
+      value: 
+      objectReference: {fileID: 9100000, guid: 1c152a33de9c02f44a5a16cb4d8619b4, type: 2}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: mergePreviewMiniCopies.Array.size
       value: 3
