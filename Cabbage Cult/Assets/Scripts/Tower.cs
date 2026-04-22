@@ -130,7 +130,29 @@ public class Tower : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
             //Debug.Log("laser pew pew");
             attackLine.positionCount = 2;
 
-            attackLine.SetPosition(0, transform.position);
+            //attack from eye
+            Vector3 laserOrigin = transform.position;
+            float xdiff = 0;
+            float ydiff = 0;
+            if (level == 1)
+            {
+                xdiff = 0.2f;//0.54f;
+                ydiff = 0.524f;//0.35f;
+            }
+            //if enemy is on tower's right
+            if (target.gameObject.transform.position.x > transform.position.x)
+            {
+                laserOrigin.x += xdiff;
+                GetComponent<SpriteRenderer>().flipX = false;
+            }
+            else
+            {
+                laserOrigin.x -= xdiff;
+                GetComponent<SpriteRenderer>().flipX = true;
+            }
+            laserOrigin.y += ydiff;
+
+            attackLine.SetPosition(0, laserOrigin);
             attackLine.SetPosition(1, target.gameObject.transform.position);
         }
     }

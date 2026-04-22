@@ -504,7 +504,18 @@ This tower applies the Decay effect to hit enemies, dealing 10>40>80 damage ever
 
     public RuntimeAnimatorController getHitAnimController(string hitType)
     {
-        return hitAnimControllers[0];
+        if(hitType == "decay")
+        {
+            return hitAnimControllers[0];
+        }
+        else if (hitType == "slow")
+        {
+            return hitAnimControllers[1];
+        }
+        else
+        {
+            return hitAnimControllers[2];
+        }
     }
 
 
