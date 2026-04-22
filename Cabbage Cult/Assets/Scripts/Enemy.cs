@@ -195,9 +195,9 @@ public class Enemy : MonoBehaviour
     public void PlayAnimation(string hitType)
     {
         //TODO
-        //GameObject newHitEffect = Instantiate(gameManager.hitEffectPrefab, transform.position, Quaternion.identity);
-        //newHitEffect.GetComponent<Animator>().runtimeAnimatorController = gameManager.getHitAnimController(hitType);
-        //newHitEffect.GetComponent<HitEffect>().myEnemy = transform;
+        GameObject newHitEffect = Instantiate(gameManager.hitEffectPrefab, transform.position, Quaternion.identity);
+        newHitEffect.GetComponent<Animator>().runtimeAnimatorController = gameManager.getHitAnimController(hitType);
+        newHitEffect.GetComponent<HitEffect>().myEnemy = transform;
         /*
         Animator anim = GetComponentInChildren<Animator>();
         if(effect == "laser")

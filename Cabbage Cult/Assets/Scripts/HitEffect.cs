@@ -14,12 +14,10 @@ public class HitEffect : MonoBehaviour
     void Update()
     {
         //follow enemy
-        if (myEnemy == null)
+        if (myEnemy != null)
         {
-            Destroy(gameObject);
+            transform.position = myEnemy.position;
         }
-        transform.position = myEnemy.position;
-        
         
         //if animation done, die
         if(GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.99)
