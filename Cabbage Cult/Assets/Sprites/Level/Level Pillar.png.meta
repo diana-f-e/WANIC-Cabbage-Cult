@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a8ab3a42ded88b84dbc880d1394bd37a
+guid: c5c86a5ffa53ebc4689eadefacced2d1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8651139991857426548
-    second: Cult of Cabbage_Level_Outline_0
+      213: 5413376004014432798
+    second: level idk_pillar_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cult of Cabbage_Level_Outline_0
+      name: level idk_pillar_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3840
-        height: 2160
+        x: 990
+        y: 1299
+        width: 231
+        height: 355
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c8f892b530af0f780800000000000000
-      internalID: -8651139991857426548
+      spriteID: e1267ea5bcc202b40800000000000000
+      internalID: 5413376004014432798
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Cult of Cabbage_Level_Outline_0: -8651139991857426548
+      level idk_pillar_0: 5413376004014432798
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
