@@ -15,7 +15,7 @@ MonoBehaviour:
   curseName: Only Muscle
   curseColor: {r: 1, g: 0, b: 0.29735708, a: 1}
   cooldown: 0
-  damage: 5
+  damage: 2
   attackRadius: 0
   effectNum: 0.001
   effectCooldown: 10

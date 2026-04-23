@@ -25,6 +25,7 @@ MonoBehaviour:
   onPlace: {fileID: 8300000, guid: 5254f968a15ad4942999b610c0c15737, type: 3}
   onBuy: {fileID: 0}
   skin: {fileID: 9149414102983926309, guid: 6502f2e1b0c0db442b81e9af21a8b814, type: 3}
+  runtimeAnimator: {fileID: 0}
   effectNum: 40
   effectCooldown: 0.75
   description: "Applies the Decay effect to hit enemies, dealing 20>40>80 damage
