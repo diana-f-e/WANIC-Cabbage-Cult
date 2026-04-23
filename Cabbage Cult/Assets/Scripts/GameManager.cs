@@ -72,7 +72,7 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        Time.timeScale = 2;
         //generate cuttoffs for randomization: get magnitude etc etc
         float chanceMagnitude = 0;
         for (int i = 0; i < curseWeights.Length; i++)
@@ -399,7 +399,7 @@ public class GameManager : MonoBehaviour
     {
         if(Time.timeScale == num)
         {
-            Time.timeScale = 1;
+            Time.timeScale = 2;
         }
         else
         {
