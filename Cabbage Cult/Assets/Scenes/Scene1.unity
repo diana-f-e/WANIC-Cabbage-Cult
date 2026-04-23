@@ -6936,7 +6936,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Day
 
-    1'
+    1/10'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: afa0a66607c20c142ba8d9a384e21f7c, type: 2}
   m_sharedMaterial: {fileID: -8018622220918054729, guid: afa0a66607c20c142ba8d9a384e21f7c, type: 2}
@@ -15371,7 +15371,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1360861328
 RectTransform:
   m_ObjectHideFlags: 0
