@@ -24,9 +24,10 @@ MonoBehaviour:
   onAttack: {fileID: 8300000, guid: 0085bf832b2435e489cc404ccaad0f6d, type: 3}
   onPlace: {fileID: 8300000, guid: 50a7d3de857baae4c9361b5dc1925e32, type: 3}
   onBuy: {fileID: 0}
+  audioResourceTest: {fileID: 0}
   skin: {fileID: -2503201390149090699, guid: f77c97ef7c7b4bd43afb8c11390120c6, type: 3}
   runtimeAnimator: {fileID: 0}
   effectNum: 20
   effectCooldown: 1
-  description: "Applies the Decay effect to hit enemies, dealing 20>40>80 damage
-    for every second it\u2019s applied at level 1>2>3."
+  description: "Applies the Decay effect to hit enemies, dealing damage for every
+    second it\u2019s applied."
