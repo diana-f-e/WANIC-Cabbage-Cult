@@ -16,6 +16,6 @@ MonoBehaviour:
   curseColor: {r: 1, g: 0.51450044, b: 0, a: 1}
   cooldown: 0
   damage: 0
-  attackRadius: 0.6
+  attackRadius: 0.75
   effectNum: 0
   effectCooldown: 0
