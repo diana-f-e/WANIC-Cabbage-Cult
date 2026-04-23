@@ -162,17 +162,24 @@ public class Tower : MonoBehaviour
             if (target.gameObject.transform.position.x > transform.position.x)
             {
                 laserOrigin.x += xdiff;
-                GetComponent<SpriteRenderer>().flipX = false;
             }
             else
             {
                 laserOrigin.x -= xdiff;
-                GetComponent<SpriteRenderer>().flipX = true;
             }
             laserOrigin.y += ydiff;
 
             attackLine.SetPosition(0, laserOrigin);
             attackLine.SetPosition(1, target.gameObject.transform.position);
+        }
+        //flip sprite to face enemy
+        if (target.gameObject.transform.position.x > transform.position.x)
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
         }
     }
 

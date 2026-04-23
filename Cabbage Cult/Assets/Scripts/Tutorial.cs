@@ -32,4 +32,14 @@ public class Tutorial : MonoBehaviour
         steps[index].SetActive(true);
         index += 1;
     }
+
+    public void RestartTutorial()
+    {
+        gameObject.SetActive(true);
+        foreach(GameObject step in steps)
+        {
+            step.SetActive(false);
+        }
+        steps[0].SetActive(true);
+    }
 }

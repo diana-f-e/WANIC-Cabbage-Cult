@@ -518,7 +518,6 @@ This tower applies the Decay effect to hit enemies, dealing 10>40>80 damage ever
         }
     }
 
-
-
+    
 
 }
