@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.Audio;
 
 public class Enemy : MonoBehaviour
 {
@@ -99,7 +99,7 @@ public class Enemy : MonoBehaviour
                 {
                     SceneManager.LoadScene("LoseScene");
                 }
-                gameManager.audioSource.PlayOneShot(scriptVals.onDeath);
+                //gameManager.audioSource.PlayOneShot(scriptVals.onDeath);
                 Destroy(this.gameObject);
 
             }
@@ -187,7 +187,7 @@ public class Enemy : MonoBehaviour
         else
         {
             health -= amount;
-            gameManager.audioSource.PlayOneShot(scriptVals.onHurt);
+            //gameManager.audioSource.PlayOneShot(scriptVals.onHurt);
         }
 
     }
