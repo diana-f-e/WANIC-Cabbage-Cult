@@ -5508,8 +5508,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Once you have placed three followers of the same type, you can select them
-    through right click and then click the MERGE button to merge them.
+  m_text: Once you have three followers of the same type, you can right-click them
+    and then click the MERGE button to merge them.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: afa0a66607c20c142ba8d9a384e21f7c, type: 2}
   m_sharedMaterial: {fileID: -8018622220918054729, guid: afa0a66607c20c142ba8d9a384e21f7c, type: 2}
@@ -5575,10 +5575,10 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 13.270599, y: 0, z: 0, w: 0}
+  m_margin: {x: 13.270599, y: 6.1758423, z: 0, w: 49.414062}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &276235012
@@ -7955,9 +7955,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Before you can summon new followers, you must pay a tithe to Cva'pfel-roth
-    the Old One. Should you refuse, your followers will receive a random curse during
-    the following onslaught.
+  m_text: 'Every wave, you can pay a tithe to the Old One that scales with your current
+    followers.
+
+
+    Refusing this tithe will give a random curse for the next wave.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: afa0a66607c20c142ba8d9a384e21f7c, type: 2}
   m_sharedMaterial: {fileID: -8018622220918054729, guid: afa0a66607c20c142ba8d9a384e21f7c, type: 2}
@@ -8026,7 +8028,7 @@ MonoBehaviour:
   m_margin: {x: 13.270599, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &503998207
@@ -8317,9 +8319,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: In 10 days, the planets will align perfectly for you to summon Cva'pfel-roth!
-    However, the townspeople know of your plan, and will attack you in onslaughts
-    each night.
+  m_text: In 10 days, you will summon Cva'pfel-roth! However, the townspeople will
+    try to stop you in onslaughts each night.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: afa0a66607c20c142ba8d9a384e21f7c, type: 2}
   m_sharedMaterial: {fileID: -8018622220918054729, guid: afa0a66607c20c142ba8d9a384e21f7c, type: 2}
@@ -8385,10 +8386,10 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 13.270599, y: -157.12604, z: 0, w: 0}
+  m_margin: {x: 13.270599, y: -8.883759, z: 0, w: -86.47482}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &551923779
@@ -8643,8 +8644,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 287.287, y: 870.1}
-  m_SizeDelta: {x: 1055.006, y: 391.1}
+  m_AnchoredPosition: {x: 287.287, y: 934.9558}
+  m_SizeDelta: {x: 1055.006, y: 261.388}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &566443161
 MonoBehaviour:
@@ -9548,7 +9549,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: To summon new cultists, you must spend soul dust, shown here.
+  m_text: This is your main currency, Soul Dust.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: afa0a66607c20c142ba8d9a384e21f7c, type: 2}
   m_sharedMaterial: {fileID: -8018622220918054729, guid: afa0a66607c20c142ba8d9a384e21f7c, type: 2}
@@ -9614,7 +9615,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 13.270599, y: 0, z: 0, w: 0}
+  m_margin: {x: 13.270599, y: 86.47455, z: 0, w: 86.474556}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -11985,8 +11986,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15.777, y: 529}
-  m_SizeDelta: {x: 1598.025, y: 873.791}
+  m_AnchoredPosition: {x: 15.777, y: 501.20468}
+  m_SizeDelta: {x: 1598.025, y: 929.382}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &851288148
 MonoBehaviour:
@@ -18836,8 +18837,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You follow Cva'pfel-roth, a great Old One who grants you the ability to
-    transform your followers into powerful monstrosities.
+  m_text: You follow Cva'pfel-roth, a great Old One who can turn your followers into
+    powerful monstrosities.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: afa0a66607c20c142ba8d9a384e21f7c, type: 2}
   m_sharedMaterial: {fileID: -8018622220918054729, guid: afa0a66607c20c142ba8d9a384e21f7c, type: 2}
@@ -18903,10 +18904,10 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 13.270599, y: 0, z: 0, w: 0}
+  m_margin: {x: 13.270599, y: 43.236786, z: 0, w: -111.1814}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1743201704
@@ -19326,8 +19327,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15.777, y: -180.266}
-  m_SizeDelta: {x: 1598.025, y: 812.462}
+  m_AnchoredPosition: {x: 15.777, y: -106.76}
+  m_SizeDelta: {x: 1598.025, y: 665.44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1780867137
 MonoBehaviour:
@@ -20130,8 +20131,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1202.411, y: 1064.255}
+  m_AnchoredPosition: {x: 0, y: 79.92}
+  m_SizeDelta: {x: 1202.411, y: 867.39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1909958656
 MonoBehaviour:
@@ -20206,8 +20207,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1202.411, y: 1064.255}
+  m_AnchoredPosition: {x: 0, y: 3.088}
+  m_SizeDelta: {x: 1202.411, y: 885.128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1913164787
 MonoBehaviour:
