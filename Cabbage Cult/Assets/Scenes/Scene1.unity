@@ -23988,7 +23988,7 @@ PrefabInstance:
       objectReference: {fileID: 582781636}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: curseSOs.Array.size
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: statsTextTitheCurse
@@ -24043,8 +24043,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: dd1e3a2045214524f9b8b61a5e82d57e, type: 2}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: 'curseSOs.Array.data[10]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 83f30eebb9e29db43895ab2a0cc924b1, type: 2}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: 'curseSOs.Array.data[11]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 772d23f9aca4ee8439fa74f1911d9414, type: 2}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: curseWeights.Array.size
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: 'curseWeights.Array.data[0]'
@@ -24084,7 +24092,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: 'curseWeights.Array.data[9]'
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: 'curseWeights.Array.data[10]'
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: 'curseWeights.Array.data[11]'
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: mergePreviewMinis.Array.size

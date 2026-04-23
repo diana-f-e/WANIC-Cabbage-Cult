@@ -15,7 +15,7 @@ MonoBehaviour:
   curseName: Short Buff Arms
   curseColor: {r: 0, g: 1, b: 0.49980283, a: 1}
   cooldown: 0
-  damage: 2
+  damage: 1.5
   attackRadius: 0.4
   effectNum: 0
   effectCooldown: 0
