@@ -15,6 +15,6 @@ MonoBehaviour:
   enemyDamage: 10
   enemyHealth: 100
   enemySpeed: 1.5
-  onHurt: {fileID: 0}
-  onDeath: {fileID: 0}
+  helmetHealth: 0
+  onHurt: {fileID: 6418180475301049370, guid: 2453d84289982514e8a21e9e92055c8d, type: 2}
   skin: {fileID: 2704208188245951875, guid: 9fb98d807e302b34393f6acfbe9812d9, type: 3}
