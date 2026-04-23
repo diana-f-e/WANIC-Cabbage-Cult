@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   money: 500
   health: 100
-  tax: 10
+  taxes: 0a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a000000
   enemySpawnCooldown: 3
   enemiesToSpawn: 2
   moneyPerRound: 250

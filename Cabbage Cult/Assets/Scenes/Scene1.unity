@@ -23979,6 +23979,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4069428957314610932, guid: 2f3a987d1907f5441a53dedc4f1877d4, type: 3}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: taxes.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: towerInfoDisplay
       value: 
       objectReference: {fileID: 1093824749}
