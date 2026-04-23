@@ -28,7 +28,8 @@ public class GameManager : MonoBehaviour
 
 
     public bool alreadyTithed = false;
-    public int tax;
+    public int[] taxes;
+    private int taxIndex;
     public GameObject titheUI;
     public TextMeshProUGUI statsTextTitheTowers;
     public TextMeshProUGUI statsTextTitheMult;
@@ -59,7 +60,8 @@ public class GameManager : MonoBehaviour
     {
         money = scriptVals.money;
         health = scriptVals.health;
-        tax = scriptVals.tax;
+        taxes = scriptVals.taxes;
+        taxIndex = 0;
     }
     public List<Tower> towers;
     public GameObject towerInfoDisplay;
@@ -115,8 +117,8 @@ public class GameManager : MonoBehaviour
         if(titheUI.activeInHierarchy)
         {
             statsTextTitheTowers.text = "Towers:\n" + towers.Count;
-            statsTextTitheMult.text = "Multiplier:\n"+ (int)tax +"x";
-            statsTextTithe.text = "Pay the " + towers.Count * (int)tax + " Soul Dust Tithe?";
+            statsTextTitheMult.text = "Multiplier:\n"+ (int)taxes[taxIndex] +"x";
+            statsTextTithe.text = "Pay the " + towers.Count * (int)taxes[taxIndex] + " Soul Dust Tithe?";
         }
 
         //get the mouse position
@@ -299,6 +301,7 @@ public class GameManager : MonoBehaviour
     {
         phase = "shop";
         money += scriptVals.moneyPerRound;
+        taxIndex += 1;
         alreadyTithed = false;
         //undo curse
         currentCurseName = "none";
@@ -374,7 +377,7 @@ public class GameManager : MonoBehaviour
     {
         if (alreadyTithed) { return; }
         if (phase != "shop") { return; }
-        if(tax * towers.Count > money)
+        if(taxes[taxIndex] * towers.Count > money)
         {
             return;
         }
@@ -382,7 +385,7 @@ public class GameManager : MonoBehaviour
         //hide tithe button
         titheUI.SetActive(false);
         Debug.Log("tithing...");
-        money -= tax * towers.Count;
+        money -= taxes[taxIndex] * towers.Count;
         alreadyTithed = true;
     }
 

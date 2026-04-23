@@ -5,7 +5,7 @@ public class PlaytestingSO : ScriptableObject
 {
     public int money;
     public int health;
-    public int tax;
+    public int[] taxes;
 
     public float enemySpawnCooldown;
     public int enemiesToSpawn;
