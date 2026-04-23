@@ -450,20 +450,26 @@ public class GameManager : MonoBehaviour
             {
                 displayText += "\u2605";
             }
-            else
-            {
-                displayText += "\u2606";
-            }
+            //TODO fix star characters
+            //else
+            //{
+            //    displayText += "\u2606";
+            //}
         }
         displayText += "\n";
-        displayText += "ATK Cooldown: " + scriptVals.cooldown;
-        if(scriptVals.cooldown > 1)
+        displayText += "Speed: " + scriptVals.cooldown;
+        //ATK cooldown
+        if(scriptVals.cooldown > 3)
         {
-            displayText += " seconds\n";
+            displayText += " fast\n";
+        }
+        else if(scriptVals.cooldown > 1)
+        {
+            displayText += " medium\n";
         }
         else
         {
-            displayText += " second\n";
+            displayText += " slow\n";
         }
         //display effect
         if (scriptVals.effect != "" && scriptVals.effect != null)
