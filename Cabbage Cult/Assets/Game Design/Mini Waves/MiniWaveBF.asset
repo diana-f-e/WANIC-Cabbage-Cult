@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   construction: ratio
   count: 5
-  delay: 2
+  delay: 1
   types:
   - {fileID: 11400000, guid: d9ca98e60f6afe14e8c8fc522ca9348e, type: 2}
   - {fileID: 11400000, guid: 7619fddf6365acb4ba2436916fe52998, type: 2}
