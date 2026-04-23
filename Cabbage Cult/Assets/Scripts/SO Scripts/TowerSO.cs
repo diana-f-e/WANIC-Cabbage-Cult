@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 [CreateAssetMenu(fileName = "TowerSO", menuName = "Scriptable Objects/TowerSO")]
 public class TowerSO : ScriptableObject
@@ -16,6 +17,8 @@ public class TowerSO : ScriptableObject
     public AudioClip onAttack;
     public AudioClip onPlace;
     public AudioClip onBuy;
+    public AudioResource audioResourceTest;
+
     public Sprite skin;
     public RuntimeAnimatorController runtimeAnimator;
 

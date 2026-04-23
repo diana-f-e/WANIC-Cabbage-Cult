@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.PlayerLoop;
+using UnityEngine.Audio;
 
 public class HitEffect : MonoBehaviour
 {
@@ -7,7 +8,9 @@ public class HitEffect : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        AudioResource sfx = myEnemy.GetComponent<Enemy>().scriptVals.onHurt;
+        GetComponent<AudioSource>().resource = sfx;
+        GetComponent<AudioSource>().PlayDelayed(1);
     }
 
     // Update is called once per frame

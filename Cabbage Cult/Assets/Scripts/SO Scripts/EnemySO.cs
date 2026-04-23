@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 [CreateAssetMenu(fileName = "EnemySO", menuName = "Scriptable Objects/EnemySO")]
 public class EnemySO : ScriptableObject
@@ -7,7 +8,6 @@ public class EnemySO : ScriptableObject
     public int enemyHealth;
     public float enemySpeed;
     public int helmetHealth;
-    public AudioClip onHurt;
-    public AudioClip onDeath;
+    public AudioResource onHurt;
     public Sprite skin;
 }
