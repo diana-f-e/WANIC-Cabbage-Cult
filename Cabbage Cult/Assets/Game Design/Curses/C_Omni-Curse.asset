@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   curseName: Omni-Curse
   curseColor: {r: 0, g: 0, b: 0, a: 1}
-  cooldown: 1.1
-  damage: 0.9
-  attackRadius: 0.9
-  effectNum: 0.9
-  effectCooldown: 1.1
+  cooldown: 1.2
+  damage: 0.8
+  attackRadius: 0.8
+  effectNum: 0.8
+  effectCooldown: 1.2

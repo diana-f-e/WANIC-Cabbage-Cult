@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc45781756f9c0f468772d9c3e5d6797, type: 3}
   m_Name: C_NoMagicAllStrength
   m_EditorClassIdentifier: 
-  curseName: No Magic All Muscle
+  curseName: Only Muscle
   curseColor: {r: 1, g: 0, b: 0.29735708, a: 1}
   cooldown: 0
   damage: 5
   attackRadius: 0
-  effectNum: 0.1
+  effectNum: 0.001
   effectCooldown: 10
