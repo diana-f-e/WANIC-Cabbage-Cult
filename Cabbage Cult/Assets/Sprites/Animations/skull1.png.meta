@@ -93,7 +93,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -158,12 +158,12 @@ TextureImporter:
       name: skull1_0
       rect:
         serializedVersion: 2
-        x: 151
-        y: 608
-        width: 367
-        height: 398
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 503
+        width: 517
+        height: 503
+      alignment: 9
+      pivot: {x: 0.645, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -180,12 +180,12 @@ TextureImporter:
       name: skull1_1
       rect:
         serializedVersion: 2
-        x: 618
-        y: 609
-        width: 407
-        height: 397
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 514
+        y: 502
+        width: 517
+        height: 503
+      alignment: 9
+      pivot: {x: 0.645, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -203,11 +203,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 49
-        width: 55
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 0
+        width: 517
+        height: 503
+      alignment: 9
+      pivot: {x: 0.645, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -220,275 +220,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: skull1_3
-      rect:
-        serializedVersion: 2
-        x: 53
-        y: 95
-        width: 79
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 329f4f7a3cbf12530800000000000000
-      internalID: 3828617975996676387
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: skull1_4
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 119
-        width: 71
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 77ee5cb0d8ed91130800000000000000
-      internalID: 3538103679645511287
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: skull1_5
-      rect:
-        serializedVersion: 2
-        x: 108
-        y: 82
-        width: 77
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9f51cf1b351d52370800000000000000
-      internalID: 8297268045898585593
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: skull1_6
-      rect:
-        serializedVersion: 2
-        x: 121
-        y: 109
-        width: 382
-        height: 394
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a14ef080e8c109fc0800000000000000
-      internalID: -3490258314865941478
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: skull1_7
-      rect:
-        serializedVersion: 2
-        x: 197
-        y: 89
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 41db60c3cb13166e0800000000000000
-      internalID: -1846139687714505452
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: skull1_8
-      rect:
-        serializedVersion: 2
-        x: 57
-        y: 72
-        width: 9
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f1503dc8a7983cfe0800000000000000
-      internalID: -1169940318744541921
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: skull1_9
-      rect:
-        serializedVersion: 2
-        x: 67
-        y: 56
-        width: 36
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1760a550ac9f08c40800000000000000
-      internalID: 5512680589969983089
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: skull1_10
-      rect:
-        serializedVersion: 2
-        x: 106
-        y: 45
-        width: 181
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b5cee6fb01490d0f0800000000000000
-      internalID: -1094211909798925221
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: skull1_11
-      rect:
-        serializedVersion: 2
-        x: 323
-        y: 45
-        width: 17
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5793a128d767c3a10800000000000000
-      internalID: 1890516225014511989
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: skull1_12
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 15
-        width: 59
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6a7c50746fde5b4f0800000000000000
-      internalID: -813482515661207642
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: skull1_13
-      rect:
-        serializedVersion: 2
-        x: 285
-        y: 22
-        width: 34
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5fb0fbdd7bdf83770800000000000000
-      internalID: 8590895255350348789
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: skull1_14
-      rect:
-        serializedVersion: 2
-        x: 116
-        y: 0
-        width: 150
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 30a34e19dbac7a3e0800000000000000
-      internalID: -2042440990443947517
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e7c9b7f88580bce4ba26543f108b9719
     internalID: 0
     vertices: []
     indices: 
@@ -500,19 +236,7 @@ TextureImporter:
     nameFileIdTable:
       skull1_0: 3322266479791537964
       skull1_1: -920743883665117794
-      skull1_10: -1094211909798925221
-      skull1_11: 1890516225014511989
-      skull1_12: -813482515661207642
-      skull1_13: 8590895255350348789
-      skull1_14: -2042440990443947517
       skull1_2: -4790630363681379554
-      skull1_3: 3828617975996676387
-      skull1_4: 3538103679645511287
-      skull1_5: 8297268045898585593
-      skull1_6: -3490258314865941478
-      skull1_7: -1846139687714505452
-      skull1_8: -1169940318744541921
-      skull1_9: 5512680589969983089
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
