@@ -18,3 +18,4 @@ MonoBehaviour:
   helmetHealth: 0
   onHurt: {fileID: 6418180475301049370, guid: 2453d84289982514e8a21e9e92055c8d, type: 2}
   skin: {fileID: -3571453731875283761, guid: 9a902de2447129540816b2d52f6dd21b, type: 3}
+  runtimeAnimator: {fileID: 9100000, guid: ee4998e347506fc43892514c0c4ac127, type: 2}
