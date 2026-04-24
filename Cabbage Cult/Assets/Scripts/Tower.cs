@@ -177,10 +177,16 @@ public class Tower : MonoBehaviour
         if (target.gameObject.transform.position.x > transform.position.x)
         {
             GetComponent<SpriteRenderer>().flipX = false;
+            
         }
         else
         {
             GetComponent<SpriteRenderer>().flipX = true;
+        }
+        //flip decay again since its sprite faces left
+        if (scriptVals.towerType == "decay")
+        {
+            GetComponent<SpriteRenderer>().flipX = !GetComponent<SpriteRenderer>().flipX;
         }
     }
 
