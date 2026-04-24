@@ -11,7 +11,7 @@ public class MiniWaveSO : ScriptableObject
     [Header("equal to the corresponding index in the chances array. count will be disregarded.")]
     public string construction;
     public int count;
-    public int delay;
+    public float delay;
     public EnemySO[] types;
     public float[] chances;
 }

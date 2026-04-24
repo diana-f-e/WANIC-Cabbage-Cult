@@ -1,5 +1,6 @@
 using Unity.Burst.CompilerServices;
 using UnityEngine;
+using UnityEngine.Audio;
 using TMPro;
 using System.Collections.Generic;
 using UnityEngine.UI;
@@ -68,6 +69,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject hitEffectPrefab;
     public RuntimeAnimatorController[] hitAnimControllers;
+    public AudioResource[] hitARCs;
+    public AudioResource summonARC;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -450,14 +453,13 @@ public class GameManager : MonoBehaviour
             {
                 displayText += "\u2605";
             }
-            //TODO fix star characters
-            //else
-            //{
-            //    displayText += "\u2606";
-            //}
+            else
+            {
+                displayText += "\u2606";
+            }
         }
         displayText += "\n";
-        displayText += "Speed: " + scriptVals.cooldown;
+        displayText += "Speed: ";// + scriptVals.cooldown;
         //ATK cooldown
         if(scriptVals.cooldown > 3)
         {
@@ -527,6 +529,22 @@ This tower applies the Decay effect to hit enemies, dealing 10>40>80 damage ever
         }
     }
 
-    
+    public AudioResource getHitARC(string hitType)
+    {
+        if (hitType == "decay")
+        {
+            return hitARCs[0];
+        }
+        else if (hitType == "slow")
+        {
+            return hitARCs[1];
+        }
+        else
+        {
+            return hitARCs[2];
+        }
+    }
+
+
 
 }

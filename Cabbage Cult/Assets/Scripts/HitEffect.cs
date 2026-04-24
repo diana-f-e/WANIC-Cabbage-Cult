@@ -9,8 +9,7 @@ public class HitEffect : MonoBehaviour
     void Start()
     {
         AudioResource sfx = myEnemy.GetComponent<Enemy>().scriptVals.onHurt;
-        GetComponent<AudioSource>().resource = sfx;
-        GetComponent<AudioSource>().PlayDelayed(1);
+        GetComponent<AudioSource>().Play();
     }
 
     // Update is called once per frame
