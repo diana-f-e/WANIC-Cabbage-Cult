@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: fdc2b4a34ba06fd409908f36d97756dc
+guid: 50a30237cf6ecbc4285d33cefb310c54
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2688893141514098655
-    second: Mouth2_Animation_0
+      213: -8022306247270553746
+    second: eye2_animation_0
   - first:
-      213: -1991680397275892930
-    second: Mouth2_Animation_1
+      213: 1171935026705224275
+    second: eye2_animation_1
   - first:
-      213: -4385243808931547060
-    second: Mouth2_Animation_2
+      213: -520775350910708590
+    second: eye2_animation_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 250
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mouth2_Animation_0
+      name: eye2_animation_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 410
-        width: 363
-        height: 410
+        y: 449
+        width: 320
+        height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 12861152fe12faad0800000000000000
-      internalID: -2688893141514098655
+      spriteID: e67aa0cd8fa0ba090800000000000000
+      internalID: -8022306247270553746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mouth2_Animation_1
+      name: eye2_animation_1
       rect:
         serializedVersion: 2
-        x: 363
-        y: 410
-        width: 363
-        height: 410
+        x: 9
+        y: 6
+        width: 289
+        height: 444
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e33f2462b312c54e0800000000000000
-      internalID: -1991680397275892930
+      spriteID: 3525a9692bc834010800000000000000
+      internalID: 1171935026705224275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mouth2_Animation_2
+      name: eye2_animation_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 363
-        height: 410
+        x: 319
+        y: 448
+        width: 319
+        height: 447
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,8 +178,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c4877236dfb7423c0800000000000000
-      internalID: -4385243808931547060
+      spriteID: 2941039d395d5c8f0800000000000000
+      internalID: -520775350910708590
       vertices: []
       indices: 
       edges: []
@@ -188,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9cb43c1eb8c77c7419bebd988a075660
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -198,9 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Mouth2_Animation_0: -2688893141514098655
-      Mouth2_Animation_1: -1991680397275892930
-      Mouth2_Animation_2: -4385243808931547060
+      eye2_animation_0: -8022306247270553746
+      eye2_animation_1: 1171935026705224275
+      eye2_animation_2: -520775350910708590
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
