@@ -19,14 +19,14 @@ MonoBehaviour:
   attackRadius: 3.5
   placeRadius: 0.5
   towerCost: 0
-  towerColor: {r: 0.8910652, g: 0.54905653, b: 1, a: 1}
+  towerColor: {r: 1, g: 1, b: 1, a: 1}
   effect: decay
   onAttack: {fileID: 8300000, guid: 0085bf832b2435e489cc404ccaad0f6d, type: 3}
   onPlace: {fileID: 8300000, guid: e66c666efcc224044b2a3d7708ae6c1e, type: 3}
   onBuy: {fileID: 0}
   audioResourceTest: {fileID: 0}
-  skin: {fileID: -2503201390149090699, guid: f77c97ef7c7b4bd43afb8c11390120c6, type: 3}
-  runtimeAnimator: {fileID: 0}
+  skin: {fileID: -3564481149584529697, guid: 2b88f2a1ab4022f45935f6d142bb2f15, type: 3}
+  runtimeAnimator: {fileID: 9100000, guid: b71528d3d68b90e4dbaf1b8f574d986f, type: 2}
   effectNum: 80
   effectCooldown: 0.5
   description: "Applies the Decay effect to hit enemies, dealing damage for every
