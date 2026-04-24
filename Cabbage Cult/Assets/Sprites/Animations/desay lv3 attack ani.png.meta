@@ -1,0 +1,253 @@
+fileFormatVersion: 2
+guid: 2b88f2a1ab4022f45935f6d142bb2f15
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3564481149584529697
+    second: desay lv3 attack ani_0
+  - first:
+      213: -2028165444753089754
+    second: desay lv3 attack ani_1
+  - first:
+      213: 147140856545085720
+    second: desay lv3 attack ani_2
+  - first:
+      213: 1212441030434416389
+    second: desay lv3 attack ani_3
+  - first:
+      213: -6959358861163251902
+    second: desay lv3 attack ani_4
+  - first:
+      213: -3349184261240308944
+    second: desay lv3 attack ani_5
+  - first:
+      213: 7409663382674044097
+    second: desay lv3 attack ani_6
+  - first:
+      213: 6993379171417438917
+    second: desay lv3 attack ani_7
+  - first:
+      213: -6116992977707620138
+    second: desay lv3 attack ani_8
+  - first:
+      213: 395599683281419759
+    second: desay lv3 attack ani_9
+  - first:
+      213: -3710201307387972451
+    second: desay lv3 attack ani_10
+  - first:
+      213: 5965672446075731293
+    second: desay lv3 attack ani_11
+  - first:
+      213: 3459826341166336466
+    second: desay lv3 attack ani_12
+  - first:
+      213: 4518578447566537181
+    second: desay lv3 attack ani_13
+  - first:
+      213: 5411872268281239535
+    second: desay lv3 attack ani_14
+  - first:
+      213: -1597717433481335316
+    second: desay lv3 attack ani_15
+  - first:
+      213: 3222396173239265392
+    second: desay lv3 attack ani_16
+  - first:
+      213: -2963460954811045978
+    second: desay lv3 attack ani_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 250
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: desay lv3 attack ani_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 505
+        width: 682
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd62076a74b688ec0800000000000000
+      internalID: -3564481149584529697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desay lv3 attack ani_1
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 505
+        width: 682
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62b15cf06428ad3e0800000000000000
+      internalID: -2028165444753089754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desay lv3 attack ani_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 682
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 819015654dfba0200800000000000000
+      internalID: 147140856545085720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a36fc0e4fd474f84b87da9f8da6c5420
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      desay lv3 attack ani_0: -3564481149584529697
+      desay lv3 attack ani_1: -2028165444753089754
+      desay lv3 attack ani_2: 147140856545085720
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
