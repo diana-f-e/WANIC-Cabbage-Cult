@@ -1,3 +1,14 @@
+/****************************************************************************
+* File Name: GameManager.cs
+* Author: Diana Everman
+* DigiPen Email: diana.everman@digipen.edu
+* Course: Video Game Programming 1
+*
+* Description: This file manages most of the game functions, like merging and 
+*   placing towers.
+*
+****************************************************************************/
+
 using Unity.Burst.CompilerServices;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -71,6 +82,7 @@ public class GameManager : MonoBehaviour
     public RuntimeAnimatorController[] hitAnimControllers;
     public AudioResource[] hitARCs;
     public AudioResource summonARC;
+    public AudioResource hurtARC;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

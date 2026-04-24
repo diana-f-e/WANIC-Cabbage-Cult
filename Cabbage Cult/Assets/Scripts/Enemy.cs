@@ -1,3 +1,13 @@
+/****************************************************************************
+* File Name: Enemy.cs
+* Author: Diana Everman
+* DigiPen Email: diana.everman@digipen.edu
+* Course: Video Game Programming 1
+*
+* Description: This file is to be attached to an enemy for its functions.
+*
+****************************************************************************/
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
@@ -49,8 +59,8 @@ public class Enemy : MonoBehaviour
             GetComponent<SpriteRenderer>().sprite = scriptVals.skin;
         }
         GetComponent<Animator>().runtimeAnimatorController = scriptVals.runtimeAnimator;
-        //TODO
         GetComponent<SpriteRenderer>().flipX = true;
+        GetComponent<AudioSource>().resource = gameManager.hurtARC;
 
 
     }
@@ -97,12 +107,11 @@ public class Enemy : MonoBehaviour
                 //reached last waypoint
                 direction = new Vector3(0, 0, 0);
                 gameManager.health -= damage;
-                //TODO make sceneswitcher have funcs for die/win
-                if(gameManager.health <= 0)
+                GetComponent<AudioSource>().Play();
+                if (gameManager.health <= 0)
                 {
                     SceneManager.LoadScene("LoseScene");
                 }
-                //gameManager.audioSource.PlayOneShot(scriptVals.onDeath);
                 Destroy(this.gameObject);
 
             }
