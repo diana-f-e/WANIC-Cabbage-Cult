@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: fdc2b4a34ba06fd409908f36d97756dc
+guid: c2229bec3a7053a4faf7ceeff7dacd69
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2688893141514098655
-    second: Mouth2_Animation_0
+      213: -7436302592896031495
+    second: melee lv3 attack ani_0
   - first:
-      213: -1991680397275892930
-    second: Mouth2_Animation_1
+      213: 2719332112290714153
+    second: melee lv3 attack ani_1
   - first:
-      213: -4385243808931547060
-    second: Mouth2_Animation_2
+      213: 1071482159560687419
+    second: melee lv3 attack ani_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 250
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mouth2_Animation_0
+      name: melee lv3 attack ani_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 410
-        width: 363
-        height: 410
+        x: 68
+        y: 460
+        width: 486
+        height: 461
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 12861152fe12faad0800000000000000
-      internalID: -2688893141514098655
+      spriteID: 9f4ad14e032fcc890800000000000000
+      internalID: -7436302592896031495
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mouth2_Animation_1
+      name: melee lv3 attack ani_1
       rect:
         serializedVersion: 2
-        x: 363
-        y: 410
-        width: 363
-        height: 410
+        x: 571
+        y: 495
+        width: 568
+        height: 427
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e33f2462b312c54e0800000000000000
-      internalID: -1991680397275892930
+      spriteID: 922966306220db520800000000000000
+      internalID: 2719332112290714153
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mouth2_Animation_2
+      name: melee lv3 attack ani_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 363
-        height: 410
+        x: 46
+        y: 18
+        width: 527
+        height: 433
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,8 +178,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c4877236dfb7423c0800000000000000
-      internalID: -4385243808931547060
+      spriteID: b3f78cfd85baede00800000000000000
+      internalID: 1071482159560687419
       vertices: []
       indices: 
       edges: []
@@ -188,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9cb43c1eb8c77c7419bebd988a075660
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -198,9 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Mouth2_Animation_0: -2688893141514098655
-      Mouth2_Animation_1: -1991680397275892930
-      Mouth2_Animation_2: -4385243808931547060
+      melee lv3 attack ani_0: -7436302592896031495
+      melee lv3 attack ani_1: 2719332112290714153
+      melee lv3 attack ani_2: 1071482159560687419
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

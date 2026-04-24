@@ -24,7 +24,9 @@ MonoBehaviour:
   onAttack: {fileID: 8300000, guid: b2a6007724a56c449a61383aca98c122, type: 3}
   onPlace: {fileID: 8300000, guid: 5254f968a15ad4942999b610c0c15737, type: 3}
   onBuy: {fileID: 0}
-  skin: {fileID: -3695747079076597807, guid: bdc1c7d25781e464d91e80d1446427f2, type: 3}
+  audioResourceTest: {fileID: 0}
+  skin: {fileID: 1019658227202165358, guid: 7e2a0812128facc4ebabc7b5e79fdc9e, type: 3}
+  runtimeAnimator: {fileID: 9100000, guid: 5799995d263deff4ea819ed0bfe5664d, type: 2}
   effectNum: 0.6
   effectCooldown: 4.5
   description: Applies the Slowness effect to hit enemies, lowering their movement
