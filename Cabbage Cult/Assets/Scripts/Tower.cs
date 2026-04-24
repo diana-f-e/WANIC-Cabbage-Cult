@@ -135,7 +135,7 @@ public class Tower : MonoBehaviour
         GetComponent<AudioSource>().PlayOneShot(onAttack);
         //Debug.Log("trying to play animation: " + scriptVals.towerType + "Atk");
 
-        GetComponent<Animator>().Play(scriptVals.towerType + "Atk", 0);
+        GetComponent<Animator>().Play(scriptVals.towerType + scriptVals.towerLevel + "Atk", 0);
         AnimateAttack(target);
         //Debug.Log("pew pew");
 
