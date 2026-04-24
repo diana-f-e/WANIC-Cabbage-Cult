@@ -25,8 +25,8 @@ MonoBehaviour:
   onPlace: {fileID: 8300000, guid: 5254f968a15ad4942999b610c0c15737, type: 3}
   onBuy: {fileID: 0}
   audioResourceTest: {fileID: 0}
-  skin: {fileID: -8954459809086255966, guid: 8a6351fefe2b5ed41b7a638f7e8695fe, type: 3}
-  runtimeAnimator: {fileID: 0}
+  skin: {fileID: -8022306247270553746, guid: 50a30237cf6ecbc4285d33cefb310c54, type: 3}
+  runtimeAnimator: {fileID: 9100000, guid: 800e66c20ecd93744b50d92dc5017acc, type: 2}
   effectNum: 0
   effectCooldown: 0
   description: Does massive damage to a single target in exchange for a longer cooldown.

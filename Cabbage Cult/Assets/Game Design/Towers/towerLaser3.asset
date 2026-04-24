@@ -19,12 +19,14 @@ MonoBehaviour:
   attackRadius: 6
   placeRadius: 0.5
   towerCost: 0
-  towerColor: {r: 1, g: 0.7766574, b: 0.47358483, a: 1}
+  towerColor: {r: 1, g: 1, b: 1, a: 1}
   effect: 
   onAttack: {fileID: 8300000, guid: a0128dc2277938a4bb07d89e749b3a18, type: 3}
   onPlace: {fileID: 8300000, guid: e66c666efcc224044b2a3d7708ae6c1e, type: 3}
   onBuy: {fileID: 0}
-  skin: {fileID: 4137744052999057349, guid: d7d3e2be59f0f134fb243f9d11ff00bc, type: 3}
+  audioResourceTest: {fileID: 0}
+  skin: {fileID: -2938813705912772333, guid: a8a380a0e0f1a3d4fa160a0b1e518cb6, type: 3}
+  runtimeAnimator: {fileID: 0}
   effectNum: 0
   effectCooldown: 0
   description: Does massive damage to a single target in exchange for a longer cooldown.
