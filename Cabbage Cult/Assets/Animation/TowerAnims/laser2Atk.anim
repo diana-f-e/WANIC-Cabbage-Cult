@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: melee2Idle
+  m_Name: laser2Atk
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,9 +21,11 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -2688893141514098655, guid: fdc2b4a34ba06fd409908f36d97756dc, type: 3}
-    - time: 1
-      value: {fileID: -2688893141514098655, guid: fdc2b4a34ba06fd409908f36d97756dc, type: 3}
+      value: {fileID: -8022306247270553746, guid: 50a30237cf6ecbc4285d33cefb310c54, type: 3}
+    - time: 0.083333336
+      value: {fileID: 1171935026705224275, guid: 50a30237cf6ecbc4285d33cefb310c54, type: 3}
+    - time: 0.25
+      value: {fileID: -520775350910708590, guid: 50a30237cf6ecbc4285d33cefb310c54, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,14 +48,15 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -2688893141514098655, guid: fdc2b4a34ba06fd409908f36d97756dc, type: 3}
-    - {fileID: -2688893141514098655, guid: fdc2b4a34ba06fd409908f36d97756dc, type: 3}
+    - {fileID: -8022306247270553746, guid: 50a30237cf6ecbc4285d33cefb310c54, type: 3}
+    - {fileID: 1171935026705224275, guid: 50a30237cf6ecbc4285d33cefb310c54, type: 3}
+    - {fileID: -520775350910708590, guid: 50a30237cf6ecbc4285d33cefb310c54, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.0166667
+    m_StopTime: 0.26666668
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
