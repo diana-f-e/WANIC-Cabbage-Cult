@@ -1,3 +1,13 @@
+/****************************************************************************
+* File Name: Spawner.cs
+* Author: Diana Everman
+* DigiPen Email: diana.everman@digipen.edu
+* Course: Video Game Programming 1
+*
+* Description: This file manages the enemy spawnign in waves.
+*
+****************************************************************************/
+
 using System;
 using System.Collections.Generic;
 using TMPro;
@@ -15,18 +25,6 @@ public class Spawner : MonoBehaviour
 
         public EnemySO[] enemies;
         public float delay;
-
-        // Optional: You can include a constructor for clean initialization
-        /*
-        public MiniWave(int count, float delayTime)
-        {
-            delay = delayTime;
-            enemies = new EnemySO[count];
-            for(int i = 0; i < count; i++)
-            {
-                enemies[i] = "testEnemy";
-            }
-        }*/
 
         public MiniWave(MiniWaveSO so)
         {
@@ -97,12 +95,10 @@ public class Spawner : MonoBehaviour
                 for (int i = 0; i < enemies.Length; i++)
                 {
                     enemies[i] = enemySOs[i];
-                    //Debug.Log("MiniWave builder: i = " + i  + ", enemies[i] = " + enemies[i].name);
                 }
             }
             else
             {
-                //Debug.Log("invalid construction type");
                 enemies = null;
                 delay = 1;
             }

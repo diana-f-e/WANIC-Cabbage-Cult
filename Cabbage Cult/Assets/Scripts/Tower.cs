@@ -1,3 +1,13 @@
+/****************************************************************************
+* File Name: Tower.cs
+* Author: Diana Everman
+* DigiPen Email: diana.everman@digipen.edu
+* Course: Video Game Programming 1
+*
+* Description: This file is to be attached to a Tower for its functions.
+*
+****************************************************************************/
+
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;

@@ -18122,8 +18122,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -23921,6 +23921,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2091233535}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: hurtARC
+      value: 
+      objectReference: {fileID: 6418180475301049370, guid: 5573da885ede2694d8abaa21f0d8bff5, type: 2}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: titheUI
       value: 
       objectReference: {fileID: 489343690}
@@ -23948,6 +23952,10 @@ PrefabInstance:
       propertyPath: statsText
       value: 
       objectReference: {fileID: 426317561}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: summonARC
+      value: 
+      objectReference: {fileID: 8300000, guid: e66c666efcc224044b2a3d7708ae6c1e, type: 3}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: waveMusic
       value: 
@@ -24012,6 +24020,18 @@ PrefabInstance:
       propertyPath: statsTextTitheTowers
       value: 
       objectReference: {fileID: 1714189448}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: 'hitARCs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 6418180475301049370, guid: 74683d6434948aa449b567e4136df1a2, type: 2}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: 'hitARCs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 6418180475301049370, guid: e9744058221a79f47863aeb4f549c1b2, type: 2}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: 'hitARCs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 6418180475301049370, guid: a45853db639b9fc4cbce7ea10fa0b066, type: 2}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: 'curseSOs.Array.data[0]'
       value: 
