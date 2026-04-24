@@ -10,4 +10,5 @@ public class EnemySO : ScriptableObject
     public int helmetHealth;
     public AudioResource onHurt;
     public Sprite skin;
+    public RuntimeAnimatorController runtimeAnimator;
 }

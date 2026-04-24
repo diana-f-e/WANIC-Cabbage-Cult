@@ -48,6 +48,9 @@ public class Enemy : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().sprite = scriptVals.skin;
         }
+        GetComponent<Animator>().runtimeAnimatorController = scriptVals.runtimeAnimator;
+        //TODO
+        GetComponent<SpriteRenderer>().flipX = true;
 
 
     }
