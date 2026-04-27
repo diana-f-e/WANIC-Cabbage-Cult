@@ -29,6 +29,5 @@ MonoBehaviour:
   runtimeAnimator: {fileID: 9100000, guid: d1631c4654c85f84a8b9fb3845964740, type: 2}
   effectNum: 20
   effectCooldown: 1
-  description: "--------------------------------------------------------Applies the
-    Decay effect to hit enemies, dealing effect damage for every second it\u2019s
-    applied."
+  description: "Applies the Decay effect to hit enemies, dealing effect damage for
+    every second it\u2019s applied."

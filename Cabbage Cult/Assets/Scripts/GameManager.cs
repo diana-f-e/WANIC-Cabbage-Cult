@@ -84,6 +84,9 @@ public class GameManager : MonoBehaviour
     public AudioResource summonARC;
     public AudioResource hurtARC;
 
+    public Texture2D cursorOpen;
+    public Texture2D cursorClosed;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -155,6 +158,9 @@ public class GameManager : MonoBehaviour
         //click
         if (Input.GetMouseButtonDown(0))
         {
+            //update cursor sprite 
+            Cursor.SetCursor(cursorClosed, new Vector2(16, 16), CursorMode.Auto);
+
             //holding smth?
             if (heldObj != null)
             {
@@ -172,6 +178,9 @@ public class GameManager : MonoBehaviour
         //right click
         if (Input.GetMouseButtonDown(1))
         {
+            //update cursor sprite 
+            Cursor.SetCursor(cursorClosed, new Vector2(16, 16), CursorMode.Auto);
+
             Tower clickedTower = clickedObj.GetComponent<Tower>();
             //loop through everything clicked to find the tower
             if (clickedTower == null)
@@ -198,8 +207,12 @@ public class GameManager : MonoBehaviour
                 {
                     AddToMergeList(clickedTower);
                 }
-
             }
+        }
+        if(Input.GetMouseButtonUp(0) || Input.GetMouseButtonUp(1))
+        {
+            //update cursor sprite 
+            Cursor.SetCursor(cursorOpen, new Vector2(16,16), CursorMode.Auto);
         }
 
 
@@ -442,7 +455,7 @@ public class GameManager : MonoBehaviour
     public string GetTowerDisplayText(TowerSO scriptVals)
     {
         string displayText = "";
-        displayText += scriptVals.towerType + " Tower \n";
+        displayText += scriptVals.towerType + " Cultist \n";
         //damage display
         displayText += "DMG: ";
         for(int i = 0; i < 5; i++)
@@ -498,8 +511,24 @@ public class GameManager : MonoBehaviour
             }
             displayText += "\n";
         }
-        
-        displayText += scriptVals.description;
+
+        int dashesGoal = (int)(scriptVals.description.Length / 3.1);
+        if(scriptVals.towerType == "laser")
+        {
+            dashesGoal += (int)(3 * 20 / 3.1);
+        }
+        else
+        {
+            dashesGoal += (int)(4 * 20 / 3.1);
+        }
+
+
+        for (int i = 0; i < dashesGoal; i++)
+        {
+            displayText += "-";
+        }
+
+        displayText += "\n" + scriptVals.description;
         return displayText;
     }
 

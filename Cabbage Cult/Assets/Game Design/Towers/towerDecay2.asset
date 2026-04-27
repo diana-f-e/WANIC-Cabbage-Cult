@@ -29,6 +29,5 @@ MonoBehaviour:
   runtimeAnimator: {fileID: 0}
   effectNum: 40
   effectCooldown: 0.75
-  description: "--------------------------------------------------------Applies a
-    stronger Decay effect to hit enemies, dealing grater damage for every 0.75 seconds
-    it\u2019s applied."
+  description: "Applies a stronger Decay effect to hit enemies, dealing grater damage
+    for every 0.75 seconds it\u2019s applied."
