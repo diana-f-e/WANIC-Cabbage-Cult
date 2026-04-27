@@ -27,7 +27,7 @@ MonoBehaviour:
   audioResourceTest: {fileID: 0}
   skin: {fileID: 3322266479791537964, guid: bb6509e85fc50d947b27691d94746c1c, type: 3}
   runtimeAnimator: {fileID: 9100000, guid: d1631c4654c85f84a8b9fb3845964740, type: 2}
-  effectNum: 20
+  effectNum: 15
   effectCooldown: 1
   description: Applies the Decay effect to hit enemies, dealing average effect damage
     periodically.
