@@ -1,3 +1,12 @@
+/****************************************************************************
+* File Name: Tutorial.cs
+* Author: Diana Everman
+* DigiPen Email: diana.everman@digipen.edu
+* Course: Video Game Programming 1
+*
+* Description: This file is used on the Tutorial object to advance through it.
+*
+****************************************************************************/
 using UnityEngine;
 using UnityEngine.Rendering;
 

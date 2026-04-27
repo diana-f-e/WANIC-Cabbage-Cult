@@ -1,3 +1,12 @@
+/****************************************************************************
+* File Name: TowerIcon.cs
+* Author: Diana Everman
+* DigiPen Email: diana.everman@digipen.edu
+* Course: Video Game Programming 1
+*
+* Description: This file is to be attached to a TowerIcon for its functions.
+*
+****************************************************************************/
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -10,21 +19,15 @@ public class TowerIcon : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     public int cost;
     private GameObject infoDisplay;
 
-    //public TextMeshProUGUI textBox;
-
     private void OnValidate()
     {
         cost = scriptVals.towerCost;
-        //gameObject.GetComponent<SpriteRenderer>().sprite = scriptVals.skin;
-        //if(!textBox.text.Contains(cost.ToString()))
-        //{
-        //    textBox.text += ": " + cost;
-        //}
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        //display name and cost of the tower on its shop icon
         this.GetComponentInChildren<TextMeshProUGUI>().text = "" + scriptVals.towerType + ": " + scriptVals.towerCost;
         infoDisplay = gameManager.towerInfoDisplay;
 
@@ -39,10 +42,7 @@ public class TowerIcon : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     //when the shop icon is clicked, give the player the relevant tower item
     private void OnMouseDown()
     {
-        //Debug.Log("OnMouseDown");
         onClicked();
-
-
     }
 
     public void onClicked()

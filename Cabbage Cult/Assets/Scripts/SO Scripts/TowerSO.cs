@@ -1,3 +1,13 @@
+/****************************************************************************
+* File Name: TowerSO.cs
+* Author: Diana Everman
+* DigiPen Email: diana.everman@digipen.edu
+* Course: Video Game Programming 1
+*
+* Description: A scriptable object made using this file provides the values
+*              for a tower type.
+*
+****************************************************************************/
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;

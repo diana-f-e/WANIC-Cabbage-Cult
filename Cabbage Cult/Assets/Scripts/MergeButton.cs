@@ -1,3 +1,12 @@
+/****************************************************************************
+* File Name: MergeButton.cs
+* Author: Diana Everman
+* DigiPen Email: diana.everman@digipen.edu
+* Course: Video Game Programming 1
+*
+* Description: This file describes the function for the merge button.
+*
+****************************************************************************/
 using System.Collections.Generic;
 using UnityEngine;
 

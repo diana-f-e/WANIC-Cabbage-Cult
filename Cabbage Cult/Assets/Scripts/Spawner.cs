@@ -4,7 +4,7 @@
 * DigiPen Email: diana.everman@digipen.edu
 * Course: Video Game Programming 1
 *
-* Description: This file manages the enemy spawnign in waves.
+* Description: This file manages the enemy spawning in waves.
 *
 ****************************************************************************/
 

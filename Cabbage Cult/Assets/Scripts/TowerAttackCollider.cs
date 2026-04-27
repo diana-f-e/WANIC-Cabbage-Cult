@@ -1,3 +1,13 @@
+/****************************************************************************
+* File Name: TowerAttackCollider.cs
+* Author: Diana Everman
+* DigiPen Email: diana.everman@digipen.edu
+* Course: Video Game Programming 1
+*
+* Description: This file is to be attached to a tower's attack collider object
+*               for its functions, detecting when an enemy enters/exits.
+*
+****************************************************************************/
 using UnityEngine;
 
 public class TowerAttackCollider : MonoBehaviour

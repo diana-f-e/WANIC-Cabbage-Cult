@@ -7,7 +7,6 @@
 * Description: This file is to be attached to an enemy for its functions.
 *
 ****************************************************************************/
-
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
@@ -100,7 +99,7 @@ public class Enemy : MonoBehaviour
         //walk a step toward the next waypoint
         transform.position += speed * direction * Time.deltaTime;
         //if im at/past the waypoint: reassign waypoint
-        if(Vector3.Distance(transform.position, currentWaypoint.position) < (1.01 * speed * Time.deltaTime) ) //TODO fix in build
+        if(Vector3.Distance(transform.position, currentWaypoint.position) < (1.01 * speed * Time.deltaTime) )
         {
             if (currentWaypointIndex == waypoints.Length - 1)
             {
@@ -150,9 +149,7 @@ public class Enemy : MonoBehaviour
         Damage(amount);
         //apply effect
         if (effect == "slow")
-        {
-            //TODO animation
-            
+        { 
             if (!slowed)
             {
                 slowedAmt = num;
@@ -192,31 +189,23 @@ public class Enemy : MonoBehaviour
             helmetHealth -= 1;
             if (helmetHealth == 0)
             {
-                //TODO destroy helmet
+                //TODO destroy helmet (since this feature wasnt implemented, )
                 gameObject.GetComponent<SpriteRenderer>().color += new Color(0.4f, 0.1f, 0.1f);
             }
         }
         else
         {
             health -= amount;
-            //gameManager.audioSource.PlayOneShot(scriptVals.onHurt);
         }
 
     }
 
     public void PlayAnimation(string hitType)
     {
-        //TODO
         GameObject newHitEffect = Instantiate(gameManager.hitEffectPrefab, transform.position, Quaternion.identity);
         newHitEffect.GetComponent<Animator>().runtimeAnimatorController = gameManager.getHitAnimController(hitType);
         newHitEffect.GetComponent<HitEffect>().GetComponent<AudioSource>().resource = gameManager.getHitARC(hitType);
         newHitEffect.GetComponent<HitEffect>().myEnemy = transform;
-        /*
-        Animator anim = GetComponentInChildren<Animator>();
-        if(effect == "laser")
-        {
-            anim.Play("LaserClip");
-        }*/
     }
 
 }

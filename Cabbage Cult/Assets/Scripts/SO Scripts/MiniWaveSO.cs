@@ -1,3 +1,13 @@
+/****************************************************************************
+* File Name: MiniWaveSO.cs
+* Author: Diana Everman
+* DigiPen Email: diana.everman@digipen.edu
+* Course: Video Game Programming 1
+*
+* Description: A scriptable object made using this file provides the values
+*              for a miniwave type.
+*
+****************************************************************************/
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "MiniWaveSO", menuName = "Scriptable Objects/MiniWaveSO")]
