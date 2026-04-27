@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerType: decay
   towerLevel: 3
-  cooldown: 0.5
+  cooldown: 1
   damage: 0
   attackRadius: 3.5
   placeRadius: 0.5
@@ -29,5 +29,6 @@ MonoBehaviour:
   runtimeAnimator: {fileID: 9100000, guid: b71528d3d68b90e4dbaf1b8f574d986f, type: 2}
   effectNum: 80
   effectCooldown: 0.5
-  description: "Applies the Decay effect to hit enemies, dealing damage for every
-    second it\u2019s applied."
+  description: "---------------------------------------------------------Applies
+    a very strong Decay effect to hit enemies, dealing powerful damage for every
+    0.5 seconds it\u2019s applied."
