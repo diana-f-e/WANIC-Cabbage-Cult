@@ -27,7 +27,7 @@ MonoBehaviour:
   audioResourceTest: {fileID: 0}
   skin: {fileID: 1019658227202165358, guid: 7e2a0812128facc4ebabc7b5e79fdc9e, type: 3}
   runtimeAnimator: {fileID: 9100000, guid: 5799995d263deff4ea819ed0bfe5664d, type: 2}
-  effectNum: 0.6
+  effectNum: 0.5
   effectCooldown: 4.5
   description: Applies a greater Slowness effect to hit enemies, greatly lowering
     their movement speed for a considerable time.

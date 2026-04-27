@@ -15,7 +15,7 @@ MonoBehaviour:
   towerType: melee
   towerLevel: 3
   cooldown: 0.5
-  damage: 90
+  damage: 40
   attackRadius: 3
   placeRadius: 0.6
   towerCost: 0
@@ -27,7 +27,7 @@ MonoBehaviour:
   audioResourceTest: {fileID: 0}
   skin: {fileID: -7436302592896031495, guid: c2229bec3a7053a4faf7ceeff7dacd69, type: 3}
   runtimeAnimator: {fileID: 9100000, guid: 60d189604e6193044bf9dd8e39c05248, type: 2}
-  effectNum: 0.4
+  effectNum: 0.2
   effectCooldown: 6
   description: Applies a very strong Slowness effect to hit enemies, more than halving
     their movement speed for a long time.

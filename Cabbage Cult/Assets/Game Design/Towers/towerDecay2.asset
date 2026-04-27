@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerType: decay
   towerLevel: 2
-  cooldown: 1.5
+  cooldown: 1
   damage: 0
   attackRadius: 3
   placeRadius: 0.5
@@ -25,9 +25,9 @@ MonoBehaviour:
   onPlace: {fileID: 8300000, guid: 5254f968a15ad4942999b610c0c15737, type: 3}
   onBuy: {fileID: 0}
   audioResourceTest: {fileID: 0}
-  skin: {fileID: 9149414102983926309, guid: 6502f2e1b0c0db442b81e9af21a8b814, type: 3}
-  runtimeAnimator: {fileID: 0}
-  effectNum: 40
-  effectCooldown: 0.75
-  description: "Applies a stronger Decay effect to hit enemies, dealing grater damage
-    for every 0.75 seconds it\u2019s applied."
+  skin: {fileID: 3629319471766394242, guid: 3efd3672eb958f84c92d43bf00c9d432, type: 3}
+  runtimeAnimator: {fileID: 9100000, guid: 14175787f2518754aaa775c14c6f5c56, type: 2}
+  effectNum: 30
+  effectCooldown: 1
+  description: Applies a stronger Decay effect to hit enemies, dealing greater effect
+    damage periodically.
