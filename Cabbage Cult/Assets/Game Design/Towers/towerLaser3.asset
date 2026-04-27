@@ -29,5 +29,5 @@ MonoBehaviour:
   runtimeAnimator: {fileID: 9100000, guid: 7b8b628e00be16248a41ca0cf8657def, type: 2}
   effectNum: 0
   effectCooldown: 0
-  description: ---------------------------------------------------------Does massive
-    massive massive damage to a single target in exchange for a medium cooldown.
+  description: Does massive massive massive damage to a single target in exchange
+    for a medium cooldown.
