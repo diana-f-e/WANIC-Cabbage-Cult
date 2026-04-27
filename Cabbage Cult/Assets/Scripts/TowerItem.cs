@@ -1,3 +1,12 @@
+/****************************************************************************
+* File Name: TowerItem.cs
+* Author: Diana Everman
+* DigiPen Email: diana.everman@digipen.edu
+* Course: Video Game Programming 1
+*
+* Description: This file is to be attached to a TowerItem for its functions.
+*
+****************************************************************************/
 using UnityEngine;
 
 public class TowerItem : MonoBehaviour
@@ -26,19 +35,16 @@ public class TowerItem : MonoBehaviour
         setRadius();
     }
 
+    //the radius of the placing collider is determined by the height of the sprite and the placeRadius in the 
+    //scriptable object, with some leeway
     private void setRadius()
     {
         if (towerScriptVals.placeRadius != 0)
-        {
-            Debug.Log("start radius: " + gameObject.GetComponent<CircleCollider2D>().radius);
-            Debug.Log("sprite.bounds.size.y: " + gameObject.GetComponent<SpriteRenderer>().sprite.bounds.size.y);
-            Debug.Log("towerScriptVals.placeRadius: " + towerScriptVals.placeRadius);
-
+        { 
             gameObject.GetComponent<SpriteRenderer>().sprite = towerScriptVals.skin;
             gameObject.GetComponent<CircleCollider2D>().radius = gameObject.GetComponent<SpriteRenderer>().sprite.bounds.size.y / 2;
             gameObject.GetComponent<CircleCollider2D>().radius *= towerScriptVals.placeRadius;
             gameObject.GetComponent<CircleCollider2D>().radius *= 1.1f;
-            Debug.Log("end radius: " + gameObject.GetComponent<CircleCollider2D>().radius);
         }
     }
 
@@ -48,9 +54,9 @@ public class TowerItem : MonoBehaviour
         
     }
 
+    //if there is a tower or other obstacle within the placing range, the tower cannot be placed 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //TODO change to Tower once placing tower works
         if(collision.gameObject.GetComponent<Tower>() == null && collision.gameObject.tag != "BuildBlocker")
         {
             return;
@@ -61,7 +67,6 @@ public class TowerItem : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        //TODO change to Tower once placing tower works
         if (collision.gameObject.GetComponent<Tower>() == null && collision.gameObject.tag != "BuildBlocker")
         {
             return;
@@ -70,6 +75,7 @@ public class TowerItem : MonoBehaviour
         GetComponent<SpriteRenderer>().color = invalidSpotColor;
     }
 
+    //if there is no tower or other obstacle within the placing range, the tower can be placed 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.GetComponent<Tower>() == null && collision.gameObject.tag != "BuildBlocker")

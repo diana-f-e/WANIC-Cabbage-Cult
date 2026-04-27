@@ -169,6 +169,16 @@ public class Tower : MonoBehaviour
                 xdiff = 0.2f;//0.54f;
                 ydiff = 0.524f;//0.35f;
             }
+            else if (level == 2)
+            {
+                xdiff = -0.06f;
+                ydiff = 0.614f;
+            }
+            else if (level == 3)
+            {
+                xdiff = -0.03f;
+                ydiff = 0.67f;
+            }
             //if enemy is on tower's right
             if (target.gameObject.transform.position.x > transform.position.x)
             {

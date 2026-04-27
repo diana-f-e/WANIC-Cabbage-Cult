@@ -1,3 +1,13 @@
+/****************************************************************************
+* File Name: PlaytestingSO.cs
+* Author: Diana Everman
+* DigiPen Email: diana.everman@digipen.edu
+* Course: Video Game Programming 1
+*
+* Description: A scriptable object made using this file provides the values
+*              for a gameManager.
+*
+****************************************************************************/
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "PlaytestingSO", menuName = "Scriptable Objects/PlaytestingSO")]

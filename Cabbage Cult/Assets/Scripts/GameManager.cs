@@ -126,7 +126,6 @@ public class GameManager : MonoBehaviour
         }
 
         //update stats
-        //statsText.text = "Health: "+ health + "\nMoney: " + money + "\nPhase: " + phase + "\nCurse: " + currentCurseName;
         statsTextMoney.text = "" + money;
         healthBar.fillAmount = health / scriptVals.health;
         if(titheUI.activeInHierarchy)
@@ -160,7 +159,6 @@ public class GameManager : MonoBehaviour
             if (heldObj != null)
             {
                 //valid spot?
-                //if(validTowerSpot(mousePosition, heldObj))
                 if (heldObj.GetComponent<TowerItem>().validPlacement && mousePosition.x < shopBorder.position.x)
                 {
                     //place it
@@ -222,7 +220,6 @@ public class GameManager : MonoBehaviour
         }
 
         Destroy(towerItem);
-        //UpdateTowerList
         UpdateTowerList();
     }
 
@@ -240,14 +237,14 @@ public class GameManager : MonoBehaviour
         //if this is the first thing in the list change mergeType
         if (mergeList.Count == 0)
         {
-            //Change mergeType to towerType
+            //change mergeType to towerType
             mergeType = tower.towerType;
             mergeLevel = tower.level;
         }
-        //Does its type and level match merge type and level? 
+        //does its type and level match merge type and level? 
         if (tower.towerType != mergeType || tower.level != mergeLevel)
         {
-            //If not, return false
+            //if not, return false
             return false;
         }
         //no open spots: return false
@@ -266,11 +263,11 @@ public class GameManager : MonoBehaviour
 
     private bool RemoveFromMergeList(Tower tower)
     {
-        //Remove it from the list
+        //remove it from the list
         mergeList.Remove(tower);
-        //Change to unselected sprite
+        //change to unselected sprite
         tower.MergeDeselect();
-        //If the list is empty
+        //if the list is empty
         if (mergeList.Count <= 0)
         {
             //Change mergeType to null
@@ -300,16 +297,6 @@ public class GameManager : MonoBehaviour
             mergePreviewMiniCopies[index].gameObject.SetActive(i.gameObject.activeSelf);
             index++;
         }
-        /*
-        if (mergeList.Count == 3)
-        {
-            mergePreview.gameObject.SetActive(true);
-            mergePreview.sprite = FindFirstObjectByType<MergeButton>().GetUpgradedTowerSO().skin;
-        }
-        else
-        {
-            mergePreview.gameObject.SetActive(false);
-        }*/
     }
 
     public void StartShopPhase()
@@ -354,7 +341,6 @@ public class GameManager : MonoBehaviour
             {
                 break;
             }
-            //Debug.Log("MiniWave builder: i = "+i+", j = "+j+", enemies[i] = " + enemies[i].name);
         }
         if (chosenCurseSO == null)
         {
@@ -364,7 +350,7 @@ public class GameManager : MonoBehaviour
         }
 
         currentCurseName = chosenCurseSO.curseName;
-        currentCurse = chosenCurseSO;//curseSOs[0];
+        currentCurse = chosenCurseSO;
         Tower[] towers = FindObjectsByType<Tower>(FindObjectsSortMode.None);
         foreach(Tower t in towers)
         {
@@ -471,11 +457,11 @@ public class GameManager : MonoBehaviour
             }
         }
         displayText += "\n";
-        displayText += "Speed: ";// + scriptVals.cooldown;
+        displayText += "Speed: ";
         //ATK cooldown
         if(scriptVals.cooldown > 3)
         {
-            displayText += " fast\n";
+            displayText += " slow\n";
         }
         else if(scriptVals.cooldown > 1)
         {
@@ -483,7 +469,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            displayText += " slow\n";
+            displayText += " fast\n";
         }
         //display effect
         if (scriptVals.effect != "" && scriptVals.effect != null)
@@ -515,14 +501,6 @@ public class GameManager : MonoBehaviour
         
         displayText += scriptVals.description;
         return displayText;
-
-        /*
-         * Decay Tower
-DMG: ?????
-Attack CD: Average
-Effect DMG: ?????
-This tower applies the Decay effect to hit enemies, dealing 10>40>80 damage every second it’s applied at level 1>2>3.
-         */
     }
 
     public RuntimeAnimatorController getHitAnimController(string hitType)

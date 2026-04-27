@@ -1,3 +1,12 @@
+/****************************************************************************
+* File Name: SceneSwitcher.cs
+* Author: Diana Everman
+* DigiPen Email: diana.everman@digipen.edu
+* Course: Video Game Programming 1
+*
+* Description: This file describes the function for switching scenes.
+*
+****************************************************************************/
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
