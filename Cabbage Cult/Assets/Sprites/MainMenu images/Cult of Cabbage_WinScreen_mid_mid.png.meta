@@ -1,0 +1,453 @@
+fileFormatVersion: 2
+guid: 93fe594df1f09c9439d3b6b31ad85d02
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4497548419997218649
+    second: Cult of Cabbage_WinScreen_mid_mid_0
+  - first:
+      213: -300506603388412580
+    second: Cult of Cabbage_WinScreen_mid_mid_1
+  - first:
+      213: -5395561170708568696
+    second: Cult of Cabbage_WinScreen_mid_mid_2
+  - first:
+      213: 5934139107271800660
+    second: Cult of Cabbage_WinScreen_mid_mid_3
+  - first:
+      213: 6105070292727250567
+    second: Cult of Cabbage_WinScreen_mid_mid_4
+  - first:
+      213: -5562480232345835449
+    second: Cult of Cabbage_WinScreen_mid_mid_5
+  - first:
+      213: 7251963323229232148
+    second: Cult of Cabbage_WinScreen_mid_mid_6
+  - first:
+      213: -4403594483564035139
+    second: Cult of Cabbage_WinScreen_mid_mid_7
+  - first:
+      213: -4921175938046737529
+    second: Cult of Cabbage_WinScreen_mid_mid_8
+  - first:
+      213: 4311273456814831326
+    second: Cult of Cabbage_WinScreen_mid_mid_9
+  - first:
+      213: 1817849081788871172
+    second: Cult of Cabbage_WinScreen_mid_mid_10
+  - first:
+      213: 7785057835131197555
+    second: Cult of Cabbage_WinScreen_mid_mid_11
+  - first:
+      213: -2138951133430372713
+    second: Cult of Cabbage_WinScreen_mid_mid_12
+  - first:
+      213: -4132329549817726644
+    second: Cult of Cabbage_WinScreen_mid_mid_13
+  - first:
+      213: -190927710378948459
+    second: Cult of Cabbage_WinScreen_mid_mid_14
+  - first:
+      213: -7993892123925874988
+    second: Cult of Cabbage_WinScreen_mid_mid_15
+  - first:
+      213: 6280269500140416713
+    second: Cult of Cabbage_WinScreen_mid_mid_16
+  - first:
+      213: -8873104051436313180
+    second: Cult of Cabbage_WinScreen_mid_mid_17
+  - first:
+      213: 992443718758921758
+    second: Cult of Cabbage_WinScreen_mid_mid_18
+  - first:
+      213: 8585924960063151158
+    second: Cult of Cabbage_WinScreen_mid_mid_19
+  - first:
+      213: 676420197410615010
+    second: Cult of Cabbage_WinScreen_mid_mid_20
+  - first:
+      213: -5658544218443672303
+    second: Cult of Cabbage_WinScreen_mid_mid_21
+  - first:
+      213: -5498663871244286380
+    second: Cult of Cabbage_WinScreen_mid_mid_22
+  - first:
+      213: -5467911985522138938
+    second: Cult of Cabbage_WinScreen_mid_mid_23
+  - first:
+      213: -7714328655062584403
+    second: Cult of Cabbage_WinScreen_mid_mid_24
+  - first:
+      213: -3657224964807234999
+    second: Cult of Cabbage_WinScreen_mid_mid_25
+  - first:
+      213: 3581188129929742777
+    second: Cult of Cabbage_WinScreen_mid_mid_26
+  - first:
+      213: 7203468831375016926
+    second: Cult of Cabbage_WinScreen_mid_mid_27
+  - first:
+      213: 7166640361827609509
+    second: Cult of Cabbage_WinScreen_mid_mid_28
+  - first:
+      213: 6998233523622707430
+    second: Cult of Cabbage_WinScreen_mid_mid_29
+  - first:
+      213: 5216575352447888204
+    second: Cult of Cabbage_WinScreen_mid_mid_30
+  - first:
+      213: -6463762194816691551
+    second: Cult of Cabbage_WinScreen_mid_mid_31
+  - first:
+      213: -5423072357664631617
+    second: Cult of Cabbage_WinScreen_mid_mid_32
+  - first:
+      213: -6060024194700875889
+    second: Cult of Cabbage_WinScreen_mid_mid_33
+  - first:
+      213: 4328208266107369491
+    second: Cult of Cabbage_WinScreen_mid_mid_34
+  - first:
+      213: 5606439528820389528
+    second: Cult of Cabbage_WinScreen_mid_mid_35
+  - first:
+      213: -5376935673367936488
+    second: Cult of Cabbage_WinScreen_mid_mid_36
+  - first:
+      213: 1657860036957820584
+    second: Cult of Cabbage_WinScreen_mid_mid_37
+  - first:
+      213: 7502372465217389528
+    second: Cult of Cabbage_WinScreen_mid_mid_38
+  - first:
+      213: -44976057075938689
+    second: Cult of Cabbage_WinScreen_mid_mid_39
+  - first:
+      213: 7346693345450771818
+    second: Cult of Cabbage_WinScreen_mid_mid_40
+  - first:
+      213: -207934901986622486
+    second: Cult of Cabbage_WinScreen_mid_mid_41
+  - first:
+      213: -5017608929067214481
+    second: Cult of Cabbage_WinScreen_mid_mid_42
+  - first:
+      213: 4613747524521471207
+    second: Cult of Cabbage_WinScreen_mid_mid_43
+  - first:
+      213: 4271161577176929994
+    second: Cult of Cabbage_WinScreen_mid_mid_44
+  - first:
+      213: 7754302076041619502
+    second: Cult of Cabbage_WinScreen_mid_mid_45
+  - first:
+      213: 5396537606986410710
+    second: Cult of Cabbage_WinScreen_mid_mid_46
+  - first:
+      213: -181133732401572909
+    second: Cult of Cabbage_WinScreen_mid_mid_47
+  - first:
+      213: 595488777851090750
+    second: Cult of Cabbage_WinScreen_mid_mid_48
+  - first:
+      213: 7948639287545868620
+    second: Cult of Cabbage_WinScreen_mid_mid_49
+  - first:
+      213: 5587378274248201236
+    second: Cult of Cabbage_WinScreen_mid_mid_50
+  - first:
+      213: 3983492875267760093
+    second: Cult of Cabbage_WinScreen_mid_mid_51
+  - first:
+      213: 8595582579182391877
+    second: Cult of Cabbage_WinScreen_mid_mid_52
+  - first:
+      213: 3767275796111414090
+    second: Cult of Cabbage_WinScreen_mid_mid_53
+  - first:
+      213: -2621200628284145092
+    second: Cult of Cabbage_WinScreen_mid_mid_54
+  - first:
+      213: 2199813262624260490
+    second: Cult of Cabbage_WinScreen_mid_mid_55
+  - first:
+      213: 8166521723211941296
+    second: Cult of Cabbage_WinScreen_mid_mid_56
+  - first:
+      213: 9013357946704428333
+    second: Cult of Cabbage_WinScreen_mid_mid_57
+  - first:
+      213: 3657911974878959045
+    second: Cult of Cabbage_WinScreen_mid_mid_58
+  - first:
+      213: 497680496085941431
+    second: Cult of Cabbage_WinScreen_mid_mid_59
+  - first:
+      213: -4447837394383681418
+    second: Cult of Cabbage_WinScreen_mid_mid_60
+  - first:
+      213: -3974214746839230593
+    second: Cult of Cabbage_WinScreen_mid_mid_61
+  - first:
+      213: -1306100247349086073
+    second: Cult of Cabbage_WinScreen_mid_mid_62
+  - first:
+      213: 1101444863680226076
+    second: Cult of Cabbage_WinScreen_mid_mid_63
+  - first:
+      213: -5376437327602605951
+    second: Cult of Cabbage_WinScreen_mid_mid_64
+  - first:
+      213: -2877975547624619380
+    second: Cult of Cabbage_WinScreen_mid_mid_65
+  - first:
+      213: 4356824628961083553
+    second: Cult of Cabbage_WinScreen_mid_mid_66
+  - first:
+      213: 2294874769053291700
+    second: Cult of Cabbage_WinScreen_mid_mid_67
+  - first:
+      213: 8120624033951581081
+    second: Cult of Cabbage_WinScreen_mid_mid_68
+  - first:
+      213: -2842426893079053182
+    second: Cult of Cabbage_WinScreen_mid_mid_69
+  - first:
+      213: -2006108586722803203
+    second: Cult of Cabbage_WinScreen_mid_mid_70
+  - first:
+      213: -996933607805468244
+    second: Cult of Cabbage_WinScreen_mid_mid_71
+  - first:
+      213: 5796808722594661554
+    second: Cult of Cabbage_WinScreen_mid_mid_72
+  - first:
+      213: -3791547975847378098
+    second: Cult of Cabbage_WinScreen_mid_mid_73
+  - first:
+      213: -4766957255206669401
+    second: Cult of Cabbage_WinScreen_mid_mid_74
+  - first:
+      213: 6107115543051861519
+    second: Cult of Cabbage_WinScreen_mid_mid_75
+  - first:
+      213: 8056507685950614038
+    second: Cult of Cabbage_WinScreen_mid_mid_76
+  - first:
+      213: -3237402879715287133
+    second: Cult of Cabbage_WinScreen_mid_mid_77
+  - first:
+      213: -671715126295200348
+    second: Cult of Cabbage_WinScreen_mid_mid_78
+  - first:
+      213: -6041173548076977349
+    second: Cult of Cabbage_WinScreen_mid_mid_79
+  - first:
+      213: 7774269344870818780
+    second: Cult of Cabbage_WinScreen_mid_mid_80
+  - first:
+      213: -5682899762243505161
+    second: Cult of Cabbage_WinScreen_mid_mid_81
+  - first:
+      213: 7444529833116274402
+    second: Cult of Cabbage_WinScreen_mid_mid_82
+  - first:
+      213: 6776279061310574508
+    second: Cult of Cabbage_WinScreen_mid_mid_83
+  - first:
+      213: 3635133140359766441
+    second: Cult of Cabbage_WinScreen_mid_mid_84
+  - first:
+      213: -3125955189370635942
+    second: Cult of Cabbage_WinScreen_mid_mid_85
+  - first:
+      213: -5808910259033240098
+    second: Cult of Cabbage_WinScreen_mid_mid_86
+  - first:
+      213: -7597636129613814685
+    second: Cult of Cabbage_WinScreen_mid_mid_87
+  - first:
+      213: 3530212844651158764
+    second: Cult of Cabbage_WinScreen_mid_mid_88
+  - first:
+      213: -4183396176487529569
+    second: Cult of Cabbage_WinScreen_mid_mid_89
+  - first:
+      213: -4179725442421814114
+    second: Cult of Cabbage_WinScreen_mid_mid_90
+  - first:
+      213: 2080723747896709795
+    second: Cult of Cabbage_WinScreen_mid_mid_91
+  - first:
+      213: -1174099382414694496
+    second: Cult of Cabbage_WinScreen_mid_mid_92
+  - first:
+      213: 9134526153052180432
+    second: Cult of Cabbage_WinScreen_mid_mid_93
+  - first:
+      213: -3831288776680180948
+    second: Cult of Cabbage_WinScreen_mid_mid_94
+  - first:
+      213: -1152916652020486556
+    second: Cult of Cabbage_WinScreen_mid_mid_95
+  - first:
+      213: 1763196102808539674
+    second: Cult of Cabbage_WinScreen_mid_mid_96
+  - first:
+      213: -7005604870341920469
+    second: Cult of Cabbage_WinScreen_mid_mid_97
+  - first:
+      213: 4467804076986496640
+    second: Cult of Cabbage_WinScreen_mid_mid_98
+  - first:
+      213: 5860211001696518952
+    second: Cult of Cabbage_WinScreen_mid_mid_99
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 250
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cult of Cabbage_WinScreen_mid_mid_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3860
+        height: 2160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a842f18a8f7591c0800000000000000
+      internalID: -4497548419997218649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 033174ca23980ed4a91e1424e052ab52
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Cult of Cabbage_WinScreen_mid_mid_0: -4497548419997218649
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
