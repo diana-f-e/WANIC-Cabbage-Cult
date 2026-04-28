@@ -521,17 +521,20 @@ public class GameManager : MonoBehaviour
             displayText += "\n";
         }
 
+        //calculate the length of the separating line based on amount of text
         int dashesGoal = (int)(scriptVals.description.Length / 3.1);
         if(scriptVals.towerType == "laser")
         {
-            dashesGoal += (int)(3 * 20 / 3.1);
+            dashesGoal += (int)(3.2 * 20 / 3.1);
+        }
+        else if (scriptVals.towerType == "melee" && scriptVals.towerLevel > 1)
+        {
+            dashesGoal += (int)(3.2 * 20 / 3.1);
         }
         else
         {
             dashesGoal += (int)(4 * 20 / 3.1);
         }
-
-
         for (int i = 0; i < dashesGoal; i++)
         {
             displayText += "-";
