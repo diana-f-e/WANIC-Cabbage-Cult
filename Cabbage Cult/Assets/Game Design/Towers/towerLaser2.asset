@@ -26,6 +26,7 @@ MonoBehaviour:
   onBuy: {fileID: 0}
   audioResourceTest: {fileID: 0}
   skin: {fileID: -8022306247270553746, guid: 50a30237cf6ecbc4285d33cefb310c54, type: 3}
+  iconSkin: {fileID: 6391408147351525150, guid: 29d1191a4ee00c74ab59fe40d39e0079, type: 3}
   runtimeAnimator: {fileID: 9100000, guid: 800e66c20ecd93744b50d92dc5017acc, type: 2}
   effectNum: 0
   effectCooldown: 0

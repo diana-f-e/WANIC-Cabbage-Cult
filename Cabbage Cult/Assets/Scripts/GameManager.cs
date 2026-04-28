@@ -196,7 +196,7 @@ public class GameManager : MonoBehaviour
                 }
             }
             //Is it a tower?
-            if (clickedTower != null)
+            if (clickedTower != null && clickedTower.level != 3)
             {
                 //Is it in the list? 
                 if (mergeList.Contains(clickedTower))
@@ -293,23 +293,32 @@ public class GameManager : MonoBehaviour
     public void displayMergeList()
     {
         //display merge list
-        int index = 0;
-        foreach (Image i in mergePreviewMinis)
+        for (int index = 0; index < mergePreviewMinis.Length; index++)
         {
-            if(mergeList.Count < index + 1)
+            float w = 1;
+            float h = 1;
+            Image i = mergePreviewMinis[index];
+            if (mergeList.Count < index + 1)
             {
                 i.gameObject.SetActive(false);
             }
             else
             {
-                Sprite newSprite = mergeList[index].GetComponent<SpriteRenderer>().sprite;
+                Sprite newSprite = mergeList[index].GetComponent<Tower>().scriptVals.iconSkin;
                 i.gameObject.gameObject.SetActive(true);
                 i.sprite = newSprite;
+                //resize
+                w = newSprite.rect.width / newSprite.pixelsPerUnit;
+                h = newSprite.rect.height / newSprite.pixelsPerUnit;
+                i.rectTransform.sizeDelta = 200 * new Vector2(w, h);
             }
+            //apply changes to the copy of merge ui in the tithe menu
             mergePreviewMiniCopies[index].sprite = i.sprite;
+            //resize
+            i.rectTransform.sizeDelta = 200 * new Vector2(w, h);
             mergePreviewMiniCopies[index].gameObject.SetActive(i.gameObject.activeSelf);
-            index++;
         }
+
     }
 
     public void StartShopPhase()

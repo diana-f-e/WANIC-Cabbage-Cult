@@ -50,5 +50,6 @@ public class Tutorial : MonoBehaviour
             step.SetActive(false);
         }
         steps[0].SetActive(true);
+        index = 1;
     }
 }
