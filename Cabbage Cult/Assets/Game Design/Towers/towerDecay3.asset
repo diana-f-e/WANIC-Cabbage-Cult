@@ -28,6 +28,6 @@ MonoBehaviour:
   skin: {fileID: -3564481149584529697, guid: 2b88f2a1ab4022f45935f6d142bb2f15, type: 3}
   runtimeAnimator: {fileID: 9100000, guid: b71528d3d68b90e4dbaf1b8f574d986f, type: 2}
   effectNum: 50
-  effectCooldown: 2
+  effectCooldown: 4
   description: Applies a very strong Decay effect to hit enemies, dealing powerful
     effect damage periodically.

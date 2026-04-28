@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: MiniWaveTF
   m_EditorClassIdentifier: 
   construction: ratio
-  count: 40
-  delay: 1
+  count: 10
+  delay: 0.5
   types:
   - {fileID: 11400000, guid: 7619fddf6365acb4ba2436916fe52998, type: 2}
   - {fileID: 11400000, guid: d1da8a2ef882cc146adf9709ca886981, type: 2}

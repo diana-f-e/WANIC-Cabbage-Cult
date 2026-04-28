@@ -15,8 +15,6 @@ MonoBehaviour:
   miniWaves:
   - {fileID: 11400000, guid: 95da6d3cdb2ed9241bef1fb1d7382151, type: 2}
   - {fileID: 11400000, guid: 1fc2fc7a2d95d004cb07ada1c49a2f97, type: 2}
-  - {fileID: 11400000, guid: 95da6d3cdb2ed9241bef1fb1d7382151, type: 2}
-  - {fileID: 11400000, guid: 1fc2fc7a2d95d004cb07ada1c49a2f97, type: 2}
   - {fileID: 11400000, guid: ef1214d4d907f24428b12ce6be622c59, type: 2}
   note: -After the multitude of fast enemies, this wave gives a short break from
     that enemy type and instead introduces the other enemy type, tanks
