@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   construction: complex
   count: 0
-  delay: 5
+  delay: 2
   types:
   - {fileID: 11400000, guid: d1da8a2ef882cc146adf9709ca886981, type: 2}
   chances:
