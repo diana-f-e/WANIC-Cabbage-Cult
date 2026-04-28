@@ -509,7 +509,11 @@ public class GameManager : MonoBehaviour
 
             for (int i = 0; i < 5; i++)
             {
-                if (scriptVals.effectNum > 20 * i)
+                if(scriptVals.effect == "slow" && (1 - scriptVals.effectNum) >= 0.2 * i)
+                {
+                    displayText += "\u2605";
+                }
+                else if (scriptVals.effect == "decay" && scriptVals.effectNum >= 10 * (i+1))
                 {
                     displayText += "\u2605";
                 }
