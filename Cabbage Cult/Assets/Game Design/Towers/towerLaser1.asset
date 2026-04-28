@@ -29,4 +29,5 @@ MonoBehaviour:
   runtimeAnimator: {fileID: 9100000, guid: 38c7705197882bf47bab8f386ebbb00e, type: 2}
   effectNum: 0
   effectCooldown: 0
-  description: Does massive damage to a single target in exchange for a longer cooldown.
+  description: Does <#FF0000>massive damage </color>to a <color=#5771FF>single target
+    </color>in exchange for a <color=#FFEA5E>longer cooldown</color>.
