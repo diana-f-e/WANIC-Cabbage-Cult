@@ -30,6 +30,7 @@ public class TowerSO : ScriptableObject
     public AudioResource audioResourceTest;
 
     public Sprite skin;
+    public Sprite iconSkin;
     public RuntimeAnimatorController runtimeAnimator;
 
     public float effectNum;
