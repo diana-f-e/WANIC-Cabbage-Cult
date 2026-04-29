@@ -1,103 +1,10 @@
 fileFormatVersion: 2
-guid: 37b61098b6673c1418d2e470bee8a03d
+guid: 8e5e03317b56907439b278e7f07aaea7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8498978498821086792
-    second: level idk_path 1_0
-  - first:
-      213: -7425653571171837101
-    second: level idk_path 1_1
-  - first:
-      213: -8887455734309456034
-    second: level idk_path 1_2
-  - first:
-      213: 7002460110477737950
-    second: level idk_path 1_3
-  - first:
-      213: 4782901119084553764
-    second: level idk_path 1_4
-  - first:
-      213: 3245687386365080482
-    second: level idk_path 1_5
-  - first:
-      213: 5807432081872532412
-    second: level idk_path 1_6
-  - first:
-      213: 7118302936610574737
-    second: level idk_path 1_7
-  - first:
-      213: -4280892583088251211
-    second: level idk_path 1_8
-  - first:
-      213: -8442563240487219265
-    second: level idk_path 1_9
-  - first:
-      213: 4870972958719382196
-    second: level idk_path 1_10
-  - first:
-      213: -8861253789892685017
-    second: level idk_path 1_11
-  - first:
-      213: -7109223765727000450
-    second: level idk_path 1_12
-  - first:
-      213: 7347999298132925749
-    second: level idk_path 1_13
-  - first:
-      213: -2301107696729106245
-    second: level idk_path 1_14
-  - first:
-      213: -7163226141086736877
-    second: level idk_path 1_15
-  - first:
-      213: -8427510262114038790
-    second: level idk_path 1_16
-  - first:
-      213: 6770886349989990869
-    second: level idk_path 1_17
-  - first:
-      213: 4522647889763263259
-    second: level idk_path 1_18
-  - first:
-      213: -666815545476251616
-    second: level idk_path 1_19
-  - first:
-      213: 7072717868315019546
-    second: level idk_path 1_20
-  - first:
-      213: -2681345111647148012
-    second: level idk_path 1_21
-  - first:
-      213: -846075517322189966
-    second: level idk_path 1_22
-  - first:
-      213: -3983349853209368996
-    second: level idk_path 1_23
-  - first:
-      213: -7864007655170606838
-    second: level idk_path 1_24
-  - first:
-      213: 327102273876030227
-    second: level idk_path 1_25
-  - first:
-      213: 105208243287284648
-    second: level idk_path 1_26
-  - first:
-      213: 6839874814778686617
-    second: level idk_path 1_27
-  - first:
-      213: 5536397080667442204
-    second: level idk_path 1_28
-  - first:
-      213: -7082220355394018550
-    second: level idk_path 1_29
-  - first:
-      213: 6803087624203044512
-    second: level idk_path 1_30
-  - first:
-      213: 1310302196602064430
-    second: level idk_path 1_31
+      213: 6119513871062391631
+    second: Cult of Cabbage_LoseScreen_bg_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -144,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 215
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -206,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: level idk_path 1_0
+      name: Cult of Cabbage_LoseScreen_bg_0
       rect:
         serializedVersion: 2
         x: 0
@@ -221,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 84ed9e74aef62f570800000000000000
-      internalID: 8498978498821086792
+      spriteID: f4bdfb27171ece450800000000000000
+      internalID: 6119513871062391631
       vertices: []
       indices: 
       edges: []
@@ -231,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d005809c4f1e40a45bd46d4ab45b8a0a
+    spriteID: a98872fb056fd864f8f6f5848e18cac8
     internalID: 0
     vertices: []
     indices: 
@@ -241,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      level idk_path 1_0: 8498978498821086792
+      Cult of Cabbage_LoseScreen_bg_0: 6119513871062391631
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

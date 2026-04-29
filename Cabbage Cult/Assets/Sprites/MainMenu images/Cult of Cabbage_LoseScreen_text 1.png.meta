@@ -1,22 +1,100 @@
 fileFormatVersion: 2
-guid: 4a6ab705f0f3b394880b9c1c757d0c16
+guid: c9e53aca79027254c8fd54096ce6a0de
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4112963696691489426
-    second: level idk_0
+      213: -3348993150965012945
+    second: Cult of Cabbage_LoseScreen_text 1_0
   - first:
-      213: 5614502414862393334
-    second: level idk_1
+      213: -2641598963473202206
+    second: Cult of Cabbage_LoseScreen_text 1_1
   - first:
-      213: 2945372572239680953
-    second: level idk_2
+      213: 6613277846189722096
+    second: Cult of Cabbage_LoseScreen_text 1_2
   - first:
-      213: 8347289287946624588
-    second: level idk_3
+      213: -3601666901308971776
+    second: Cult of Cabbage_LoseScreen_text 1_3
   - first:
-      213: -693730412081305714
-    second: level idk_4
+      213: -6809317216127900520
+    second: Cult of Cabbage_LoseScreen_text 1_4
+  - first:
+      213: -1195266892066353341
+    second: Cult of Cabbage_LoseScreen_text 1_5
+  - first:
+      213: 8115694756383596771
+    second: Cult of Cabbage_LoseScreen_text 1_6
+  - first:
+      213: 3040954589689568653
+    second: Cult of Cabbage_LoseScreen_text 1_7
+  - first:
+      213: -2914152104725064684
+    second: Cult of Cabbage_LoseScreen_text 1_8
+  - first:
+      213: -7306559043881141120
+    second: Cult of Cabbage_LoseScreen_text 1_9
+  - first:
+      213: 3401491981108612405
+    second: Cult of Cabbage_LoseScreen_text 1_10
+  - first:
+      213: 906410800164825316
+    second: Cult of Cabbage_LoseScreen_text 1_11
+  - first:
+      213: -6576946243924390837
+    second: Cult of Cabbage_LoseScreen_text 1_12
+  - first:
+      213: -6989663000815927534
+    second: Cult of Cabbage_LoseScreen_text 1_13
+  - first:
+      213: 5088164661232323536
+    second: Cult of Cabbage_LoseScreen_text 1_14
+  - first:
+      213: -825713826751253917
+    second: Cult of Cabbage_LoseScreen_text 1_15
+  - first:
+      213: -5893308367279823478
+    second: Cult of Cabbage_LoseScreen_text 1_16
+  - first:
+      213: 4403331242910347906
+    second: Cult of Cabbage_LoseScreen_text 1_17
+  - first:
+      213: -2522897119884862526
+    second: Cult of Cabbage_LoseScreen_text 1_18
+  - first:
+      213: 1619611991338179911
+    second: Cult of Cabbage_LoseScreen_text 1_19
+  - first:
+      213: -3590599192133879814
+    second: Cult of Cabbage_LoseScreen_text 1_20
+  - first:
+      213: 832806602703674333
+    second: Cult of Cabbage_LoseScreen_text 1_21
+  - first:
+      213: -9089399775095942209
+    second: Cult of Cabbage_LoseScreen_text 1_22
+  - first:
+      213: 6235161782746257657
+    second: Cult of Cabbage_LoseScreen_text 1_23
+  - first:
+      213: 1131595719968387791
+    second: Cult of Cabbage_LoseScreen_text 1_24
+  - first:
+      213: -1141886240444505889
+    second: Cult of Cabbage_LoseScreen_text 1_25
+  - first:
+      213: -576483333220464131
+    second: Cult of Cabbage_LoseScreen_text 1_26
+  - first:
+      213: 1325773535560834317
+    second: Cult of Cabbage_LoseScreen_text 1_27
+  - first:
+      213: 4106525969662948650
+    second: Cult of Cabbage_LoseScreen_text 1_28
+  - first:
+      213: -7476644946363523254
+    second: Cult of Cabbage_LoseScreen_text 1_29
+  - first:
+      213: 3991176181165977856
+    second: Cult of Cabbage_LoseScreen_text 1_30
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -63,7 +141,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 215
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -125,7 +203,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: level idk_0
+      name: Cult of Cabbage_LoseScreen_text 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -140,8 +218,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e6550ac2f41dbe6c0800000000000000
-      internalID: -4112963696691489426
+      spriteID: f26a381197cf581d0800000000000000
+      internalID: -3348993150965012945
       vertices: []
       indices: 
       edges: []
@@ -150,7 +228,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3d6876a9d7523c346978b8ecf49556af
+    spriteID: 4003cdb6781a17f47a6c5c29089b7197
     internalID: 0
     vertices: []
     indices: 
@@ -160,7 +238,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      level idk_0: -4112963696691489426
+      Cult of Cabbage_LoseScreen_text 1_0: -3348993150965012945
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
