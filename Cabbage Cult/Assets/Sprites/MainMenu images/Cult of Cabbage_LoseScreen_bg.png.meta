@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 4a6ab705f0f3b394880b9c1c757d0c16
+guid: 8e5e03317b56907439b278e7f07aaea7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4112963696691489426
-    second: level idk_0
-  - first:
-      213: 5614502414862393334
-    second: level idk_1
-  - first:
-      213: 2945372572239680953
-    second: level idk_2
-  - first:
-      213: 8347289287946624588
-    second: level idk_3
-  - first:
-      213: -693730412081305714
-    second: level idk_4
+      213: 6119513871062391631
+    second: Cult of Cabbage_LoseScreen_bg_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -63,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 215
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -125,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: level idk_0
+      name: Cult of Cabbage_LoseScreen_bg_0
       rect:
         serializedVersion: 2
         x: 0
@@ -140,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e6550ac2f41dbe6c0800000000000000
-      internalID: -4112963696691489426
+      spriteID: f4bdfb27171ece450800000000000000
+      internalID: 6119513871062391631
       vertices: []
       indices: 
       edges: []
@@ -150,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3d6876a9d7523c346978b8ecf49556af
+    spriteID: a98872fb056fd864f8f6f5848e18cac8
     internalID: 0
     vertices: []
     indices: 
@@ -160,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      level idk_0: -4112963696691489426
+      Cult of Cabbage_LoseScreen_bg_0: 6119513871062391631
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
