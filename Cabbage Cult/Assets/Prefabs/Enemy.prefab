@@ -115,6 +115,7 @@ MonoBehaviour:
   helmetHealth: 0
   decayCooldown: 0
   slowCooldown: 0
+  audioSource: {fileID: 8817137818004855388}
 --- !u!50 &896317262270712088
 Rigidbody2D:
   serializedVersion: 5
