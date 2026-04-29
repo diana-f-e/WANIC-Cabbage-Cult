@@ -1,0 +1,333 @@
+fileFormatVersion: 2
+guid: 6fb23282fcfbbfa43a6b31d94af4d70a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -316517159455070842
+    second: Cult of Cabbage_Dave_text_0
+  - first:
+      213: 1222320095026693385
+    second: Cult of Cabbage_Dave_text_1
+  - first:
+      213: -1603418401718367087
+    second: Cult of Cabbage_Dave_text_2
+  - first:
+      213: -7207178157619605642
+    second: Cult of Cabbage_Dave_text_3
+  - first:
+      213: 2397824126494794020
+    second: Cult of Cabbage_Dave_text_4
+  - first:
+      213: -3322825958447397118
+    second: Cult of Cabbage_Dave_text_5
+  - first:
+      213: -5366469152561105132
+    second: Cult of Cabbage_Dave_text_6
+  - first:
+      213: -6078942131414414193
+    second: Cult of Cabbage_Dave_text_7
+  - first:
+      213: 8735621011135535632
+    second: Cult of Cabbage_Dave_text_8
+  - first:
+      213: 486680424593618848
+    second: Cult of Cabbage_Dave_text_9
+  - first:
+      213: -3854840115521836451
+    second: Cult of Cabbage_Dave_text_10
+  - first:
+      213: -4374865431352461504
+    second: Cult of Cabbage_Dave_text_11
+  - first:
+      213: 1851283169381250715
+    second: Cult of Cabbage_Dave_text_12
+  - first:
+      213: -7471924904259822426
+    second: Cult of Cabbage_Dave_text_13
+  - first:
+      213: 3256374244083560483
+    second: Cult of Cabbage_Dave_text_14
+  - first:
+      213: -8194591862029597889
+    second: Cult of Cabbage_Dave_text_15
+  - first:
+      213: -2277907794465354016
+    second: Cult of Cabbage_Dave_text_16
+  - first:
+      213: -5782054992555019416
+    second: Cult of Cabbage_Dave_text_17
+  - first:
+      213: -7358408209911220613
+    second: Cult of Cabbage_Dave_text_18
+  - first:
+      213: -274502276698777108
+    second: Cult of Cabbage_Dave_text_19
+  - first:
+      213: 8122510284771940969
+    second: Cult of Cabbage_Dave_text_20
+  - first:
+      213: 2171430543123692472
+    second: Cult of Cabbage_Dave_text_21
+  - first:
+      213: 65720549481229750
+    second: Cult of Cabbage_Dave_text_22
+  - first:
+      213: 2851042289950229143
+    second: Cult of Cabbage_Dave_text_23
+  - first:
+      213: -1748991730402355074
+    second: Cult of Cabbage_Dave_text_24
+  - first:
+      213: 1264526365026497055
+    second: Cult of Cabbage_Dave_text_25
+  - first:
+      213: -2518224708387493503
+    second: Cult of Cabbage_Dave_text_26
+  - first:
+      213: -4238141093847255366
+    second: Cult of Cabbage_Dave_text_27
+  - first:
+      213: 2593697018257691083
+    second: Cult of Cabbage_Dave_text_28
+  - first:
+      213: 609693868723456434
+    second: Cult of Cabbage_Dave_text_29
+  - first:
+      213: 8551300583914364598
+    second: Cult of Cabbage_Dave_text_30
+  - first:
+      213: 7344304608921827031
+    second: Cult of Cabbage_Dave_text_31
+  - first:
+      213: 9078268471039866772
+    second: Cult of Cabbage_Dave_text_32
+  - first:
+      213: -2138383885495070279
+    second: Cult of Cabbage_Dave_text_33
+  - first:
+      213: -3957165054956423587
+    second: Cult of Cabbage_Dave_text_34
+  - first:
+      213: -2906405301074085413
+    second: Cult of Cabbage_Dave_text_35
+  - first:
+      213: 1804622035074937984
+    second: Cult of Cabbage_Dave_text_36
+  - first:
+      213: 7343605128351512789
+    second: Cult of Cabbage_Dave_text_37
+  - first:
+      213: 3011292525497464331
+    second: Cult of Cabbage_Dave_text_38
+  - first:
+      213: 5605801608038633662
+    second: Cult of Cabbage_Dave_text_39
+  - first:
+      213: -1600100816881271606
+    second: Cult of Cabbage_Dave_text_40
+  - first:
+      213: -4614106105754452598
+    second: Cult of Cabbage_Dave_text_41
+  - first:
+      213: 3750025800579436892
+    second: Cult of Cabbage_Dave_text_42
+  - first:
+      213: 2966800916362937684
+    second: Cult of Cabbage_Dave_text_43
+  - first:
+      213: 227829814160456330
+    second: Cult of Cabbage_Dave_text_44
+  - first:
+      213: 3880328321403462436
+    second: Cult of Cabbage_Dave_text_45
+  - first:
+      213: 3359577249389825806
+    second: Cult of Cabbage_Dave_text_46
+  - first:
+      213: -1330047120554955393
+    second: Cult of Cabbage_Dave_text_47
+  - first:
+      213: 5044068002826857135
+    second: Cult of Cabbage_Dave_text_48
+  - first:
+      213: -2585367135423654535
+    second: Cult of Cabbage_Dave_text_49
+  - first:
+      213: 3118952432275966047
+    second: Cult of Cabbage_Dave_text_50
+  - first:
+      213: -3848240590465301654
+    second: Cult of Cabbage_Dave_text_51
+  - first:
+      213: -730565987833702553
+    second: Cult of Cabbage_Dave_text_52
+  - first:
+      213: -4447577155902017356
+    second: Cult of Cabbage_Dave_text_53
+  - first:
+      213: 2217993613212473552
+    second: Cult of Cabbage_Dave_text_54
+  - first:
+      213: 3855369961592059675
+    second: Cult of Cabbage_Dave_text_55
+  - first:
+      213: -5009169513789204105
+    second: Cult of Cabbage_Dave_text_56
+  - first:
+      213: 1460967309214129868
+    second: Cult of Cabbage_Dave_text_57
+  - first:
+      213: 9030188085432817915
+    second: Cult of Cabbage_Dave_text_58
+  - first:
+      213: 1232277038549089894
+    second: Cult of Cabbage_Dave_text_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cult of Cabbage_Dave_text_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3840
+        height: 2160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6856d5902518b9bf0800000000000000
+      internalID: -316517159455070842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e1659d6734144f64386c2fc1cd8ad666
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Cult of Cabbage_Dave_text_0: -316517159455070842
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
