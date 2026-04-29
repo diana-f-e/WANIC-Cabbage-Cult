@@ -9,13 +9,14 @@
 *
 ****************************************************************************/
 
+using NUnit.Framework.Internal;
+using System.Collections.Generic;
+using System.Drawing;
+using TMPro;
 using Unity.Burst.CompilerServices;
 using UnityEngine;
 using UnityEngine.Audio;
-using TMPro;
-using System.Collections.Generic;
 using UnityEngine.UI;
-using NUnit.Framework.Internal;
 
 public class GameManager : MonoBehaviour
 {
@@ -405,7 +406,7 @@ public class GameManager : MonoBehaviour
         {
             t.cursed = true;
             t.damage /= 2;
-            t.gameObject.GetComponent<SpriteRenderer>().color = Color.cyan;
+            t.gameObject.GetComponent<SpriteRenderer>().color = UnityEngine.Color.cyan;
         }
         Debug.Log("cursedy curse");
     }
@@ -467,29 +468,29 @@ public class GameManager : MonoBehaviour
     {
         if (Time.timeScale == 1)
         {
-            myButton.GetComponentInChildren<Image>().color = Color.white;
+            myButton.GetComponentInChildren<Image>().color = UnityEngine.Color.white;
         }
         else
         {
-            myButton.GetComponentInChildren<Image>().color = Color.gray;
+            myButton.GetComponentInChildren<Image>().color = UnityEngine.Color.gray;
         }
     }
 
     public string GetTowerDisplayText(TowerSO scriptVals)
     {
         string displayText = "";
-        displayText += scriptVals.towerType + " Cultist \n";
+        displayText += "<u>" + scriptVals.towerType + " cultist</u> \n";
         //damage display
         displayText += "DMG: ";
         for(int i = 0; i < 5; i++)
         {
             if(scriptVals.damage > 20 * i)
             {
-                displayText += "\u2605";
+                displayText += "<color=#DC3B86>\u2605</color>";
             }
             else
             {
-                displayText += "\u2606";
+                displayText += "<color=#BE0259>\u2606</color>";
             }
         }
         displayText += "\n";
@@ -497,15 +498,15 @@ public class GameManager : MonoBehaviour
         //ATK cooldown
         if(scriptVals.cooldown > 3)
         {
-            displayText += " slow\n";
+            displayText += " <color=#65FF57>slow</color>\n";
         }
         else if(scriptVals.cooldown > 1)
         {
-            displayText += " medium\n";
+            displayText += " <color=#FFDB57>medium</color>\n";
         }
         else
         {
-            displayText += " fast\n";
+            displayText += " <color=#FF7057>fast</color>\n";
         }
         //display effect
         if (scriptVals.effect != "" && scriptVals.effect != null)
@@ -525,39 +526,38 @@ public class GameManager : MonoBehaviour
             {
                 if(scriptVals.effect == "slow" && (1 - scriptVals.effectNum) >= 0.2 * i)
                 {
-                    displayText += "\u2605";
+                    displayText += "<color=#3BC4E3>\u2605</color>";
                 }
                 else if (scriptVals.effect == "decay" && scriptVals.effectNum >= 10 * (i+1))
                 {
-                    displayText += "\u2605";
+                    displayText += "<color=#29B32F>\u2605</color>";
                 }
                 else
                 {
-                    displayText += "\u2606";
+                    displayText += "<color=#E0E0E0>\u2606</color>";
                 }
             }
             displayText += "\n";
         }
 
         //calculate the length of the separating line based on amount of text
-        int dashesGoal = (int)(scriptVals.description.Length / 3.1);
-        if(scriptVals.towerType == "laser")
-        {
-            dashesGoal += (int)(3.2 * 20 / 3.1);
-        }
-        else if (scriptVals.towerType == "melee" && scriptVals.towerLevel > 1)
-        {
-            dashesGoal += (int)(3.2 * 20 / 3.1);
-        }
-        else
-        {
-            dashesGoal += (int)(4 * 20 / 3.1);
-        }
-        for (int i = 0; i < dashesGoal; i++)
-        {
-            displayText += "-";
-        }
-
+        //int dashesGoal = (int)(scriptVals.description.Length / 3.1);
+        //if(scriptVals.towerType == "laser")
+        //{
+        //    dashesGoal += (int)(3.2 * 20 / 3.1);
+        //}
+        //else if (scriptVals.towerType == "melee" && scriptVals.towerLevel > 1)
+        //{
+        //    dashesGoal += (int)(3.2 * 20 / 3.1);
+        //}
+        //else
+        //{
+        //    dashesGoal += (int)(4 * 20 / 3.1);
+        //}
+        //for (int i = 0; i < dashesGoal; i++)
+        //{
+        //    displayText += "-";
+        //}
         displayText += "\n" + scriptVals.description;
         return displayText;
     }
