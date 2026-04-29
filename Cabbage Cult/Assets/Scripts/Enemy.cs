@@ -40,6 +40,8 @@ public class Enemy : MonoBehaviour
 
     private GameObject hitEffect;
 
+    public AudioSource audioSource;
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -59,7 +61,7 @@ public class Enemy : MonoBehaviour
         }
         GetComponent<Animator>().runtimeAnimatorController = scriptVals.runtimeAnimator;
         GetComponent<SpriteRenderer>().flipX = true;
-        GetComponent<AudioSource>().resource = gameManager.hurtARC;
+        //GetComponent<AudioSource>().resource = gameManager.hurtARC;
 
 
     }
@@ -106,7 +108,7 @@ public class Enemy : MonoBehaviour
                 //reached last waypoint
                 direction = new Vector3(0, 0, 0);
                 gameManager.health -= damage;
-                GetComponent<AudioSource>().Play();
+                gameManager.PlaySound(gameManager.hurtARC);
                 if (gameManager.health <= 0)
                 {
                     SceneManager.LoadScene("LoseScene");

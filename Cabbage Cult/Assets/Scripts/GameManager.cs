@@ -69,6 +69,8 @@ public class GameManager : MonoBehaviour
     public AudioClip shopMusic;
     public AudioClip waveMusic;
 
+    public GameObject soundPlayerPrefab;
+
     private void OnValidate()
     {
         money = scriptVals.money;
@@ -594,6 +596,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void PlaySound(AudioResource resource)
+    {
+        GameObject newSoundPlayer = Instantiate(soundPlayerPrefab, Vector3.zero, Quaternion.identity);
+        newSoundPlayer.GetComponent<AudioSource>().resource = resource;
+    }
 
 
 }
