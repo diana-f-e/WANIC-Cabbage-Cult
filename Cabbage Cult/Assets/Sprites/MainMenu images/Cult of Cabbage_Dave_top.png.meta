@@ -1,0 +1,237 @@
+fileFormatVersion: 2
+guid: dd128227fa833ea43990eab92be4554b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1775281397465042912
+    second: Cult of Cabbage_Dave_top_0
+  - first:
+      213: -1457307542460784016
+    second: Cult of Cabbage_Dave_top_1
+  - first:
+      213: -3995704585980212135
+    second: Cult of Cabbage_Dave_top_2
+  - first:
+      213: -7522849671556713177
+    second: Cult of Cabbage_Dave_top_3
+  - first:
+      213: 3873619548455737811
+    second: Cult of Cabbage_Dave_top_4
+  - first:
+      213: -7062482688980402071
+    second: Cult of Cabbage_Dave_top_5
+  - first:
+      213: -8705254715218697304
+    second: Cult of Cabbage_Dave_top_6
+  - first:
+      213: 5429983741311590992
+    second: Cult of Cabbage_Dave_top_7
+  - first:
+      213: 2009626284397110695
+    second: Cult of Cabbage_Dave_top_8
+  - first:
+      213: 4376129344662726146
+    second: Cult of Cabbage_Dave_top_9
+  - first:
+      213: -1164993584181666788
+    second: Cult of Cabbage_Dave_top_10
+  - first:
+      213: -6689500112070452452
+    second: Cult of Cabbage_Dave_top_11
+  - first:
+      213: -3833530053775599432
+    second: Cult of Cabbage_Dave_top_12
+  - first:
+      213: 2904879243438590630
+    second: Cult of Cabbage_Dave_top_13
+  - first:
+      213: -404079914307641448
+    second: Cult of Cabbage_Dave_top_14
+  - first:
+      213: -3583857760102842826
+    second: Cult of Cabbage_Dave_top_15
+  - first:
+      213: -5462422745595357284
+    second: Cult of Cabbage_Dave_top_16
+  - first:
+      213: 6486292161287103782
+    second: Cult of Cabbage_Dave_top_17
+  - first:
+      213: 1807453647921460179
+    second: Cult of Cabbage_Dave_top_18
+  - first:
+      213: 8157765277763529974
+    second: Cult of Cabbage_Dave_top_19
+  - first:
+      213: -2704783120070270308
+    second: Cult of Cabbage_Dave_top_20
+  - first:
+      213: 8628233402296878395
+    second: Cult of Cabbage_Dave_top_21
+  - first:
+      213: -866818248979513683
+    second: Cult of Cabbage_Dave_top_22
+  - first:
+      213: 797941619021123324
+    second: Cult of Cabbage_Dave_top_23
+  - first:
+      213: 2762694090852090788
+    second: Cult of Cabbage_Dave_top_24
+  - first:
+      213: -1608344331903052233
+    second: Cult of Cabbage_Dave_top_25
+  - first:
+      213: 1727178394015692508
+    second: Cult of Cabbage_Dave_top_26
+  - first:
+      213: 6308607259830941243
+    second: Cult of Cabbage_Dave_top_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cult of Cabbage_Dave_top_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3840
+        height: 2160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ef4340760113a810800000000000000
+      internalID: 1775281397465042912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 95e05485c2da58e4bbb6282ca916cb31
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Cult of Cabbage_Dave_top_0: 1775281397465042912
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
