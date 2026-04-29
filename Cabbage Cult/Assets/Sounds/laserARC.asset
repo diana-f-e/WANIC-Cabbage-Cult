@@ -41,7 +41,7 @@ AudioRandomContainer:
   m_Pitch: 0
   m_AutomaticTriggerTime: 0
   m_LoopCount: 1
-  m_VolumeRandomizationRange: {x: -22.06894, y: 22.068987}
+  m_VolumeRandomizationRange: {x: -5, y: 22.068987}
   m_PitchRandomizationRange: {x: -82.75888, y: 206.89651}
   m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
   m_LoopCountRandomizationRange: {x: 0, y: 0}
