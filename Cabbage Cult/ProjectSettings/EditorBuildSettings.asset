@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LoseScene.unity
     guid: 5bd450acf6ddb044db0c199a851d946b
+  - enabled: 1
+    path: Assets/Scenes/DaveScene.unity
+    guid: 58c72fb9e358b554695afca4ddb6ac36
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
