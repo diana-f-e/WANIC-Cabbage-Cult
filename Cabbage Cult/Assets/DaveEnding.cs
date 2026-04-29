@@ -26,7 +26,7 @@ public class DaveEnding : MonoBehaviour
     {
         if (index >= daveClues.Length)
         {
-            gameObject.transform.position = Vector3.zero;
+            gameObject.transform.position = new Vector3(440, 240);
             return;
         }
         daveClues[index - 1].tag = "Untagged";
