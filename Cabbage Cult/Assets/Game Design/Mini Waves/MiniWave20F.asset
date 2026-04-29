@@ -18,4 +18,4 @@ MonoBehaviour:
   types:
   - {fileID: 11400000, guid: 7619fddf6365acb4ba2436916fe52998, type: 2}
   chances:
-  - 20
+  - 15

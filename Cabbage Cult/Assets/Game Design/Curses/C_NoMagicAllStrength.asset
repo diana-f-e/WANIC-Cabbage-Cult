@@ -17,5 +17,5 @@ MonoBehaviour:
   cooldown: 0
   damage: 1.5
   attackRadius: 0
-  effectNum: 0.001
-  effectCooldown: 0
+  effectNum: 2
+  effectCooldown: 250
