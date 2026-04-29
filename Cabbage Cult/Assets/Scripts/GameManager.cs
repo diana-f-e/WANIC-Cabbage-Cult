@@ -87,6 +87,8 @@ public class GameManager : MonoBehaviour
     public Texture2D cursorOpen;
     public Texture2D cursorClosed;
 
+    public DaveEnding daveEnding;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -160,7 +162,6 @@ public class GameManager : MonoBehaviour
         {
             //update cursor sprite 
             Cursor.SetCursor(cursorClosed, new Vector2(16, 16), CursorMode.Auto);
-
             //holding smth?
             if (heldObj != null)
             {
@@ -170,6 +171,19 @@ public class GameManager : MonoBehaviour
                     //place it
                     PlaceTower(mousePosition, heldObj.GetComponent<TowerItem>().tower, heldObj);
                     heldObj = null;
+                }
+                    
+            }
+            else
+            {
+                if(clickedObj != null)
+                {
+                    if (clickedObj.tag == "Dave")
+                    {
+                        Debug.Log("DAVE");
+                        daveEnding.AdvanceDave();
+                    }
+
                 }
                     
             }
