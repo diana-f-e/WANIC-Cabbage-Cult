@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class DaveEnding : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class DaveEnding : MonoBehaviour
     {
         if (index >= daveClues.Length)
         {
-            gameObject.SetActive(true);
+            gameObject.transform.position = Vector3.zero;
             return;
         }
         daveClues[index - 1].tag = "Untagged";
@@ -37,7 +38,7 @@ public class DaveEnding : MonoBehaviour
 
     public void RestartDave()
     {
-        gameObject.SetActive(false);
+        gameObject.transform.position = new Vector3(0,10000);
         foreach (GameObject clue in daveClues)
         {
             clue.tag = "Untagged";
@@ -46,5 +47,10 @@ public class DaveEnding : MonoBehaviour
         daveClues[0].tag = "Dave";
         daveClues[0].GetComponent<SpriteRenderer>().sprite = daveSprite;
         index = 1;
+    }
+
+    public void TriggerDave()
+    {
+        SceneManager.LoadScene("DaveScene");
     }
 }
