@@ -208,7 +208,7 @@ public class Tower : MonoBehaviour
             GetComponent<SpriteRenderer>().flipX = true;
         }
         //flip decay again since its sprite faces left
-        if (scriptVals.towerType == "decay")
+        if (scriptVals.towerType == "decay" || ( scriptVals.towerType == "melee" && scriptVals.towerLevel == 3))
         {
             GetComponent<SpriteRenderer>().flipX = !GetComponent<SpriteRenderer>().flipX;
         }
