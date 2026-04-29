@@ -31,5 +31,5 @@ MonoBehaviour:
   effectNum: 50
   effectCooldown: 4
   description: <color=#5771FF>Applies </color>a <color=#0B7831>very strong Decay
-    </color>effect to hit enemies, dealing <#9E0D0D>powerful </color>effect <#FF0000>damage
+    </color>effect to hit enemies, dealing <#C70C0C>powerful </color>effect <#FF0000>damage
     </color><color=#FFEA5E>periodically</color>.
