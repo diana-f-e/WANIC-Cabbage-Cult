@@ -51,6 +51,8 @@ public class MergeButton : MonoBehaviour
                 Destroy(t.gameObject);
             }
             gameManager.mergeList.Clear();
+            //play sound
+            gameManager.PlaySound(gameManager.mergeARC);
         }
         //UpdateTowerList
         gameManager.UpdateTowerList();

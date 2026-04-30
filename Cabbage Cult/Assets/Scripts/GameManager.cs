@@ -83,9 +83,13 @@ public class GameManager : MonoBehaviour
 
     public GameObject hitEffectPrefab;
     public RuntimeAnimatorController[] hitAnimControllers;
+
+    [Header("audio arrays: decay, slow, laser")]
     public AudioResource[] hitARCs;
-    public AudioResource summonARC;
+    public AudioResource[] buyARCs;
+    public AudioResource[] placeARCs;
     public AudioResource hurtARC;
+    public AudioResource mergeARC;
 
     public Texture2D cursorOpen;
     public Texture2D cursorClosed;
@@ -241,14 +245,15 @@ public class GameManager : MonoBehaviour
         GameObject placedTower = Instantiate(tower, coords, Quaternion.identity);
         placedTower.GetComponent<Tower>().scriptVals = towerItem.GetComponent<TowerItem>().towerScriptVals;
         placedTower.GetComponent<Tower>().gameManager = this;
-        audioSource.PlayOneShot(placedTower.GetComponent<Tower>().scriptVals.onBuy);
+        //audioSource.PlayOneShot(placedTower.GetComponent<Tower>().scriptVals.onPlace);
         //apply curse
         if(currentCurse != null)
         {
             Debug.Log("currentCurse != null");
             placedTower.GetComponent<Tower>().ApplyCurse(currentCurse);
         }
-
+        //play sound
+        PlaySound(getPlaceARC(placedTower.GetComponent<Tower>().scriptVals.effect));
         Destroy(towerItem);
         UpdateTowerList();
     }
@@ -580,13 +585,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public AudioResource getHitARC(string hitType)
+    public AudioResource getHitARC(string effectType)
     {
-        if (hitType == "decay")
+        if (effectType == "decay")
         {
             return hitARCs[0];
         }
-        else if (hitType == "slow")
+        else if (effectType == "slow")
         {
             return hitARCs[1];
         }
@@ -594,6 +599,41 @@ public class GameManager : MonoBehaviour
         {
             return hitARCs[2];
         }
+        
+    }
+
+    public AudioResource getPlaceARC(string effectType)
+    {
+        if (effectType == "decay")
+        {
+            return placeARCs[0];
+        }
+        else if (effectType == "slow")
+        {
+            return placeARCs[1];
+        }
+        else
+        {
+            return placeARCs[2];
+        }
+
+    }
+
+    public AudioResource getBuyARC(string effectType)
+    {
+        if (effectType == "decay")
+        {
+            return buyARCs[0];
+        }
+        else if (effectType == "slow")
+        {
+            return buyARCs[1];
+        }
+        else
+        {
+            return buyARCs[2];
+        }
+
     }
 
     public void PlaySound(AudioResource resource)

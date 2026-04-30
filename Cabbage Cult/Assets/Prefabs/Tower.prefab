@@ -149,7 +149,6 @@ MonoBehaviour:
   level: 1
   effect: 
   towerType: '"basic"'
-  onAttack: {fileID: 0}
   gameManager: {fileID: 0}
   cursed: 0
   attackLine: {fileID: 2316631842164305207}

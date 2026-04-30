@@ -1,43 +1,43 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1233149941 &-6150344081685205343
+--- !u!1233149941 &-7365987094995480854
 AudioContainerElement:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: sfx_projectile_Hit1_{-6150344081685205343}
-  m_AudioClip: {fileID: 8300000, guid: 592d4daf2b0dddd40b0b3f1667b7b2ca, type: 3}
+  m_Name: sfx_laser_{-7365987094995480854}
+  m_AudioClip: {fileID: 8300000, guid: a0128dc2277938a4bb07d89e749b3a18, type: 3}
   m_Volume: 0
   m_Enabled: 1
---- !u!1233149941 &-2266561451339461273
+--- !u!1233149941 &3127013879477489570
 AudioContainerElement:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: sfx_projectile_Hit3_{-2266561451339461273}
-  m_AudioClip: {fileID: 8300000, guid: 990daae9fdf7dbe4aa83c931cfc2f306, type: 3}
+  m_Name: sfx_laser4_{3127013879477489570}
+  m_AudioClip: {fileID: 8300000, guid: 08127d8fe7bcd75488fe1419a826f9a2, type: 3}
   m_Volume: 0
   m_Enabled: 1
---- !u!1233149941 &-505982265890111473
+--- !u!1233149941 &5534085764765117498
 AudioContainerElement:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: sfx_projectile_shoot 2_{-505982265890111473}
-  m_AudioClip: {fileID: 8300000, guid: b2a6007724a56c449a61383aca98c122, type: 3}
+  m_Name: sfx_laser2_{5534085764765117498}
+  m_AudioClip: {fileID: 8300000, guid: d078dfe8f64ed0b4c82c2cea14b3eacd, type: 3}
   m_Volume: 0
   m_Enabled: 1
---- !u!1233149941 &1807890955044967908
+--- !u!1233149941 &5645849244728316056
 AudioContainerElement:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: sfx_projectile_Hit2_{1807890955044967908}
-  m_AudioClip: {fileID: 8300000, guid: a7b5022186c1e9444acc8124f0a4ec6c, type: 3}
+  m_Name: sfx_laser3_{5645849244728316056}
+  m_AudioClip: {fileID: 8300000, guid: c62e4ae43683bb6449a9e2120b5f9da6, type: 3}
   m_Volume: 0
   m_Enabled: 1
 --- !u!1307931743 &6418180475301049370
@@ -46,21 +46,21 @@ AudioRandomContainer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: decayARC
+  m_Name: laserARC
   m_Volume: 0
   m_Pitch: 0
   m_AutomaticTriggerTime: 0
   m_LoopCount: 1
-  m_VolumeRandomizationRange: {x: -5, y: 13.793097}
-  m_PitchRandomizationRange: {x: -100, y: 0}
+  m_VolumeRandomizationRange: {x: 0, y: 10}
+  m_PitchRandomizationRange: {x: -82.75888, y: 206.89651}
   m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
   m_LoopCountRandomizationRange: {x: 0, y: 0}
   m_Elements:
-  - {fileID: -6150344081685205343}
-  - {fileID: 1807890955044967908}
-  - {fileID: -2266561451339461273}
-  - {fileID: -505982265890111473}
-  m_AvoidRepeatingLast: 0
+  - {fileID: 5534085764765117498}
+  - {fileID: 5645849244728316056}
+  - {fileID: 3127013879477489570}
+  - {fileID: -7365987094995480854}
+  m_AvoidRepeatingLast: 1
   m_PlaybackMode: 2
   m_TriggerMode: 0
   m_AutomaticTriggerMode: 1
