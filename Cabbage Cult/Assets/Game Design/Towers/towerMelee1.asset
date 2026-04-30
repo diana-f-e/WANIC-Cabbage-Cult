@@ -30,6 +30,5 @@ MonoBehaviour:
   runtimeAnimator: {fileID: 9100000, guid: 9570c53aa730fad45beadbd7a4883b2d, type: 2}
   effectNum: 0.7
   effectCooldown: 3
-  description: <color=#5771FF>Applies </color>the <#3BC4E3>Slowness </color>effect
-    to hit enemies, <#F7079A>lowering </color>their <#4AF0FF>movement speed </color>for
-    <color=#FFEA5E>a few seconds</color>.
+  description: Applies the <#3BC4E3>Slowness </color>effect to hit enemies, <#D62041>lowering
+    their movement speed </color>for <color=#DC9307>a few seconds</color>.

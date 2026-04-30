@@ -30,6 +30,5 @@ MonoBehaviour:
   runtimeAnimator: {fileID: 9100000, guid: b71528d3d68b90e4dbaf1b8f574d986f, type: 2}
   effectNum: 50
   effectCooldown: 4
-  description: <color=#5771FF>Applies </color>a <color=#0B7831>very strong Decay
-    </color>effect to hit enemies, dealing <#C70C0C>powerful </color>effect <#FF0000>damage
-    </color><color=#FFEA5E>periodically</color>.
+  description: Applies a <color=#0B7831>very strong Decay </color>effect to hit enemies,
+    dealing <#D62041>powerful effect damage </color><color=#DC9307>periodically</color>.
