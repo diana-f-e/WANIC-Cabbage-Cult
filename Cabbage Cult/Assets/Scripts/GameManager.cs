@@ -187,7 +187,6 @@ public class GameManager : MonoBehaviour
                 {
                     if (clickedObj.tag == "Dave")
                     {
-                        Debug.Log("DAVE");
                         daveEnding.AdvanceDave();
                     }
 
@@ -252,8 +251,6 @@ public class GameManager : MonoBehaviour
             Debug.Log("currentCurse != null");
             placedTower.GetComponent<Tower>().ApplyCurse(currentCurse);
         }
-        //play sound
-        PlaySound(getPlaceARC(placedTower.GetComponent<Tower>().scriptVals.effect));
         Destroy(towerItem);
         UpdateTowerList();
     }

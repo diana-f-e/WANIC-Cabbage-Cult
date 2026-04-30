@@ -5816,7 +5816,7 @@ GameObject:
   - component: {fileID: 290624552}
   - component: {fileID: 290624551}
   - component: {fileID: 290624550}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6838,7 +6838,7 @@ GameObject:
   - component: {fileID: 350453293}
   - component: {fileID: 350453295}
   - component: {fileID: 350453294}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12725,7 +12725,7 @@ GameObject:
   - component: {fileID: 840505573}
   - component: {fileID: 840505575}
   - component: {fileID: 840505574}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14404,7 +14404,7 @@ GameObject:
   - component: {fileID: 997046104}
   - component: {fileID: 997046106}
   - component: {fileID: 997046105}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14897,7 +14897,7 @@ GameObject:
   - component: {fileID: 1080658312}
   - component: {fileID: 1080658314}
   - component: {fileID: 1080658313}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15110,7 +15110,7 @@ GameObject:
   - component: {fileID: 1111696459}
   - component: {fileID: 1111696461}
   - component: {fileID: 1111696460}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20167,7 +20167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1719525725}
   - component: {fileID: 1719525724}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: DaveManager
   m_TagString: Untagged
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
@@ -20195,16 +20195,17 @@ MonoBehaviour:
   - {fileID: 1728414974}
   normSprite: {fileID: 8339149345414565218, guid: 0f059c061e7a7a24c8222b8d7124ceaf, type: 3}
   daveSprite: {fileID: 4402904626200886398, guid: f29b5b67487d87e4ba07d3f724a2e3b7, type: 3}
---- !u!4 &1719525725
-Transform:
+  daveSpriteNoLeftFish: {fileID: 3047546493925672597, guid: ba97cbcee1c1f6e419d92b40d9c8a7da, type: 3}
+  myRectTf: {fileID: 1719525725}
+--- !u!224 &1719525725
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719525723}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 10000, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 4.426606, y: 4.426606, z: 4.426606}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20215,6 +20216,11 @@ Transform:
   - {fileID: 290624549}
   m_Father: {fileID: 1566302061}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 10000}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1721957943
 GameObject:
   m_ObjectHideFlags: 0
@@ -21892,7 +21898,7 @@ GameObject:
   - component: {fileID: 1844202999}
   - component: {fileID: 1844202998}
   - component: {fileID: 1844202997}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
