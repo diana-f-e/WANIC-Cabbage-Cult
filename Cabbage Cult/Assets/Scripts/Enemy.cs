@@ -100,8 +100,11 @@ public class Enemy : MonoBehaviour
 
         //walk a step toward the next waypoint
         transform.position += speed * direction * Time.deltaTime;
+        //appear on top based on y position
+        transform.position = new Vector3(transform.position.x, transform.position.y, 100 + transform.position.y);
+
         //if im at/past the waypoint: reassign waypoint
-        if(Vector3.Distance(transform.position, currentWaypoint.position) < (1.01 * speed * Time.deltaTime) )
+        if (Vector2.Distance(transform.position, currentWaypoint.position) < (1.01 * speed * Time.deltaTime) )
         {
             if (currentWaypointIndex == waypoints.Length - 1)
             {
@@ -120,8 +123,9 @@ public class Enemy : MonoBehaviour
             {
                 currentWaypointIndex += 1;
                 currentWaypoint = waypoints[currentWaypointIndex];
-                //reassign direction
-                direction = GetNewDirection(transform.position, currentWaypoint.position);
+                //reassign direction (need zeroed position so z doesnt interfere)
+                Vector3 zZeroedPosition = new Vector3(transform.position.x, transform.position.y, 0);
+                direction = GetNewDirection(zZeroedPosition, currentWaypoint.position);
             }
         }
     }
