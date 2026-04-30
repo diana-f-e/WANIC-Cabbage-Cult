@@ -15191,7 +15191,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1132502649
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26230,6 +26230,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 489343690}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: mergeARC
+      value: 
+      objectReference: {fileID: 8300000, guid: 2944b1ac70949c54b982d4862c68b0bf, type: 3}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: curseText
       value: 
       objectReference: {fileID: 877027998}
@@ -26314,6 +26318,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4069428957314610932, guid: 7e6fe1b7f6842c94b88484ce015ce0f0, type: 3}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: buyARCs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: hitARCs.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -26334,9 +26342,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: placeARCs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: statsTextTitheTowers
       value: 
       objectReference: {fileID: 1714189448}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: 'buyARCs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 6418180475301049370, guid: f960b711d55805046b10072bdc3d4821, type: 2}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: 'buyARCs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 6418180475301049370, guid: 7e1579d9c42dbb141a41ffafd70cb4aa, type: 2}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: 'buyARCs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 6418180475301049370, guid: 356a5d74beb2b574aad85b1ce945038d, type: 2}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: 'hitARCs.Array.data[0]'
       value: 
@@ -26401,6 +26425,18 @@ PrefabInstance:
       propertyPath: curseWeights.Array.size
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: 'placeARCs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 6418180475301049370, guid: a8c74f286ff53754d8a2fe8f3393e186, type: 2}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: 'placeARCs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 6418180475301049370, guid: ee9d70f54e1f95a4ba7dafe944723931, type: 2}
+    - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
+      propertyPath: 'placeARCs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 6418180475301049370, guid: 0fb98f274e742e94c917bf5eb70735a8, type: 2}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: 'curseWeights.Array.data[0]'
       value: 10

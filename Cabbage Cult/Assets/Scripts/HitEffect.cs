@@ -18,7 +18,7 @@ public class HitEffect : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        GetComponent<AudioSource>().Play();
+        //GetComponent<AudioSource>().Play();
     }
 
     // Update is called once per frame

@@ -56,7 +56,8 @@ public class TowerIcon : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         newToweritem.GetComponent<TowerItem>().towerScriptVals = scriptVals;
         gameManager.heldObj = newToweritem;
         gameManager.money -= cost;
-        gameManager.audioSource.PlayOneShot(scriptVals.onBuy);
+        //gameManager.audioSource.PlayOneShot(scriptVals.onBuy);
+        gameManager.PlaySound(gameManager.getBuyARC(scriptVals.effect));
     }
 
     //display the tower's stats 

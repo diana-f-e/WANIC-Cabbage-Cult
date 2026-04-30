@@ -206,8 +206,9 @@ public class Enemy : MonoBehaviour
     {
         GameObject newHitEffect = Instantiate(gameManager.hitEffectPrefab, transform.position, Quaternion.identity);
         newHitEffect.GetComponent<Animator>().runtimeAnimatorController = gameManager.getHitAnimController(hitType);
-        newHitEffect.GetComponent<HitEffect>().GetComponent<AudioSource>().resource = gameManager.getHitARC(hitType);
+        //newHitEffect.GetComponent<HitEffect>().GetComponent<AudioSource>().resource = gameManager.getHitARC(hitType);
         newHitEffect.GetComponent<HitEffect>().myEnemy = transform;
+        gameManager.PlaySound(gameManager.getHitARC(hitType));
     }
 
 }

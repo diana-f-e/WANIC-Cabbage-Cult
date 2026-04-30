@@ -28,7 +28,7 @@ public class Tower : MonoBehaviour
 
     public string towerType;
 
-    public AudioClip onAttack;
+    //public AudioClip onAttack;
     public GameManager gameManager;
 
     public bool cursed;
@@ -106,7 +106,7 @@ public class Tower : MonoBehaviour
         attackingCollider.radius = scriptVals.attackRadius;
         effect = scriptVals.effect;
         GetComponent<SpriteRenderer>().color = scriptVals.towerColor;
-        onAttack = scriptVals.onAttack;
+        //onAttack = scriptVals.onAttack;
         effectNum = scriptVals.effectNum;
         effectCooldown = scriptVals.effectCooldown;
         if (scriptVals.skin != null)
@@ -146,7 +146,7 @@ public class Tower : MonoBehaviour
         {
             target.Damage(damage, effect, effectNum, effectCooldown);
         }
-        GetComponent<AudioSource>().PlayOneShot(onAttack);
+        //GetComponent<AudioSource>().PlayOneShot(onAttack);
         //Debug.Log("trying to play animation: " + scriptVals.towerType + "Atk");
 
         GetComponent<Animator>().Play(scriptVals.towerType + scriptVals.towerLevel + "Atk", 0);
