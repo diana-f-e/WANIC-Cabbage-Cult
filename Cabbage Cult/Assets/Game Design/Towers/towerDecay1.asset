@@ -30,5 +30,5 @@ MonoBehaviour:
   runtimeAnimator: {fileID: 9100000, guid: d1631c4654c85f84a8b9fb3845964740, type: 2}
   effectNum: 20
   effectCooldown: 4
-  description: <color=#5771FF>Applies </color>the <color=#29B32F>Decay </color>effect
-    to hit enemies, dealing <#DE1B1B>average </color>effect <#FF0000>damage </color><color=#FFEA5E>periodically</color>.
+  description: Applies the <color=#29B32F>Decay </color>effect to hit enemies, dealing
+    <#D62041>average effect damage </color><color=#DC9307>periodically</color>.

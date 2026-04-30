@@ -144,7 +144,7 @@ public class GameManager : MonoBehaviour
         {
             statsTextTitheTowers.text = "Towers:\n" + towers.Count;
             statsTextTitheMult.text = "Multiplier:\n"+ (int)taxes[taxIndex] +"x";
-            statsTextTithe.text = "Pay the " + towers.Count * (int)taxes[taxIndex] + " Soul Dust Tithe?";
+            statsTextTithe.text = "Pay the <b>" + towers.Count * (int)taxes[taxIndex] + "</b> Soul Dust Tithe?";
         }
 
         //get the mouse position
@@ -493,11 +493,11 @@ public class GameManager : MonoBehaviour
         {
             if(scriptVals.damage > 20 * i)
             {
-                displayText += "<color=#DC3B86>\u2605</color>";
+                displayText += "<color=#D62040>\u2605</color>";
             }
             else
             {
-                displayText += "<color=#BE0259>\u2606</color>";
+                displayText += "<color=#911B36>\u2606</color>";
             }
         }
         displayText += "\n";
@@ -505,15 +505,15 @@ public class GameManager : MonoBehaviour
         //ATK cooldown
         if(scriptVals.cooldown > 3)
         {
-            displayText += " <color=#65FF57>slow</color>\n";
+            displayText += " <color=#9C044A>slow</color>\n";
         }
         else if(scriptVals.cooldown > 1)
         {
-            displayText += " <color=#FFDB57>medium</color>\n";
+            displayText += " <color=#BE0259>medium</color>\n";
         }
         else
         {
-            displayText += " <color=#FF7057>fast</color>\n";
+            displayText += " <color=#DC3B86>fast</color>\n";
         }
         //display effect
         if (scriptVals.effect != "" && scriptVals.effect != null)
@@ -541,7 +541,7 @@ public class GameManager : MonoBehaviour
                 }
                 else
                 {
-                    displayText += "<color=#E0E0E0>\u2606</color>";
+                    displayText += "<color=#383A4E>\u2606</color>";
                 }
             }
             displayText += "\n";
