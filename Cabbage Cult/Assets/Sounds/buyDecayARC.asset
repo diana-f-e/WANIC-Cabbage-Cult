@@ -6,8 +6,8 @@ AudioContainerElement:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: sfx_combined_summon_{-7349817444976606149}
-  m_AudioClip: {fileID: 8300000, guid: e66c666efcc224044b2a3d7708ae6c1e, type: 3}
+  m_Name: combined summon new_{-7349817444976606149}
+  m_AudioClip: {fileID: 8300000, guid: 7a7b639330b0b9143a0df75e0a14b229, type: 3}
   m_Volume: 0
   m_Enabled: 1
 --- !u!1307931743 &6418180475301049370

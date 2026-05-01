@@ -62,7 +62,6 @@ public class Enemy : MonoBehaviour
         }
         GetComponent<Animator>().runtimeAnimatorController = scriptVals.runtimeAnimator;
         GetComponent<SpriteRenderer>().flipX = true;
-        //GetComponent<AudioSource>().resource = gameManager.hurtARC;
 
 
     }
@@ -158,10 +157,10 @@ public class Enemy : MonoBehaviour
     public void Damage(int amount, string effect, float num, float cooldown)
     {
         Damage(amount);
-        //apply effect
+        //apply effect, replacing the effect if a higher level tower has attacked
         if (effect == "slow")
         { 
-            if (!slowed)
+            if (!slowed || num > slowedAmt)
             {
                 slowedAmt = num;
                 speed *= slowedAmt;
@@ -173,7 +172,7 @@ public class Enemy : MonoBehaviour
         }
         else if (effect == "decay")
         {
-            if (!decaying)
+            if (!decaying || num > decayDmg)
             {
                 decayDmg = num;
                 gameObject.GetComponent<SpriteRenderer>().color -= new Color(0f, 0.2f, 0f);
@@ -200,7 +199,7 @@ public class Enemy : MonoBehaviour
             helmetHealth -= 1;
             if (helmetHealth == 0)
             {
-                //TODO destroy helmet (since this feature wasnt implemented, )
+                //TODO destroy helmet (since this feature wasnt implemented, disregard)
                 gameObject.GetComponent<SpriteRenderer>().color += new Color(0.4f, 0.1f, 0.1f);
             }
         }
@@ -215,7 +214,6 @@ public class Enemy : MonoBehaviour
     {
         GameObject newHitEffect = Instantiate(gameManager.hitEffectPrefab, transform.position, Quaternion.identity);
         newHitEffect.GetComponent<Animator>().runtimeAnimatorController = gameManager.getHitAnimController(hitType);
-        //newHitEffect.GetComponent<HitEffect>().GetComponent<AudioSource>().resource = gameManager.getHitARC(hitType);
         newHitEffect.GetComponent<HitEffect>().myEnemy = transform;
         gameManager.PlaySound(gameManager.getHitARC(hitType));
     }

@@ -1,43 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1233149941 &-7365987094995480854
+--- !u!1233149941 &-3475882020435793470
 AudioContainerElement:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: sfx_laser_{-7365987094995480854}
-  m_AudioClip: {fileID: 8300000, guid: a0128dc2277938a4bb07d89e749b3a18, type: 3}
+  m_Name: sfx_laser_new2_{-3475882020435793470}
+  m_AudioClip: {fileID: 8300000, guid: e1c7eaa5fa3416c4e850f7e2bf266421, type: 3}
   m_Volume: 0
   m_Enabled: 1
---- !u!1233149941 &3127013879477489570
+--- !u!1233149941 &-2463208577713171320
 AudioContainerElement:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: sfx_laser4_{3127013879477489570}
-  m_AudioClip: {fileID: 8300000, guid: 08127d8fe7bcd75488fe1419a826f9a2, type: 3}
+  m_Name: sfx_laser_new3_{-2463208577713171320}
+  m_AudioClip: {fileID: 8300000, guid: ccb2d638a1ac8db40a9733b0b968a5ea, type: 3}
   m_Volume: 0
   m_Enabled: 1
---- !u!1233149941 &5534085764765117498
+--- !u!1233149941 &1668998168535678761
 AudioContainerElement:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: sfx_laser2_{5534085764765117498}
-  m_AudioClip: {fileID: 8300000, guid: d078dfe8f64ed0b4c82c2cea14b3eacd, type: 3}
-  m_Volume: 0
-  m_Enabled: 1
---- !u!1233149941 &5645849244728316056
-AudioContainerElement:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: sfx_laser3_{5645849244728316056}
-  m_AudioClip: {fileID: 8300000, guid: c62e4ae43683bb6449a9e2120b5f9da6, type: 3}
+  m_Name: sfx_laser_new1_{1668998168535678761}
+  m_AudioClip: {fileID: 8300000, guid: 3f5b5409d1f814b4faf24cff33524166, type: 3}
   m_Volume: 0
   m_Enabled: 1
 --- !u!1307931743 &6418180475301049370
@@ -56,11 +46,10 @@ AudioRandomContainer:
   m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
   m_LoopCountRandomizationRange: {x: 0, y: 0}
   m_Elements:
-  - {fileID: 5534085764765117498}
-  - {fileID: 5645849244728316056}
-  - {fileID: 3127013879477489570}
-  - {fileID: -7365987094995480854}
-  m_AvoidRepeatingLast: 1
+  - {fileID: 1668998168535678761}
+  - {fileID: -3475882020435793470}
+  - {fileID: -2463208577713171320}
+  m_AvoidRepeatingLast: 0
   m_PlaybackMode: 2
   m_TriggerMode: 0
   m_AutomaticTriggerMode: 1

@@ -6,38 +6,8 @@ AudioContainerElement:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: sfx_projectile_Hit1_{-6150344081685205343}
-  m_AudioClip: {fileID: 8300000, guid: 592d4daf2b0dddd40b0b3f1667b7b2ca, type: 3}
-  m_Volume: 0
-  m_Enabled: 1
---- !u!1233149941 &-2266561451339461273
-AudioContainerElement:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: sfx_projectile_Hit3_{-2266561451339461273}
-  m_AudioClip: {fileID: 8300000, guid: 990daae9fdf7dbe4aa83c931cfc2f306, type: 3}
-  m_Volume: 0
-  m_Enabled: 1
---- !u!1233149941 &-505982265890111473
-AudioContainerElement:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: sfx_projectile_shoot 2_{-505982265890111473}
-  m_AudioClip: {fileID: 8300000, guid: b2a6007724a56c449a61383aca98c122, type: 3}
-  m_Volume: 0
-  m_Enabled: 1
---- !u!1233149941 &1807890955044967908
-AudioContainerElement:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: sfx_projectile_Hit2_{1807890955044967908}
-  m_AudioClip: {fileID: 8300000, guid: a7b5022186c1e9444acc8124f0a4ec6c, type: 3}
+  m_Name: sfx_punch_{-6150344081685205343}
+  m_AudioClip: {fileID: 8300000, guid: aece07e997925334d8a718d264eae50a, type: 3}
   m_Volume: 0
   m_Enabled: 1
 --- !u!1307931743 &6418180475301049370
@@ -52,14 +22,11 @@ AudioRandomContainer:
   m_AutomaticTriggerTime: 0
   m_LoopCount: 1
   m_VolumeRandomizationRange: {x: 0, y: 10}
-  m_PitchRandomizationRange: {x: 0, y: 100}
+  m_PitchRandomizationRange: {x: -100, y: 0}
   m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
   m_LoopCountRandomizationRange: {x: 0, y: 0}
   m_Elements:
   - {fileID: -6150344081685205343}
-  - {fileID: 1807890955044967908}
-  - {fileID: -2266561451339461273}
-  - {fileID: -505982265890111473}
   m_AvoidRepeatingLast: 0
   m_PlaybackMode: 2
   m_TriggerMode: 0
