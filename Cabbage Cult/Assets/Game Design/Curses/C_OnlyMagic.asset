@@ -15,7 +15,7 @@ MonoBehaviour:
   curseName: Only Magic
   curseColor: {r: 0.3137255, g: 0.2784314, b: 0.7433963, a: 1}
   cooldown: 0
-  damage: 0.1
+  damage: 0.01
   attackRadius: 0
-  effectNum: 2
+  effectNum: 1.75
   effectCooldown: 0.8
