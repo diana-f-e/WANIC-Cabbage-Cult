@@ -24824,7 +24824,7 @@ PrefabInstance:
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: cursorOpen
       value: 
-      objectReference: {fileID: 2800000, guid: 0ee705689c6c9e949bd2aba3b9c07822, type: 3}
+      objectReference: {fileID: 2800000, guid: a841fc410527c30478baf427f4d34817, type: 3}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: daveEnding
       value: 
@@ -24848,7 +24848,7 @@ PrefabInstance:
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: cursorClosed
       value: 
-      objectReference: {fileID: 2800000, guid: 990e8f9726515f048b0ac5da21e71942, type: 3}
+      objectReference: {fileID: 2800000, guid: ef1415c5af531c543b158125bd6f7cf2, type: 3}
     - target: {fileID: 3090316478463109635, guid: 7f63f05f8ad17184a8cc4788a93a720e, type: 3}
       propertyPath: statsTextMoney
       value: 
