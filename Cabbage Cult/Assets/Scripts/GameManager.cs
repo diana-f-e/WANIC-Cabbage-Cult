@@ -113,17 +113,103 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < curseWeights.Length; i++)
         {
             curseCutoffs[i] = runningTotal / chanceMagnitude;
-            Debug.Log("[" + i + "]: " + curseCutoffs[i]);
+            //Debug.Log("[" + i + "]: " + curseCutoffs[i]);
             runningTotal += curseWeights[i];
         }
 
         statsTextTitheCurse.text = "Curse Chances:\n";
         int currentIndex = 0;
+        //list of rareties of curses
+        List<string> commonCs = new List<string>();
+        List<string> uncommonCs = new List<string>();
+        List<string> rareCs = new List<string>();
+        statsTextTitheCurse.text += "Curse Chances: <b>Common</b>: 70%\n " +
+        "- Less Damage   - Slow Attacks\n- Lesser Range   - Weak Effects\n- Long Effect Cooldowns\n";  /*< b>Uncommon</b>: 25%
+- Short Buff Arms   - Tall 'n Scrawny
+- Only Muscle   - Only Magic
+
+<b>Rare</b>: 5%
+- Omni-Curse   - Asthma
+- Blind   "*/
+
+
+        /*
         foreach (CurseSO c in curseSOs)
         {
-            statsTextTitheCurse.text += "" + c.curseName + ": " + (int)(curseWeights[currentIndex] / chanceMagnitude * 100) + "%\n";
+            //statsTextTitheCurse.text += "" + c.curseName + ": " + (int)(curseWeights[currentIndex] / chanceMagnitude * 100) + "%\n";
+            if(curseWeights[currentIndex] > 9)
+            {
+                commonCs.Add(c.curseName);
+            }
+            else if(curseWeights[currentIndex] > 4)
+            {
+                uncommonCs.Add(c.curseName);
+            }
+            else
+            {
+                rareCs.Add(c.curseName);
+            }
             currentIndex++;
         }
+        statsTextTitheCurse.text += "\n<b>Common</b>: 70%\n";
+        int newlineEveryOther = 0;
+        foreach (string s in commonCs)
+        {
+            statsTextTitheCurse.text += "- " + s;
+            if(newlineEveryOther % 2 == 0)
+            {
+                statsTextTitheCurse.text += "\n  ";
+            }
+            else
+            {
+                statsTextTitheCurse.text += "   ";
+            }
+            newlineEveryOther++;
+        }
+        statsTextTitheCurse.text += "\n<b>Uncommon</b>: 25%\n";
+        foreach (string s in uncommonCs)
+        {
+            statsTextTitheCurse.text += "- " + s;
+            if (newlineEveryOther % 2 == 0)
+            {
+                statsTextTitheCurse.text += "\n";
+            }
+            else
+            {
+                statsTextTitheCurse.text += "   ";
+            }
+            newlineEveryOther++;
+        }
+        statsTextTitheCurse.text += "\n<b>Rare</b>: 5%\n"; 
+        foreach (string s in rareCs)
+        {
+            statsTextTitheCurse.text += "- " + s;
+            if (newlineEveryOther % 2 == 0)
+            {
+                statsTextTitheCurse.text += "\n";
+            }
+            else
+            {
+                statsTextTitheCurse.text += "   ";
+            }
+            newlineEveryOther++;
+        }*/
+
+
+        /* Common (13%):
+         * -fejivhus
+         * -fhvbda
+         * -iafhvbd
+         * 
+         * Uncommon (6%):
+         * - grwh
+         * -fhua
+         * -vuha
+         * 
+         * Rare (1%):
+         * -dafgshdtj
+         * -etrsyhdtj
+         */
 
 
     }
@@ -227,6 +313,8 @@ public class GameManager : MonoBehaviour
                 {
                     AddToMergeList(clickedTower);
                 }
+                //hide the tower info display
+                towerInfoDisplay.SetActive(false);
             }
         }
         if(Input.GetMouseButtonUp(0) || Input.GetMouseButtonUp(1))
@@ -334,7 +422,7 @@ public class GameManager : MonoBehaviour
             //apply changes to the copy of merge ui in the tithe menu
             mergePreviewMiniCopies[index].sprite = i.sprite;
             //resize
-            i.rectTransform.sizeDelta = 200 * new Vector2(w, h);
+            mergePreviewMiniCopies[index].rectTransform.sizeDelta = 200 * new Vector2(w, h);
             mergePreviewMiniCopies[index].gameObject.SetActive(i.gameObject.activeSelf);
         }
 
