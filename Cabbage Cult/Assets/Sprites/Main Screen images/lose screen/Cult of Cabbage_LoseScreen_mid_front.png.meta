@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: e052ae0c99ea9224487980bd23cd5911
+guid: 30b1e54d38d601944aeb855b93450641
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2402023852889806380
-    second: Cult of Cabbage_LoseScreen_top_0
+      213: 9050940129353238943
+    second: Cult of Cabbage_LoseScreen_mid_front_0
   - first:
-      213: 5490890017800673829
-    second: Cult of Cabbage_LoseScreen_top_1
-  - first:
-      213: 8320960384600697805
-    second: Cult of Cabbage_LoseScreen_top_2
+      213: -1828752724680662159
+    second: Cult of Cabbage_LoseScreen_mid_front_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 250
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -119,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cult of Cabbage_LoseScreen_top_0
+      name: Cult of Cabbage_LoseScreen_mid_front_0
       rect:
         serializedVersion: 2
         x: 0
@@ -134,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c26138db7f3b55120800000000000000
-      internalID: 2402023852889806380
+      spriteID: f998d6df7166b9d70800000000000000
+      internalID: 9050940129353238943
       vertices: []
       indices: 
       edges: []
@@ -144,7 +141,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 161ad867fb6bc544cb93db94ba90c35e
+    spriteID: 48a28965b9e804643ac9bba5dd08a1e8
     internalID: 0
     vertices: []
     indices: 
@@ -154,7 +151,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Cult of Cabbage_LoseScreen_top_0: 2402023852889806380
+      Cult of Cabbage_LoseScreen_mid_front_0: 9050940129353238943
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
