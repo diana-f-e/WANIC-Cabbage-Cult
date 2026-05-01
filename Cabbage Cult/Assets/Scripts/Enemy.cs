@@ -42,7 +42,8 @@ public class Enemy : MonoBehaviour
 
     public AudioSource audioSource;
 
-
+    public GameObject decayDisplay;
+    public GameObject slowDisplay;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -148,6 +149,10 @@ public class Enemy : MonoBehaviour
         if (healthColor <= 0)
             healthColor = 0.001f;
         GetComponent<SpriteRenderer>().color = new Color(1.0f, healthColor, healthColor);
+        //display effects
+        decayDisplay.SetActive(decaying);
+        slowDisplay.SetActive(slowed);
+        ParticleSystem test;
     }
 
     public void Damage(int amount, string effect, float num, float cooldown)
