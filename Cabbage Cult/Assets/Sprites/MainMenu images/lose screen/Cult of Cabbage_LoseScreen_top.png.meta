@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 90ae0f6e6a0b3cc4cbf0763eae1ea35e
+guid: 7fc271b8b30c7234ea4ff7d265961753
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6922371489471582230
-    second: win screen (1)_0
+      213: -426093202643564893
+    second: Cult of Cabbage_LoseScreen_top 1_0
+  - first:
+      213: -1324516150089136115
+    second: Cult of Cabbage_LoseScreen_top 1_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,12 +116,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: win screen (1)_0
+      name: Cult of Cabbage_LoseScreen_top 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 3860
+        width: 3840
         height: 2160
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -128,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 610de318134311060800000000000000
-      internalID: 6922371489471582230
+      spriteID: 3a6c83f5d76361af0800000000000000
+      internalID: -426093202643564893
       vertices: []
       indices: 
       edges: []
@@ -138,7 +141,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c7fa812e523eb8e4a9f441dabba30572
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +151,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      win screen (1)_0: 6922371489471582230
+      Cult of Cabbage_LoseScreen_top 1_0: -426093202643564893
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
