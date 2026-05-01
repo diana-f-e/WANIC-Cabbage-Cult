@@ -18403,8 +18403,8 @@ MonoBehaviour:
 
     --'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: afa0a66607c20c142ba8d9a384e21f7c, type: 2}
-  m_sharedMaterial: {fileID: -8018622220918054729, guid: afa0a66607c20c142ba8d9a384e21f7c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c7e752794c267a240b1e05e422ee2174, type: 2}
+  m_sharedMaterial: {fileID: -8018622220918054729, guid: c7e752794c267a240b1e05e422ee2174, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -25153,6 +25153,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner
       objectReference: {fileID: 0}
+    - target: {fileID: 1009095234624828748, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2965054833826929101, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.5
@@ -25305,6 +25309,18 @@ PrefabInstance:
       propertyPath: 'waypoints.Array.data[6]'
       value: 
       objectReference: {fileID: 1042917378}
+    - target: {fileID: 7745634554259684832, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7745634554259684832, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7745634554259684832, guid: c14cc3b598e198b4a880381570e89a4e, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
