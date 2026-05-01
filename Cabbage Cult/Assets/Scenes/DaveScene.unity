@@ -374,7 +374,7 @@ PrefabInstance:
     - target: {fileID: 2442439976822027288, guid: 72976d93b8fc9494090963a7de0fb758, type: 3}
       propertyPath: m_Resource
       value: 
-      objectReference: {fileID: 8300000, guid: ef05aea5dc5484b4fb02c5d02a9510a9, type: 3}
+      objectReference: {fileID: 8300000, guid: 98134593b030f994988041bef89edc38, type: 3}
     - target: {fileID: 6895006760952438142, guid: 72976d93b8fc9494090963a7de0fb758, type: 3}
       propertyPath: m_Name
       value: Jukebox
