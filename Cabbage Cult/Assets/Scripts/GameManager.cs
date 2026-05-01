@@ -117,7 +117,7 @@ public class GameManager : MonoBehaviour
             runningTotal += curseWeights[i];
         }
 
-        statsTextTitheCurse.text = "<u>Curse Chances:</u>\n";
+        statsTextTitheCurse.text = "<color=#811B49><u><b>Curse Chances:</u></b></color>\n";
         int currentIndex = 0;
         //list of rareties of curses
         List<string> commonCs = new List<string>();
@@ -125,15 +125,15 @@ public class GameManager : MonoBehaviour
         List<string> rareCs = new List<string>();
         statsTextTitheCurse.text +=
         "<b>Common</b>: 70%\n <color=#811B49>" +
-        "- Less DMG   - Slow Attacks\n" +
-        "- Less Range   - Weak Magic\n" +
-        "- Delayed Magic</color>\n" +
+        "-- Less DMG   -- Slow Attacks\n" +
+        "-- Less Range   -- Weak Magic\n" +
+        "-- Delayed Magic</color>\n" +
         "<b>Uncommon</b>: 25%\n <color=#811B49>" +
-        "- Short Arms   - Tall 'n Scrawny\n" + 
-        "- Only Muscle   - Only Magic</color>\n" +
+        "-- Short Arms   -- Tall 'n Scrawny\n" + 
+        "-- Only Muscle   -- Only Magic</color>\n" +
         "<b>Rare</b>: 5%\n <color=#811B49>" +
-        "- Omni-Curse   - Asthma\n" +
-        "- Blind</color>";
+        "-- Omni-Curse   -- Asthma\n" +
+        "-- Blind</color>";
 
 /*< b>Uncommon</b>: 25%
 - Short Buff Arms   - Tall 'n Scrawny
