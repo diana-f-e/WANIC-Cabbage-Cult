@@ -11,16 +11,26 @@ using UnityEngine;
 
 public class MenuFunctions : MonoBehaviour
 {
+    public Texture2D cursorOpen;
+    public Texture2D cursorClosed;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        Cursor.SetCursor(cursorOpen, new Vector2(16, 16), CursorMode.Auto);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //show cursor clicks
+        if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
+        {
+            Cursor.SetCursor(cursorClosed, new Vector2(16, 16), CursorMode.Auto);
+        }
+        if (Input.GetMouseButtonUp(0) || Input.GetMouseButtonUp(1))
+        {
+            Cursor.SetCursor(cursorOpen, new Vector2(16, 16), CursorMode.Auto);
+        }
     }
 
     public void SetActiveGameObject(GameObject obj)
